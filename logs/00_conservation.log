@@ -1,0 +1,162 @@
+==========================================================================
+STAGE 00 - TfR1 human/mouse surface conservation map (DECISION GATE)
+==========================================================================
+
+[seq] human assay construct 121-760: 640 aa
+[seq] mouse assay construct 123-763: 641 aa
+[seq] both from the challenge page, NOT UniProt
+
+[aln] global identity over aligned columns: 78.1% (499/639)  -- page states 78%
+[aln] Indel re-seated: aligner placed the apical gap at human V210; the challenge page places it at L212 (V210->D213, Y211->P214, L212->none). Adopted the page's placement. Both are equal-cost alignments of the same single-residue deletion; only the gap column differs, and all of 210/211/212 are non-conserved under either.
+
+[aln] validation against the page's six stated apical differences:
+      OK        D204 -> Q207   (page: D204->Q207)
+      OK        R208 -> N211   (page: R208->N211)
+      OK        V210 -> D213   (page: V210->D213)
+      OK        Y211 -> P214   (page: Y211->P214)
+      OK        N348 -> K350   (page: N348->K350)
+      OK        K371 -> Q373   (page: K371->Q373)
+[aln] ALIGNMENT VALIDATED against all six page-stated differences.
+
+==========================================================================
+Q1  IS K205 CONSERVED IN MOUSE?   <-- checked first, decides the campaign
+==========================================================================
+    human K205  ->  mouse S208
+    VERDICT: K205 is NOT CONSERVED  (K -> S)
+
+    apical main loop 202-215, residue by residue:
+      human I202  -> mouse I205   conserved
+      human V203  -> mouse V206   conserved
+      human D204  -> mouse Q207   DIFFERS
+      human K205  -> mouse S208   DIFFERS
+      human N206  -> mouse N209   conserved
+      human G207  -> mouse G210   conserved
+      human R208  -> mouse N211   DIFFERS
+      human L209  -> mouse L212   conserved
+      human V210  -> mouse D213   DIFFERS
+      human Y211  -> mouse P214   DIFFERS
+      human L212  -> mouse -  -   DIFFERS
+      human V213  -> mouse V215   conserved
+      human E214  -> mouse E216   conserved
+      human N215  -> mouse S217   DIFFERS
+
+    apical cation inventory:
+      K205  (cation     ) -> mouse S208 (polar)
+      R208  (cation     ) -> mouse N211 (polar)
+      K371  (cation     ) -> mouse Q373 (polar)
+      N348  (polar      ) -> mouse K350 (cation)
+
+==========================================================================
+STRUCTURE 11QC
+==========================================================================
+[pdb] 11QC chains: ['A', 'B']; chain A modelled residues: 639
+[pdb] chain A numbering span: 122-760
+[pdb] heteroatom residues present: {'NAG': 6}
+
+[142] 11QC chain A position 142 = G  (assay construct carries G; mouse-aligned partner = D144)
+[142] OK - 11QC matches the assay construct at 142. No patch needed.
+
+[xchk] 11QC chain A vs assay construct: 0 mismatches over 639 modelled residues
+
+[sasa] Shrake-Rupley on the isolated monomer (chain A)...
+[sasa] Shrake-Rupley on the A+B dimer (to find seam-buried residues)...
+
+[11RN] computing VP1u footprint on TfR1...
+[11RN] TfR1 chain(s) ['A', 'B'], VP1u chain(s) ['X', 'Y']
+[11RN] VP1u contacts 9 TfR1 residues (<=4.5 A): [202, 204, 208, 209, 210, 211, 212, 348, 371]
+
+[tab] 639 residues scored; 244 surface-exposed (rel SASA >= 0.25)
+[tab] of those, 163 conserved (67%) - note the surface is less conserved than the 78% global figure
+
+==========================================================================
+Q2  CONSERVED, SURFACE-EXPOSED CATIONS IN A USABLE PATCH
+==========================================================================
+    32 conserved surface Arg/Lys on the monomer
+    23 of them are Tf-sparing (>10 A from 619-670), >10 A from a glycan sequon, and not dimer-seam buried
+
+    ranked candidate patches (12 A footprint around each conserved surface cation):
+       pos            dom  dApex    dTf   dGly  nSurf  nCons  fCons  areaA2  VP1u other conserved cations
+    K189           apical   33.0   35.7   11.7     18     15   0.83    1460 False [193, 382]
+    K382           apical   30.5   40.5   14.2     16     13   0.81    1239 False [161, 189, 193]
+    K534    protease-like   40.7   10.9   19.8     18     14   0.78    1573 False [240, 486, 495, 531]
+    K486    protease-like   35.2   26.4   29.6     13     10   0.77    1080 False [495, 534]
+    K240           apical   29.3   14.4   13.0     21     16   0.76    1962 False [241, 534, 717]
+    K531    protease-like   45.0   10.2   30.6     16     12   0.75    1476 False [495, 534]
+    K495    protease-like   39.8   19.3   32.4     22     16   0.73    1983 False [486, 514, 531, 534]
+    K477    protease-like   57.8   13.1   23.1     15     11   0.73    1188 False [394]
+    K177    protease-like   60.6   21.6   28.5     11      8   0.73    1177 False [180, 394, 439]
+    K600    protease-like   60.7   12.1   36.2     14     10   0.71    1247 False [128, 508]
+    K508    protease-like   58.5   12.5   41.7     18     12   0.67    1453 False [128, 514, 600]
+    R183    protease-like   48.8   27.7   11.9     15     10   0.67    1324 False [161, 180]
+    K128    protease-like   63.4   19.3   43.3     17     11   0.65    1636 False [508, 514, 600]
+    K439    protease-like   65.0   21.8   38.1     14      9   0.64    1473 False [177]
+    K224           apical   19.3   34.9   15.3     16     10   0.62    1293 False [193, 374]
+    K394    protease-like   62.4   12.3   25.1     13      8   0.62    1200 False [177, 180, 477]
+    K241           apical   29.1   11.8   13.9     15      9    0.6    1686 False [240, 717]
+    K193           apical   20.9   42.3   23.9     17     10   0.59    1347 False [189, 224, 382]
+    K161    protease-like   37.5   41.4   20.8     14      8   0.57    1077 False [183, 382]
+    K514    protease-like   54.6   28.2   45.2     18     10   0.56    1529 False [128, 495, 508]
+    K374           apical    6.4   40.6   15.2     19      8   0.42    1639 False [224, 231, 344]
+    K344           apical    9.5   41.4   21.4     17      7   0.41    1320 False [374]
+    K145    protease-like   44.0   41.6   33.4     12      4   0.33     954 False []
+
+==========================================================================
+Q2b IS THE APICAL CATION INVENTORY 'REARRANGED' RATHER THAN LOST?
+==========================================================================
+    human apical cations R208, K371 (+K205) all go neutral in mouse,
+    but mouse GAINS K350 where human has N348. If human R208 and human
+    348 are close in space, one binder His could sit between them and
+    find a cation in BOTH species.
+
+              pair  minHeavy    CB-CB  tip-tip
+       371 <-> 348       3.6      5.2      4.6
+       208 <-> 348      10.4     14.5     17.2
+       205 <-> 348      11.0     12.7     13.3
+       208 <-> 371       8.4     11.1     14.1
+       205 <-> 208       5.5      8.5     13.4
+
+      exposure of the two swap partners (mouse gains a cation at 350,
+      loses the one at 373 - human is the mirror image):
+        human N348 relSASA 0.122  -> mouse K350  VP1u-contact=True
+        human K371 relSASA 0.268  -> mouse Q373  VP1u-contact=True
+
+==========================================================================
+RESOLVING THE NINE-RESIDUE APICAL PATCH (brief section 4, step 7)
+==========================================================================
+    VP1u footprint on TfR1 (<=4.5 A) = 9 residues: [202, 204, 208, 209, 210, 211, 212, 348, 371]
+    page names 7 of 9: [204, 208, 210, 211, 212, 348, 371]
+    the previously unnamed patch residues are therefore: [202, 209]
+      I202 -> mouse I205  CONSERVED;  charge=hydrophobic;  relSASA=0.025
+      L209 -> mouse L212  CONSERVED;  charge=hydrophobic;  relSASA=0.579
+    K205 in the VP1u footprint? False
+
+==========================================================================
+Q3  DOES THE MAP CORROBORATE THE 318/633/719 SEAM LEAD?
+==========================================================================
+    H318 -> mouse H320  conserved; relSASA 0.798; dTf 32.7 A; dGlycan 1.3 A; domain apical
+    K633 -> mouse R636  DIFFERS; relSASA 0.671; dTf 0.0 A; dGlycan 14.0 A; domain helical
+    R719 -> mouse R722  conserved; relSASA 0.221; dTf 2.8 A; dGlycan 6.8 A; domain helical
+    (transferrin site is 619-670; K633 falls inside it)
+
+==========================================================================
+NATIVE HISTIDINES - spatial check against the apical patch
+==========================================================================
+    12 histidines modelled in chain A
+      H234   relSASA 0.0    d(apex)   16.9 A  domain         apical  mouse H236
+      H300   relSASA 0.188  d(apex)   26.6 A  domain         apical  mouse H302
+      H302   relSASA 0.045  d(apex)   28.4 A  domain         apical  mouse H304
+      H186   relSASA 0.0    d(apex)   41.8 A  domain  protease-like  mouse H188
+      H707   relSASA 0.127  d(apex)   44.0 A  domain        helical  mouse H710
+      H699   relSASA 0.0    d(apex)   46.1 A  domain        helical  mouse H702
+      H318   relSASA 0.798  d(apex)   49.2 A  domain         apical  mouse H320
+      H515   relSASA 0.126  d(apex)   49.2 A  domain  protease-like  mouse H518
+      H475   relSASA 0.25   d(apex)   54.4 A  domain  protease-like  mouse H478
+      H684   relSASA 0.275  d(apex)   55.1 A  domain        helical  mouse H687
+      H401   relSASA 0.048  d(apex)   60.4 A  domain  protease-like  mouse R403
+      H603   relSASA 0.212  d(apex)   64.0 A  domain  protease-like  mouse H606
+    position 349 is M - the 'His349' claim in background reading is WRONG, do not carry it forward
+
+[out] target/conservation_table.tsv
+[out] target/conservation_candidates.json
+
+STAGE 00 COMPLETE - stop here for the epitope decision.

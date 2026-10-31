@@ -217,3 +217,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Stage run logs are the evidence for the numbers in runlog/ and target/*.md.
+# The brief (section 0) says to commit run logs, so exempt them from *.log above.
+!logs/*.log

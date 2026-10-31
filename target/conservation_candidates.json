@@ -1,0 +1,531 @@
+{
+  "global_identity_pct": 78.09076682316119,
+  "k205": {
+    "human": "K205",
+    "mouse": "S208",
+    "conserved": false
+  },
+  "candidates": [
+    {
+      "pos": 189,
+      "aa": "K",
+      "domain": "apical",
+      "d_apex": 33.0,
+      "d_tf": 35.7,
+      "d_glycan": 11.7,
+      "vp1u": false,
+      "n_surface": 18,
+      "n_conserved": 15,
+      "frac_conserved": 0.83,
+      "patch_area": 1460,
+      "other_conserved_cations": [
+        193,
+        382
+      ],
+      "anions_in_patch": [
+        156,
+        383
+      ]
+    },
+    {
+      "pos": 382,
+      "aa": "K",
+      "domain": "apical",
+      "d_apex": 30.5,
+      "d_tf": 40.5,
+      "d_glycan": 14.2,
+      "vp1u": false,
+      "n_surface": 16,
+      "n_conserved": 13,
+      "frac_conserved": 0.81,
+      "patch_area": 1239,
+      "other_conserved_cations": [
+        161,
+        189,
+        193
+      ],
+      "anions_in_patch": [
+        156,
+        194,
+        383
+      ]
+    },
+    {
+      "pos": 534,
+      "aa": "K",
+      "domain": "protease-like",
+      "d_apex": 40.7,
+      "d_tf": 10.9,
+      "d_glycan": 19.8,
+      "vp1u": false,
+      "n_surface": 18,
+      "n_conserved": 14,
+      "frac_conserved": 0.78,
+      "patch_area": 1573,
+      "other_conserved_cations": [
+        240,
+        486,
+        495,
+        531
+      ],
+      "anions_in_patch": [
+        266,
+        533,
+        538,
+        624,
+        714
+      ]
+    },
+    {
+      "pos": 486,
+      "aa": "K",
+      "domain": "protease-like",
+      "d_apex": 35.2,
+      "d_tf": 26.4,
+      "d_glycan": 29.6,
+      "vp1u": false,
+      "n_surface": 13,
+      "n_conserved": 10,
+      "frac_conserved": 0.77,
+      "patch_area": 1080,
+      "other_conserved_cations": [
+        495,
+        534
+      ],
+      "anions_in_patch": [
+        266,
+        533,
+        538,
+        559,
+        562
+      ]
+    },
+    {
+      "pos": 240,
+      "aa": "K",
+      "domain": "apical",
+      "d_apex": 29.3,
+      "d_tf": 14.4,
+      "d_glycan": 13.0,
+      "vp1u": false,
+      "n_surface": 21,
+      "n_conserved": 16,
+      "frac_conserved": 0.76,
+      "patch_area": 1962,
+      "other_conserved_cations": [
+        241,
+        534,
+        717
+      ],
+      "anions_in_patch": [
+        244,
+        245,
+        266,
+        714
+      ]
+    },
+    {
+      "pos": 531,
+      "aa": "K",
+      "domain": "protease-like",
+      "d_apex": 45.0,
+      "d_tf": 10.2,
+      "d_glycan": 30.6,
+      "vp1u": false,
+      "n_surface": 16,
+      "n_conserved": 12,
+      "frac_conserved": 0.75,
+      "patch_area": 1476,
+      "other_conserved_cations": [
+        495,
+        534
+      ],
+      "anions_in_patch": [
+        525,
+        533,
+        560
+      ]
+    },
+    {
+      "pos": 495,
+      "aa": "K",
+      "domain": "protease-like",
+      "d_apex": 39.8,
+      "d_tf": 19.3,
+      "d_glycan": 32.4,
+      "vp1u": false,
+      "n_surface": 22,
+      "n_conserved": 16,
+      "frac_conserved": 0.73,
+      "patch_area": 1983,
+      "other_conserved_cations": [
+        486,
+        514,
+        531,
+        534
+      ],
+      "anions_in_patch": [
+        525,
+        533,
+        538,
+        559,
+        560,
+        562
+      ]
+    },
+    {
+      "pos": 477,
+      "aa": "K",
+      "domain": "protease-like",
+      "d_apex": 57.8,
+      "d_tf": 13.1,
+      "d_glycan": 23.1,
+      "vp1u": false,
+      "n_surface": 15,
+      "n_conserved": 11,
+      "frac_conserved": 0.73,
+      "patch_area": 1188,
+      "other_conserved_cations": [
+        394
+      ],
+      "anions_in_patch": [
+        400,
+        676
+      ]
+    },
+    {
+      "pos": 177,
+      "aa": "K",
+      "domain": "protease-like",
+      "d_apex": 60.6,
+      "d_tf": 21.6,
+      "d_glycan": 28.5,
+      "vp1u": false,
+      "n_surface": 11,
+      "n_conserved": 8,
+      "frac_conserved": 0.73,
+      "patch_area": 1177,
+      "other_conserved_cations": [
+        180,
+        394,
+        439
+      ],
+      "anions_in_patch": [
+        175
+      ]
+    },
+    {
+      "pos": 600,
+      "aa": "K",
+      "domain": "protease-like",
+      "d_apex": 60.7,
+      "d_tf": 12.1,
+      "d_glycan": 36.2,
+      "vp1u": false,
+      "n_surface": 14,
+      "n_conserved": 10,
+      "frac_conserved": 0.71,
+      "patch_area": 1247,
+      "other_conserved_cations": [
+        128,
+        508
+      ],
+      "anions_in_patch": [
+        125,
+        604,
+        606
+      ]
+    },
+    {
+      "pos": 508,
+      "aa": "K",
+      "domain": "protease-like",
+      "d_apex": 58.5,
+      "d_tf": 12.5,
+      "d_glycan": 41.7,
+      "vp1u": false,
+      "n_surface": 18,
+      "n_conserved": 12,
+      "frac_conserved": 0.67,
+      "patch_area": 1453,
+      "other_conserved_cations": [
+        128,
+        514,
+        600
+      ],
+      "anions_in_patch": [
+        125,
+        525,
+        604,
+        606,
+        612
+      ]
+    },
+    {
+      "pos": 183,
+      "aa": "R",
+      "domain": "protease-like",
+      "d_apex": 48.8,
+      "d_tf": 27.7,
+      "d_glycan": 11.9,
+      "vp1u": false,
+      "n_surface": 15,
+      "n_conserved": 10,
+      "frac_conserved": 0.67,
+      "patch_area": 1324,
+      "other_conserved_cations": [
+        161,
+        180
+      ],
+      "anions_in_patch": []
+    },
+    {
+      "pos": 128,
+      "aa": "K",
+      "domain": "protease-like",
+      "d_apex": 63.4,
+      "d_tf": 19.3,
+      "d_glycan": 43.3,
+      "vp1u": false,
+      "n_surface": 17,
+      "n_conserved": 11,
+      "frac_conserved": 0.65,
+      "patch_area": 1636,
+      "other_conserved_cations": [
+        508,
+        514,
+        600
+      ],
+      "anions_in_patch": [
+        125,
+        133,
+        136,
+        604
+      ]
+    },
+    {
+      "pos": 439,
+      "aa": "K",
+      "domain": "protease-like",
+      "d_apex": 65.0,
+      "d_tf": 21.8,
+      "d_glycan": 38.1,
+      "vp1u": false,
+      "n_surface": 14,
+      "n_conserved": 9,
+      "frac_conserved": 0.64,
+      "patch_area": 1473,
+      "other_conserved_cations": [
+        177
+      ],
+      "anions_in_patch": [
+        133,
+        175
+      ]
+    },
+    {
+      "pos": 224,
+      "aa": "K",
+      "domain": "apical",
+      "d_apex": 19.3,
+      "d_tf": 34.9,
+      "d_glycan": 15.3,
+      "vp1u": false,
+      "n_surface": 16,
+      "n_conserved": 10,
+      "frac_conserved": 0.62,
+      "patch_area": 1293,
+      "other_conserved_cations": [
+        193,
+        374
+      ],
+      "anions_in_patch": [
+        194
+      ]
+    },
+    {
+      "pos": 394,
+      "aa": "K",
+      "domain": "protease-like",
+      "d_apex": 62.4,
+      "d_tf": 12.3,
+      "d_glycan": 25.1,
+      "vp1u": false,
+      "n_surface": 13,
+      "n_conserved": 8,
+      "frac_conserved": 0.62,
+      "patch_area": 1200,
+      "other_conserved_cations": [
+        177,
+        180,
+        477
+      ],
+      "anions_in_patch": [
+        400
+      ]
+    },
+    {
+      "pos": 241,
+      "aa": "K",
+      "domain": "apical",
+      "d_apex": 29.1,
+      "d_tf": 11.8,
+      "d_glycan": 13.9,
+      "vp1u": false,
+      "n_surface": 15,
+      "n_conserved": 9,
+      "frac_conserved": 0.6,
+      "patch_area": 1686,
+      "other_conserved_cations": [
+        240,
+        717
+      ],
+      "anions_in_patch": [
+        244,
+        245,
+        266,
+        356,
+        714
+      ]
+    },
+    {
+      "pos": 193,
+      "aa": "K",
+      "domain": "apical",
+      "d_apex": 20.9,
+      "d_tf": 42.3,
+      "d_glycan": 23.9,
+      "vp1u": false,
+      "n_surface": 17,
+      "n_conserved": 10,
+      "frac_conserved": 0.59,
+      "patch_area": 1347,
+      "other_conserved_cations": [
+        189,
+        224,
+        382
+      ],
+      "anions_in_patch": [
+        156,
+        194,
+        294,
+        383
+      ]
+    },
+    {
+      "pos": 161,
+      "aa": "K",
+      "domain": "protease-like",
+      "d_apex": 37.5,
+      "d_tf": 41.4,
+      "d_glycan": 20.8,
+      "vp1u": false,
+      "n_surface": 14,
+      "n_conserved": 8,
+      "frac_conserved": 0.57,
+      "patch_area": 1077,
+      "other_conserved_cations": [
+        183,
+        382
+      ],
+      "anions_in_patch": [
+        149,
+        156
+      ]
+    },
+    {
+      "pos": 514,
+      "aa": "K",
+      "domain": "protease-like",
+      "d_apex": 54.6,
+      "d_tf": 28.2,
+      "d_glycan": 45.2,
+      "vp1u": false,
+      "n_surface": 18,
+      "n_conserved": 10,
+      "frac_conserved": 0.56,
+      "patch_area": 1529,
+      "other_conserved_cations": [
+        128,
+        495,
+        508
+      ],
+      "anions_in_patch": [
+        136,
+        582
+      ]
+    },
+    {
+      "pos": 374,
+      "aa": "K",
+      "domain": "apical",
+      "d_apex": 6.4,
+      "d_tf": 40.6,
+      "d_glycan": 15.2,
+      "vp1u": false,
+      "n_surface": 19,
+      "n_conserved": 8,
+      "frac_conserved": 0.42,
+      "patch_area": 1639,
+      "other_conserved_cations": [
+        224,
+        231,
+        344
+      ],
+      "anions_in_patch": []
+    },
+    {
+      "pos": 344,
+      "aa": "K",
+      "domain": "apical",
+      "d_apex": 9.5,
+      "d_tf": 41.4,
+      "d_glycan": 21.4,
+      "vp1u": false,
+      "n_surface": 17,
+      "n_conserved": 7,
+      "frac_conserved": 0.41,
+      "patch_area": 1320,
+      "other_conserved_cations": [
+        374
+      ],
+      "anions_in_patch": [
+        294,
+        343,
+        350
+      ]
+    },
+    {
+      "pos": 145,
+      "aa": "K",
+      "domain": "protease-like",
+      "d_apex": 44.0,
+      "d_tf": 41.6,
+      "d_glycan": 33.4,
+      "vp1u": false,
+      "n_surface": 12,
+      "n_conserved": 4,
+      "frac_conserved": 0.33,
+      "patch_area": 954,
+      "other_conserved_cations": [],
+      "anions_in_patch": [
+        139,
+        149,
+        578
+      ]
+    }
+  ],
+  "vp1u_footprint": [
+    202,
+    204,
+    208,
+    209,
+    210,
+    211,
+    212,
+    348,
+    371
+  ],
+  "n_surface": 244,
+  "n_surface_conserved": 163
+}
