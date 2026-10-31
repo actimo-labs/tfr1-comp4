@@ -1,0 +1,74 @@
+[
+  {
+    "name": "plain_d_0_s1",
+    "reason": "N-X-S/T sequon at 44"
+  },
+  {
+    "name": "plain_d_0_s2",
+    "reason": "homopolymer Ax6"
+  },
+  {
+    "name": "plain_d_0_s3",
+    "reason": "homopolymer Ax6"
+  },
+  {
+    "name": "plain_d_1_s3",
+    "reason": "homopolymer Ax18"
+  },
+  {
+    "name": "plain_d_2_s3",
+    "reason": "homopolymer Ax9"
+  },
+  {
+    "name": "plain_d_3_s1",
+    "reason": "homopolymer Ax5"
+  },
+  {
+    "name": "plain_d_3_s2",
+    "reason": "homopolymer Ax5"
+  },
+  {
+    "name": "plain_d_3_s3",
+    "reason": "homopolymer Ax5"
+  },
+  {
+    "name": "plain_d_3_s4",
+    "reason": "homopolymer Ax5"
+  },
+  {
+    "name": "plain_d_4_s4",
+    "reason": "homopolymer Ax6"
+  },
+  {
+    "name": "plain_d_7_s1",
+    "reason": "homopolymer Ex5"
+  },
+  {
+    "name": "plain_d_7_s2",
+    "reason": "homopolymer Ax5"
+  },
+  {
+    "name": "plain_d_7_s3",
+    "reason": "homopolymer Ex6"
+  },
+  {
+    "name": "plain_d_8_s1",
+    "reason": "homopolymer Ax12"
+  },
+  {
+    "name": "plain_d_8_s3",
+    "reason": "homopolymer Ax15"
+  },
+  {
+    "name": "plain_d_8_s4",
+    "reason": "homopolymer Ax18"
+  },
+  {
+    "name": "plain_d_9_s1",
+    "reason": "homopolymer Ax6"
+  },
+  {
+    "name": "plain_d_9_s2",
+    "reason": "homopolymer Ax6"
+  }
+]

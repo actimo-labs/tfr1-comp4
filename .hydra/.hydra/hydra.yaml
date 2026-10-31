@@ -113,18 +113,20 @@ hydra:
     - hydra.run.dir=/work/.hydra
     - hydra.mode=RUN
     task:
-    - inference.output_prefix=/work/pilot/rfdiff_shoulder/d
+    - inference.output_prefix=/work/gen/rfdiff/shoulder_s/d
     - inference.input_pdb=/work/target/tfr1_A_crop.pdb
-    - contigmap.contigs=[A191-236/A243-258/A264-285/A292-301/A330-380/0 70-110]
+    - contigmap.contigs=[A191-236/A243-258/A264-285/A292-301/A330-380/0 55-75]
     - ppi.hotspot_res=[A209,A211,A348,A371,A374]
-    - inference.num_designs=10
+    - inference.num_designs=110
+    - inference.design_startnum=0
     - denoiser.noise_scale_ca=0
     - denoiser.noise_scale_frame=0
+    - inference.write_trajectory=False
   job:
     name: run_inference
     chdir: null
     override_dirname: contigmap.contigs=[A191-236/A243-258/A264-285/A292-301/A330-380/0
-      70-110],denoiser.noise_scale_ca=0,denoiser.noise_scale_frame=0,inference.input_pdb=/work/target/tfr1_A_crop.pdb,inference.num_designs=10,inference.output_prefix=/work/pilot/rfdiff_shoulder/d,ppi.hotspot_res=[A209,A211,A348,A371,A374]
+      55-75],denoiser.noise_scale_ca=0,denoiser.noise_scale_frame=0,inference.design_startnum=0,inference.input_pdb=/work/target/tfr1_A_crop.pdb,inference.num_designs=110,inference.output_prefix=/work/gen/rfdiff/shoulder_s/d,inference.write_trajectory=False,ppi.hotspot_res=[A209,A211,A348,A371,A374]
     id: ???
     num: ???
     config_name: base

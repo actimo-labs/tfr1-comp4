@@ -97,3 +97,41 @@ These do not block generation but must close before block H:
 - **O5** — resolved by stage 00. The 318/633/719 seam lead is **discarded**;
   see the conservation report. No design will be built on it, so the preprint
   no longer needs verifying.
+
+---
+
+## Block C result — measured, and it changed the plan
+
+Run 31 Oct 15:00–15:14 UTC.
+
+**RFdiffusion: 0.98 min/backbone** on the 18 Å crop (145 target + 70–110
+binder). Estimate was 1.1. 10.5 h buys ~640; block D asks for 540.
+
+**Boltz target mode — the §5 point-3 decision, now made on numbers:**
+
+| mode | target aa | s/design | 10 h capacity |
+|---|---|---|---|
+| apical crop | 195 | 27.3 | ~1300 |
+| **full monomer** | **639** | **39.5** | **~900** |
+
+Full is only **1.4× slower**, not the order of magnitude §5 feared. And the two
+modes disagree badly:
+
+| design | apical ipTM | full ipTM |
+|---|---|---|
+| plain_d_1_s1 | 0.361 | **0.775** |
+| plain_d_0_s4 | **0.429** | 0.513 |
+| plain_d_1_s2 | 0.295 | 0.509 |
+| plain_d_1_s4 | 0.171 | 0.293 |
+
+The crop **inverts the ranking at the top** — it would have discarded
+`d_1_s1`, the strongest binder in the pilot, as borderline. A cheap screen that
+reorders designs is worse than no screen.
+
+**Decision: score on the full 639-residue monomer.** The apical crop is kept
+only for the self-consistency pose mapping. Funnel is narrower (~900 Boltz
+slots in block E, not ~1900) so MPNN takes ~2–4 sequences per backbone and
+AF2-IG does the cheap triage ahead of Boltz rather than after it.
+
+The generation crop is unaffected — it is a *generation* device and the
+validation target was always the uncropped monomer.

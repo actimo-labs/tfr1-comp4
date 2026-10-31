@@ -71,7 +71,7 @@ for spec in "${BATCHES[@]}"; do
   OUT="${OUTROOT}/${NAME}"
   mkdir -p "$OUT"
 
-  HAVE=$(ls -1 "${OUT}"/d_*.pdb 2>/dev/null | wc -l)
+  HAVE=$(find "${OUT}" -maxdepth 1 -name 'd_*.pdb' 2>/dev/null | wc -l)
   NEED=$(( WANT - HAVE ))
   if [ "$NEED" -le 0 ]; then
     echo "[${NAME}] complete: ${HAVE}/${WANT} - skipping"
@@ -99,7 +99,7 @@ for spec in "${BATCHES[@]}"; do
     hydra.run.dir=/work/.hydra 2>&1 | grep -vE "Timestep|FALLBACK|UserWarning|^ *sh = |codegen|PYTORCH" || true
   B_END=$(date +%s)
 
-  NOW=$(ls -1 "${OUT}"/d_*.pdb 2>/dev/null | wc -l)
+  NOW=$(find "${OUT}" -maxdepth 1 -name 'd_*.pdb' 2>/dev/null | wc -l)
   echo "[${NAME}] done: ${NOW}/${WANT} in $(( B_END - B_START ))s"
   echo "         disk: $(du -sh "${OUT}" | cut -f1)   free: $(df -h / | awk 'NR==2{print $4}')"
   echo
@@ -107,6 +107,6 @@ done
 
 echo "=== block D generation finished $(date -u '+%F %T UTC') ==="
 echo "total elapsed: $(( $(date +%s) - TOTAL_START ))s"
-echo "backbones: $(ls -1 ${OUTROOT}/*/d_*.pdb 2>/dev/null | wc -l)"
+echo "backbones: $(find ${OUTROOT} -name 'd_*.pdb' 2>/dev/null | wc -l)"
 echo "disk used: $(du -sh ${OUTROOT} | cut -f1)"
 echo "free space: $(df -h / | awk 'NR==2{print $4}')"

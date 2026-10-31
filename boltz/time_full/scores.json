@@ -1,0 +1,53 @@
+{
+  "meta": {
+    "species": "human",
+    "target_mode": "full",
+    "target_len": 639,
+    "n_designs": 4,
+    "n_scored": 4,
+    "seconds": 157.9,
+    "seconds_per_design": 39.48
+  },
+  "scores": [
+    {
+      "name": "plain_d_1_s1",
+      "binder_target_iptm": 0.7747218310832977,
+      "binder_ptm": 0.9443552494049072,
+      "target_ptm": 0.9670858979225159,
+      "global_iptm": 0.8165578842163086,
+      "complex_plddt": 0.9354599714279175,
+      "complex_iplddt": 0.8799132108688354,
+      "ptm": 0.9420742392539978
+    },
+    {
+      "name": "plain_d_0_s4",
+      "binder_target_iptm": 0.5133991241455078,
+      "binder_ptm": 0.9334708452224731,
+      "target_ptm": 0.9738073945045471,
+      "global_iptm": 0.5818728804588318,
+      "complex_plddt": 0.9372830390930176,
+      "complex_iplddt": 0.907550573348999,
+      "ptm": 0.9135465621948242
+    },
+    {
+      "name": "plain_d_1_s2",
+      "binder_target_iptm": 0.5086340308189392,
+      "binder_ptm": 0.9231572151184082,
+      "target_ptm": 0.970084011554718,
+      "global_iptm": 0.562104344367981,
+      "complex_plddt": 0.9322554469108582,
+      "complex_iplddt": 0.9053841233253479,
+      "ptm": 0.9038779139518738
+    },
+    {
+      "name": "plain_d_1_s4",
+      "binder_target_iptm": 0.2930269315838814,
+      "binder_ptm": 0.9071347117424011,
+      "target_ptm": 0.9659706354141235,
+      "global_iptm": 0.34118956327438354,
+      "complex_plddt": 0.9165651798248291,
+      "complex_iplddt": 0.887376070022583,
+      "ptm": 0.8725926280021667
+    }
+  ]
+}

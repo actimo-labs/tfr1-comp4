@@ -195,7 +195,7 @@ def main() -> int:
     ap.add_argument("--fasta-dir", type=Path, nargs="*", default=None)
     ap.add_argument("--out", type=Path, default=ROOT / "boltz")
     ap.add_argument("--tag", default="run")
-    ap.add_argument("--target-mode", choices=("full", "apical"), default="apical")
+    ap.add_argument("--target-mode", choices=("full", "apical"), default="full")
     ap.add_argument("--species", choices=("human", "mouse"), default="human")
     ap.add_argument("--per-backbone", type=int, default=None)
     ap.add_argument("--limit", type=int, default=None)
