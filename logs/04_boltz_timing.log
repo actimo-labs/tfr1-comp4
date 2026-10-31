@@ -1,0 +1,34 @@
+===== APICAL (195 aa target) =====
+composition pre-filter dropped 18/40 before folding:
+  plain_d_0_s1: N-X-S/T sequon at 44
+  plain_d_0_s2: homopolymer Ax6
+  plain_d_0_s3: homopolymer Ax6
+  plain_d_1_s3: homopolymer Ax18
+  plain_d_2_s3: homopolymer Ax9
+  plain_d_3_s1: homopolymer Ax5
+  plain_d_3_s2: homopolymer Ax5
+  plain_d_3_s3: homopolymer Ax5
+  plain_d_3_s4: homopolymer Ax5
+  plain_d_4_s4: homopolymer Ax6
+target : human / apical / 195 aa
+template: /home/HarjasG/tnf-track3/tfr1-comp4/target/tfr1_A_apical.cif
+designs : 4
++ boltz predict /home/HarjasG/tnf-track3/tfr1-comp4/boltz/time_apical/yaml --out_dir /home/HarjasG/tnf-track3/tfr1-comp4/boltz/time_apical/pred --model boltz2 --accelerator gpu --devices 1 --recycling_steps 3 --diffusion_samples 1 --sampling_steps 200 --output_format pdb
+Checking input data.
+Processing 4 inputs with 4 threads.
+  0%|          | 0/4 [00:00<?, ?it/s]Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+ 25%|██▌       | 1/4 [00:00<00:01,  2.20it/s]100%|██████████| 4/4 [00:00<00:00,  8.70it/s]
+Using bfloat16 Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+/home/HarjasG/miniforge3/envs/boltz/lib/python3.11/site-packages/pytorch_lightning/trainer/connectors/logger_connector/logger_connector.py:76: Starting from v1.9.0, `tensorboardX` has been removed as a dependency of the `pytorch_lightning` package, due to potential conflicts with other packages in the ML ecosystem. For this reason, `logger=True` will use `CSVLogger` as the default logger, unless the `tensorboard` or `tensorboardX` packages are found. Please `pip install lightning[extra]` or one of them to enable TensorBoard support by default
+Running structure prediction for 4 inputs.
+/home/HarjasG/miniforge3/envs/boltz/lib/python3.11/site-packages/pytorch_lightning/utilities/migration/utils.py:56: The loaded checkpoint was produced with Lightning v2.5.0.post0, which is newer than your current Lightning version: v2.5.0
