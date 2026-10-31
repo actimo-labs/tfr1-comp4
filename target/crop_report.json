@@ -1,0 +1,40 @@
+{
+  "source_pdb": "/home/HarjasG/tnf-track3/tfr1-comp4/target/tfr1_A.pdb",
+  "radius": 18.0,
+  "max_gap": 4,
+  "min_len": 5,
+  "segments": {
+    "A": [
+      [
+        191,
+        236
+      ],
+      [
+        243,
+        258
+      ],
+      [
+        264,
+        285
+      ],
+      [
+        292,
+        301
+      ],
+      [
+        330,
+        380
+      ]
+    ]
+  },
+  "residues_kept": 145,
+  "residues_total": 639,
+  "hotspots": [
+    "A209",
+    "A211",
+    "A348",
+    "A371",
+    "A374"
+  ],
+  "contig": "[A191-236/A243-258/A264-285/A292-301/A330-380/0 70-110]"
+}

@@ -1,0 +1,60 @@
+{
+  "heteroatoms_removed": {
+    "NAG": 6
+  },
+  "pos142": "G",
+  "construct_mismatches": 0,
+  "glycan_sequons": {
+    "251": {
+      "motif": "NGS",
+      "valid": true
+    },
+    "317": {
+      "motif": "NHT",
+      "valid": true
+    },
+    "727": {
+      "motif": "NET",
+      "valid": true
+    }
+  },
+  "nondesignable_count": 73,
+  "glycan_shadow_radius": 10.0,
+  "hotspot_sets": {
+    "shoulder": {
+      "members": [
+        "A209",
+        "A211",
+        "A348",
+        "A371",
+        "A374"
+      ],
+      "span_A": 10.1,
+      "primary": true
+    },
+    "swap_locus": {
+      "members": [
+        "A211",
+        "A348",
+        "A371"
+      ],
+      "span_A": 6.3,
+      "primary": false
+    },
+    "apex": {
+      "members": [
+        "A204",
+        "A208",
+        "A211",
+        "A212"
+      ],
+      "span_A": 9.9,
+      "primary": false
+    }
+  },
+  "n_residues_monomer": 639,
+  "span": [
+    122,
+    760
+  ]
+}
