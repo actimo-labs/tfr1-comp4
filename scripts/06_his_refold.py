@@ -42,7 +42,7 @@ def parent_sequences(yaml_dir: Path) -> dict[str, str]:
     for y in sorted(yaml_dir.glob("*.yaml")):
         lines = y.read_text().splitlines()
         for i, line in enumerate(lines):
-            if line.strip() == "id: X":
+            if line.strip() == "id: X":  # BINDER_ID in stage 04
                 for nxt in lines[i + 1 : i + 3]:
                     if nxt.strip().startswith("sequence:"):
                         seqs[y.stem] = nxt.split("sequence:", 1)[1].strip()
@@ -54,7 +54,7 @@ def parent_sequences(yaml_dir: Path) -> dict[str, str]:
 def parse_mutations(field: str) -> list[tuple[str, int]]:
     """'A86H,E47H' -> [('A', 86), ('E', 47)]"""
     out = []
-    for tok in field.split(","):
+    for tok in field.replace(";", ",").split(","):
         tok = tok.strip()
         if not tok:
             continue
@@ -103,7 +103,11 @@ def main() -> int:
     parent_scores = {}
     score_file = parent_dir / "scores.json"
     if score_file.exists():
-        parent_scores = {r["name"]: r for r in json.loads(score_file.read_text())}
+        _raw = json.loads(score_file.read_text())
+        # Stage 04 was rewritten for TfR1 and now writes {"meta":..., "scores":[...]}
+        # where challenge 02 wrote a bare list. Accept both.
+        _rows = _raw["scores"] if isinstance(_raw, dict) else _raw
+        parent_scores = {r["name"]: r for r in _rows}
 
     if not args.combos.exists():
         print(f"no combos file: {args.combos}", file=sys.stderr)
@@ -134,7 +138,7 @@ def main() -> int:
                 "sequence": mutant,
                 "mutations": row["mutations"],
                 "n_his": int(row["n_his"]),
-                "ddg": float(row["total_ddg_kcal"]),
+                "ddg": float(row.get("total_ddg_kcal") or row["total_ddg"]),
                 "min_his_sep_A": row.get("min_his_sep_A", ""),
                 "native_his_ddg": row.get("native_his_ddg", ""),
             }

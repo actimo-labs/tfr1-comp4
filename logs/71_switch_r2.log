@@ -1,0 +1,32 @@
+[05b] 213 raw sites across 75 designs
+[05b] 176 sites survive policy; dropped:
+        only vetoed cation 344: 36
+        ddg<=0: 1
+
+[05b] 68 designs with at least one usable switch
+  by tier : {'moderate': 1, 'weak': 7, 'sub': 60}
+  by scope: {'species_specific': 60, 'cross_species': 8}
+
+  design                                     ddG   fold  n  scope            mutations
+  plain_k374_m_d_91_s4_model_0              1.59     15  2  species_specific A41H;E31H
+  hisb_k374_m_d_68_s4_model_0               1.28      9  2  species_specific K17H;E25H
+  plain_k374_m_d_42_s2_model_0              1.20      8  3  species_specific D59H;E36H;E52H
+  hisb_k374_l_d_67_s1_model_0               1.13      7  2  species_specific E35H;V72H
+  targeted_k374_l_d_9_s4_model_0            1.12      7  2  species_specific A50H;S87H
+  hisb_k374_l_d_48_s1_model_0               1.10      6  2  cross_species    E16H;A73H
+  hisb_k374_m_d_26_s4_model_0               1.01      6  2  species_specific A42H;E36H
+  plain_k374_l_d_27_s2_model_0              1.01      6  2  species_specific L42H;E56H
+  targeted_k374_m_d_86_s1_model_0           0.98      5  2  species_specific V30H;K52H
+  hisb_k374_m_d_42_s2_model_0               0.96      5  2  species_specific D59H;E36H
+  hisb_k374_m_d_14_s4_model_0               0.95      5  2  species_specific V43H;T54H
+  targeted_k374_m_d_15_s4_model_0           0.95      5  2  cross_species    A42H;E46H
+  targeted_k374_m_d_42_s2_model_0           0.94      5  2  species_specific D59H;E36H
+  targeted_k374_m_d_19_s3_model_0           0.93      5  2  species_specific S24H;E53H
+  hisb_k374_m_d_60_s4_model_0               0.92      5  2  species_specific A42H;T51H
+  plain_k374_m_d_60_s4_model_0              0.92      5  2  species_specific T46H;E54H
+  targeted_k374_l_d_53_s2_model_0           0.91      5  2  species_specific I57H;K43H
+  hisb_k374_m_d_75_s3_model_0               0.90      5  2  species_specific L56H;E23H
+  plain_k374_m_d_70_s3_model_0              0.89      4  2  species_specific L31H;D24H
+  plain_k374_l_d_25_s2_model_0              0.88      4  2  species_specific A63H;E25H
+
+[out] results/switch_candidates_r2.tsv

@@ -1,0 +1,36 @@
+[35] 1360 raw MPNN designs
+[35] composition filter dropped 361, kept 999
+       homopolymer Ax5: 107
+       homopolymer Ax6: 75
+       homopolymer Ax7: 39
+       homopolymer Ax9: 28
+       homopolymer Ex5: 19
+       N-X-S/T sequon: 16
+[35] best-1-per-backbone-per-pool -> 315 designs
+[35] under cap (420) - keeping all
+
+[35] selected by batch / pool:
+       k374_l       hisb   65
+       k374_l       plain  64
+       k374_m       hisb   93
+       k374_m       plain  93
+
+[out] gen/r2_selected.fasta  (315 designs)
+[out] gen/r2_selected.tsv
+[35] 680 raw MPNN designs
+[35] composition filter dropped 182, kept 498
+       homopolymer Ax5: 54
+       homopolymer Ax6: 39
+       homopolymer Ax7: 18
+       homopolymer Ax9: 15
+       homopolymer Ex5: 10
+       N-X-S/T sequon: 9
+[35] best-1-per-backbone-per-pool -> 157 designs
+[35] under cap (180) - keeping all
+
+[35] selected by batch / pool:
+       k374_l       targeted 64
+       k374_m       targeted 93
+
+[out] gen/r2_selected_t.fasta  (157 designs)
+[out] gen/r2_selected_t.tsv

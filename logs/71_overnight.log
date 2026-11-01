@@ -1,2 +1,17 @@
 [2026-11-01 13:43:02] === overnight round-2 chain start ===
 [2026-11-01 13:43:02] MPNN plain+hisb on 170 round-2 backbones
+[2026-11-01 14:03:35] MPNN ok
+[2026-11-01 14:03:35] MPNN targeted-bias pool
+[2026-11-01 14:13:16] MPNN targeted ok (170 fa)
+[2026-11-01 14:13:16] select
+[2026-11-01 14:13:16] select ok
+[2026-11-01 14:13:16] round-2 designs selected: 472
+[2026-11-01 14:13:16] Boltz round-2 human screen
+[2026-11-01 17:42:35] Boltz r2 ok
+[2026-11-01 17:42:35] epitope QC round 2
+[2026-11-01 17:44:27] QC ok: 82 pass
+[2026-11-01 17:44:27] pH scan round 2
+[2026-11-01 17:49:50] pH scan r2 ok
+[2026-11-01 17:49:56] switch select r2 ok
+[2026-11-01 17:49:56] === overnight round-2 chain complete ===
+[2026-11-01 17:49:56] free: 17G

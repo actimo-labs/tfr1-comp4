@@ -1,0 +1,359 @@
+/home/HarjasG/tnf-track3/ProteinMPNN/protein_mpnn_run.py:178: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(checkpoint_path, map_location=device)
+Using ProteinMPNN trained on soluble proteins only!
+----------------------------------------
+fixed_positions_jsonl is NOT loaded
+----------------------------------------
+pssm_jsonl is NOT loaded
+----------------------------------------
+omit_AA_jsonl is NOT loaded
+----------------------------------------
+bias_AA_jsonl is NOT loaded
+----------------------------------------
+tied_positions_jsonl is NOT loaded
+bias by residue dictionary is loaded
+----------------------------------------
+discarded {'bad_chars': 0, 'too_long': 0, 'bad_seq_length': 0}
+----------------------------------------
+Number of edges: 48
+Training noise level: 0.2A
+Generating sequences for: k374_m_d_21
+4 sequences of length 235 generated in 3.5477 seconds
+Generating sequences for: k374_m_d_1
+4 sequences of length 240 generated in 3.5942 seconds
+Generating sequences for: k374_l_d_19
+4 sequences of length 243 generated in 3.56 seconds
+Generating sequences for: k374_m_d_24
+4 sequences of length 226 generated in 3.3292 seconds
+Generating sequences for: k374_m_d_50
+4 sequences of length 228 generated in 3.3628 seconds
+Generating sequences for: k374_l_d_29
+4 sequences of length 238 generated in 3.5127 seconds
+Generating sequences for: k374_m_d_30
+4 sequences of length 227 generated in 3.3538 seconds
+Generating sequences for: k374_m_d_58
+4 sequences of length 237 generated in 3.4901 seconds
+Generating sequences for: k374_m_d_13
+4 sequences of length 221 generated in 3.264 seconds
+Generating sequences for: k374_m_d_55
+4 sequences of length 231 generated in 3.4133 seconds
+Generating sequences for: k374_l_d_44
+4 sequences of length 254 generated in 3.7295 seconds
+Generating sequences for: k374_l_d_32
+4 sequences of length 243 generated in 3.5661 seconds
+Generating sequences for: k374_m_d_84
+4 sequences of length 216 generated in 3.1753 seconds
+Generating sequences for: k374_m_d_26
+4 sequences of length 235 generated in 3.4437 seconds
+Generating sequences for: k374_l_d_31
+4 sequences of length 238 generated in 3.4831 seconds
+Generating sequences for: k374_l_d_68
+4 sequences of length 261 generated in 3.8228 seconds
+Generating sequences for: k374_l_d_63
+4 sequences of length 254 generated in 3.6823 seconds
+Generating sequences for: k374_m_d_54
+4 sequences of length 232 generated in 3.3954 seconds
+Generating sequences for: k374_m_d_60
+4 sequences of length 220 generated in 3.2188 seconds
+Generating sequences for: k374_m_d_22
+4 sequences of length 215 generated in 3.1285 seconds
+Generating sequences for: k374_l_d_5
+4 sequences of length 262 generated in 3.7688 seconds
+Generating sequences for: k374_m_d_62
+4 sequences of length 231 generated in 3.3281 seconds
+Generating sequences for: k374_l_d_42
+4 sequences of length 261 generated in 3.7392 seconds
+Generating sequences for: k374_l_d_8
+4 sequences of length 237 generated in 3.4055 seconds
+Generating sequences for: k374_m_d_87
+4 sequences of length 223 generated in 3.2156 seconds
+Generating sequences for: k374_m_d_63
+4 sequences of length 229 generated in 3.2918 seconds
+Generating sequences for: k374_m_d_80
+4 sequences of length 219 generated in 3.1588 seconds
+Generating sequences for: k374_m_d_9
+4 sequences of length 220 generated in 3.1856 seconds
+Generating sequences for: k374_m_d_15
+4 sequences of length 235 generated in 3.386 seconds
+Generating sequences for: k374_l_d_39
+4 sequences of length 246 generated in 3.5312 seconds
+Generating sequences for: k374_m_d_73
+4 sequences of length 236 generated in 3.386 seconds
+Generating sequences for: k374_l_d_22
+4 sequences of length 258 generated in 3.7051 seconds
+Generating sequences for: k374_l_d_12
+4 sequences of length 263 generated in 3.7709 seconds
+Generating sequences for: k374_l_d_6
+4 sequences of length 265 generated in 3.8055 seconds
+Generating sequences for: k374_m_d_12
+4 sequences of length 230 generated in 3.3107 seconds
+Generating sequences for: k374_m_d_46
+4 sequences of length 231 generated in 3.345 seconds
+Generating sequences for: k374_l_d_35
+4 sequences of length 243 generated in 3.5104 seconds
+Generating sequences for: k374_m_d_17
+4 sequences of length 235 generated in 3.3739 seconds
+Generating sequences for: k374_l_d_43
+4 sequences of length 260 generated in 3.7245 seconds
+Generating sequences for: k374_l_d_26
+4 sequences of length 246 generated in 3.5418 seconds
+Generating sequences for: k374_m_d_40
+4 sequences of length 231 generated in 3.3277 seconds
+Generating sequences for: k374_l_d_3
+4 sequences of length 258 generated in 3.6965 seconds
+Generating sequences for: k374_l_d_53
+4 sequences of length 241 generated in 3.4554 seconds
+Generating sequences for: k374_l_d_55
+4 sequences of length 246 generated in 3.5407 seconds
+Generating sequences for: k374_m_d_53
+4 sequences of length 229 generated in 3.2838 seconds
+Generating sequences for: k374_m_d_2
+4 sequences of length 220 generated in 3.1676 seconds
+Generating sequences for: k374_m_d_81
+4 sequences of length 225 generated in 3.2233 seconds
+Generating sequences for: k374_m_d_34
+4 sequences of length 231 generated in 3.3126 seconds
+Generating sequences for: k374_l_d_61
+4 sequences of length 253 generated in 3.6377 seconds
+Generating sequences for: k374_m_d_49
+4 sequences of length 232 generated in 3.3578 seconds
+Generating sequences for: k374_m_d_18
+4 sequences of length 231 generated in 3.3264 seconds
+Generating sequences for: k374_l_d_15
+4 sequences of length 252 generated in 3.6224 seconds
+Generating sequences for: k374_l_d_38
+4 sequences of length 255 generated in 3.6639 seconds
+Generating sequences for: k374_m_d_5
+4 sequences of length 235 generated in 3.3862 seconds
+Generating sequences for: k374_l_d_36
+4 sequences of length 248 generated in 3.5489 seconds
+Generating sequences for: k374_m_d_77
+4 sequences of length 240 generated in 3.4058 seconds
+Generating sequences for: k374_m_d_33
+4 sequences of length 237 generated in 3.4088 seconds
+Generating sequences for: k374_l_d_46
+4 sequences of length 240 generated in 3.4326 seconds
+Generating sequences for: k374_l_d_0
+4 sequences of length 244 generated in 3.4948 seconds
+Generating sequences for: k374_m_d_28
+4 sequences of length 240 generated in 3.4164 seconds
+Generating sequences for: k374_m_d_86
+4 sequences of length 217 generated in 3.1039 seconds
+Generating sequences for: k374_m_d_92
+4 sequences of length 226 generated in 3.2515 seconds
+Generating sequences for: k374_l_d_37
+4 sequences of length 246 generated in 3.5125 seconds
+Generating sequences for: k374_m_d_45
+4 sequences of length 226 generated in 3.2354 seconds
+Generating sequences for: k374_l_d_56
+4 sequences of length 263 generated in 3.7788 seconds
+Generating sequences for: k374_m_d_31
+4 sequences of length 237 generated in 3.4039 seconds
+Generating sequences for: k374_m_d_20
+4 sequences of length 239 generated in 3.4261 seconds
+Generating sequences for: k374_l_d_48
+4 sequences of length 235 generated in 3.3619 seconds
+Generating sequences for: k374_l_d_33
+4 sequences of length 255 generated in 3.6283 seconds
+Generating sequences for: k374_m_d_76
+4 sequences of length 217 generated in 3.1151 seconds
+Generating sequences for: k374_m_d_0
+4 sequences of length 234 generated in 3.3522 seconds
+Generating sequences for: k374_l_d_2
+4 sequences of length 239 generated in 3.4108 seconds
+Generating sequences for: k374_m_d_95
+4 sequences of length 216 generated in 3.1039 seconds
+Generating sequences for: k374_l_d_47
+4 sequences of length 257 generated in 3.6667 seconds
+Generating sequences for: k374_l_d_49
+4 sequences of length 257 generated in 3.6663 seconds
+Generating sequences for: k374_m_d_51
+4 sequences of length 226 generated in 3.2413 seconds
+Generating sequences for: k374_l_d_24
+4 sequences of length 265 generated in 3.7817 seconds
+Generating sequences for: k374_m_d_48
+4 sequences of length 220 generated in 3.1514 seconds
+Generating sequences for: k374_l_d_45
+4 sequences of length 258 generated in 3.6776 seconds
+Generating sequences for: k374_l_d_54
+4 sequences of length 262 generated in 3.7268 seconds
+Generating sequences for: k374_l_d_11
+4 sequences of length 261 generated in 3.7366 seconds
+Generating sequences for: k374_l_d_7
+4 sequences of length 259 generated in 3.6922 seconds
+Generating sequences for: k374_m_d_83
+4 sequences of length 227 generated in 3.2634 seconds
+Generating sequences for: k374_l_d_58
+4 sequences of length 256 generated in 3.6599 seconds
+Generating sequences for: k374_l_d_64
+4 sequences of length 256 generated in 3.6202 seconds
+Generating sequences for: k374_l_d_1
+4 sequences of length 236 generated in 3.3352 seconds
+Generating sequences for: k374_l_d_52
+4 sequences of length 246 generated in 3.47 seconds
+Generating sequences for: k374_m_d_94
+4 sequences of length 217 generated in 3.0799 seconds
+Generating sequences for: k374_m_d_47
+4 sequences of length 227 generated in 3.2156 seconds
+Generating sequences for: k374_l_d_14
+4 sequences of length 241 generated in 3.4014 seconds
+Generating sequences for: k374_l_d_13
+4 sequences of length 251 generated in 3.5467 seconds
+Generating sequences for: k374_l_d_4
+4 sequences of length 259 generated in 3.6523 seconds
+Generating sequences for: k374_m_d_65
+4 sequences of length 232 generated in 3.2829 seconds
+Generating sequences for: k374_m_d_10
+4 sequences of length 230 generated in 3.2534 seconds
+Generating sequences for: k374_m_d_59
+4 sequences of length 223 generated in 3.1579 seconds
+Generating sequences for: k374_m_d_29
+4 sequences of length 217 generated in 3.0685 seconds
+Generating sequences for: k374_m_d_23
+4 sequences of length 237 generated in 3.3491 seconds
+Generating sequences for: k374_m_d_90
+4 sequences of length 217 generated in 3.0614 seconds
+Generating sequences for: k374_l_d_66
+4 sequences of length 252 generated in 3.5441 seconds
+Generating sequences for: k374_m_d_93
+4 sequences of length 234 generated in 3.3139 seconds
+Generating sequences for: k374_m_d_19
+4 sequences of length 229 generated in 3.2528 seconds
+Generating sequences for: k374_m_d_6
+4 sequences of length 218 generated in 3.0829 seconds
+Generating sequences for: k374_m_d_99
+4 sequences of length 224 generated in 3.1824 seconds
+Generating sequences for: k374_l_d_62
+4 sequences of length 239 generated in 3.3734 seconds
+Generating sequences for: k374_m_d_66
+4 sequences of length 217 generated in 3.0706 seconds
+Generating sequences for: k374_l_d_59
+4 sequences of length 240 generated in 3.4098 seconds
+Generating sequences for: k374_m_d_68
+4 sequences of length 215 generated in 3.0822 seconds
+Generating sequences for: k374_m_d_75
+4 sequences of length 224 generated in 3.1715 seconds
+Generating sequences for: k374_l_d_60
+4 sequences of length 264 generated in 3.7271 seconds
+Generating sequences for: k374_m_d_7
+4 sequences of length 231 generated in 3.2878 seconds
+Generating sequences for: k374_m_d_98
+4 sequences of length 226 generated in 3.2002 seconds
+Generating sequences for: k374_l_d_51
+4 sequences of length 248 generated in 3.503 seconds
+Generating sequences for: k374_m_d_43
+4 sequences of length 236 generated in 3.331 seconds
+Generating sequences for: k374_m_d_96
+4 sequences of length 219 generated in 3.09 seconds
+Generating sequences for: k374_m_d_42
+4 sequences of length 231 generated in 3.2812 seconds
+Generating sequences for: k374_m_d_78
+4 sequences of length 234 generated in 3.2671 seconds
+Generating sequences for: k374_l_d_23
+4 sequences of length 263 generated in 3.6991 seconds
+Generating sequences for: k374_m_d_3
+4 sequences of length 226 generated in 3.1957 seconds
+Generating sequences for: k374_m_d_25
+4 sequences of length 226 generated in 3.2047 seconds
+Generating sequences for: k374_m_d_64
+4 sequences of length 226 generated in 3.199 seconds
+Generating sequences for: k374_m_d_74
+4 sequences of length 228 generated in 3.2413 seconds
+Generating sequences for: k374_l_d_10
+4 sequences of length 235 generated in 3.3195 seconds
+Generating sequences for: k374_m_d_82
+4 sequences of length 233 generated in 3.3043 seconds
+Generating sequences for: k374_m_d_72
+4 sequences of length 225 generated in 3.1899 seconds
+Generating sequences for: k374_l_d_25
+4 sequences of length 249 generated in 3.5158 seconds
+Generating sequences for: k374_l_d_21
+4 sequences of length 259 generated in 3.6429 seconds
+Generating sequences for: k374_m_d_35
+4 sequences of length 236 generated in 3.3247 seconds
+Generating sequences for: k374_l_d_67
+4 sequences of length 244 generated in 3.4498 seconds
+Generating sequences for: k374_l_d_65
+4 sequences of length 262 generated in 3.6747 seconds
+Generating sequences for: k374_m_d_70
+4 sequences of length 215 generated in 3.0618 seconds
+Generating sequences for: k374_m_d_67
+4 sequences of length 220 generated in 3.1098 seconds
+Generating sequences for: k374_l_d_28
+4 sequences of length 253 generated in 3.5482 seconds
+Generating sequences for: k374_m_d_36
+4 sequences of length 218 generated in 3.0792 seconds
+Generating sequences for: k374_m_d_97
+4 sequences of length 234 generated in 3.2869 seconds
+Generating sequences for: k374_m_d_85
+4 sequences of length 216 generated in 3.0459 seconds
+Generating sequences for: k374_m_d_89
+4 sequences of length 225 generated in 3.1721 seconds
+Generating sequences for: k374_m_d_16
+4 sequences of length 227 generated in 3.1919 seconds
+Generating sequences for: k374_m_d_88
+4 sequences of length 229 generated in 3.225 seconds
+Generating sequences for: k374_m_d_56
+4 sequences of length 231 generated in 3.2513 seconds
+Generating sequences for: k374_l_d_69
+4 sequences of length 263 generated in 3.6897 seconds
+Generating sequences for: k374_m_d_69
+4 sequences of length 228 generated in 3.2154 seconds
+Generating sequences for: k374_m_d_38
+4 sequences of length 216 generated in 3.0515 seconds
+Generating sequences for: k374_m_d_11
+4 sequences of length 216 generated in 3.0472 seconds
+Generating sequences for: k374_m_d_79
+4 sequences of length 217 generated in 3.046 seconds
+Generating sequences for: k374_m_d_27
+4 sequences of length 227 generated in 3.1992 seconds
+Generating sequences for: k374_m_d_8
+4 sequences of length 215 generated in 3.0187 seconds
+Generating sequences for: k374_l_d_40
+4 sequences of length 246 generated in 3.4543 seconds
+Generating sequences for: k374_m_d_14
+4 sequences of length 218 generated in 3.0707 seconds
+Generating sequences for: k374_l_d_17
+4 sequences of length 260 generated in 3.6441 seconds
+Generating sequences for: k374_m_d_44
+4 sequences of length 215 generated in 3.0326 seconds
+Generating sequences for: k374_m_d_32
+4 sequences of length 234 generated in 3.2848 seconds
+Generating sequences for: k374_l_d_9
+4 sequences of length 249 generated in 3.4813 seconds
+Generating sequences for: k374_l_d_20
+4 sequences of length 256 generated in 3.5773 seconds
+Generating sequences for: k374_m_d_91
+4 sequences of length 225 generated in 3.1513 seconds
+Generating sequences for: k374_l_d_27
+4 sequences of length 262 generated in 3.6854 seconds
+Generating sequences for: k374_l_d_18
+4 sequences of length 239 generated in 3.3624 seconds
+Generating sequences for: k374_l_d_57
+4 sequences of length 263 generated in 3.6869 seconds
+Generating sequences for: k374_m_d_52
+4 sequences of length 223 generated in 3.1312 seconds
+Generating sequences for: k374_l_d_50
+4 sequences of length 236 generated in 3.2987 seconds
+Generating sequences for: k374_l_d_16
+4 sequences of length 253 generated in 3.531 seconds
+Generating sequences for: k374_m_d_37
+4 sequences of length 219 generated in 3.0697 seconds
+Generating sequences for: k374_l_d_34
+4 sequences of length 251 generated in 3.5138 seconds
+Generating sequences for: k374_m_d_4
+4 sequences of length 225 generated in 3.1835 seconds
+Generating sequences for: k374_m_d_57
+4 sequences of length 224 generated in 3.1442 seconds
+Generating sequences for: k374_l_d_41
+4 sequences of length 260 generated in 3.6382 seconds
+Generating sequences for: k374_m_d_39
+4 sequences of length 222 generated in 3.1357 seconds
+Generating sequences for: k374_m_d_41
+4 sequences of length 226 generated in 3.1664 seconds
+Generating sequences for: k374_m_d_71
+4 sequences of length 229 generated in 3.2062 seconds
+Generating sequences for: k374_m_d_61
+4 sequences of length 239 generated in 3.3491 seconds
+Generating sequences for: k374_l_d_30
+4 sequences of length 251 generated in 3.4999 seconds
