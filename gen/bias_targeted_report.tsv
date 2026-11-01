@@ -1,0 +1,124 @@
+backbone	binder_len	n_biased	positions
+apex_l_d_0	113	0	
+apex_l_d_10	94	0	
+apex_l_d_12	90	1	28->374@8.9
+apex_l_d_15	104	0	
+apex_l_d_16	115	0	
+apex_l_d_2	107	0	
+apex_l_d_22	119	2	37->374@8.9;41->374@9.5
+apex_l_d_24	109	0	
+apex_l_d_29	101	0	
+apex_l_d_31	99	0	
+apex_l_d_33	111	1	48->374@8.7
+apex_l_d_34	101	0	
+apex_l_d_37	119	0	
+apex_l_d_4	120	0	
+apex_l_d_9	93	0	
+apex_m_d_0	76	2	34->374@9.7;37->374@9.5
+apex_m_d_1	93	0	
+apex_m_d_12	95	5	45->224@8.0;46->224@8.9;52->374@9.9;53->374@8.6;56->374@9.0
+apex_m_d_17	95	1	69->374@9.6
+apex_m_d_22	95	1	78->374@9.7
+apex_m_d_23	94	0	
+apex_m_d_31	70	2	8->224@9.9;18->374@9.7
+apex_m_d_40	83	0	
+apex_m_d_49	85	1	52->374@9.4
+apex_m_d_50	89	2	61->374@9.4;65->374@9.5
+apex_m_d_51	79	4	48->374@9.3;51->374@8.9;52->374@8.2;55->374@9.3
+apex_m_d_52	87	0	
+apex_m_d_55	83	6	30->224@8.1;31->224@8.1;34->224@9.5;37->374@9.5;38->374@9.9;41->374@9.0
+apex_m_d_56	76	1	45->374@8.8
+apex_m_d_67	93	0	
+apex_m_d_68	73	0	
+apex_m_d_69	72	0	
+apex_m_d_75	94	0	
+apex_m_d_77	94	0	
+apex_m_d_78	95	2	65->374@9.5;69->374@9.7
+apex_m_d_85	81	0	
+shoulder_l_d_10	107	0	
+shoulder_l_d_14	111	0	
+shoulder_l_d_17	98	0	
+shoulder_l_d_24	91	0	
+shoulder_l_d_3	99	0	
+shoulder_l_d_37	94	0	
+shoulder_l_d_38	113	0	
+shoulder_l_d_39	119	0	
+shoulder_l_d_41	110	0	
+shoulder_l_d_44	113	1	74->374@8.9
+shoulder_l_d_46	93	0	
+shoulder_l_d_47	105	0	
+shoulder_l_d_50	117	0	
+shoulder_l_d_53	104	0	
+shoulder_l_d_57	109	0	
+shoulder_l_d_59	120	0	
+shoulder_l_d_6	106	0	
+shoulder_l_d_60	114	0	
+shoulder_l_d_65	120	0	
+shoulder_l_d_68	114	0	
+shoulder_l_d_76	95	0	
+shoulder_l_d_78	100	0	
+shoulder_l_d_8	107	0	
+shoulder_l_d_80	109	0	
+shoulder_l_d_82	97	0	
+shoulder_l_d_84	119	0	
+shoulder_l_d_85	118	0	
+shoulder_l_d_87	113	0	
+shoulder_l_d_88	100	0	
+shoulder_l_d_9	117	0	
+shoulder_m_d_103	83	0	
+shoulder_m_d_114	84	0	
+shoulder_m_d_121	73	0	
+shoulder_m_d_124	87	0	
+shoulder_m_d_132	81	0	
+shoulder_m_d_133	92	0	
+shoulder_m_d_135	87	0	
+shoulder_m_d_139	90	0	
+shoulder_m_d_15	92	0	
+shoulder_m_d_19	70	0	
+shoulder_m_d_21	74	0	
+shoulder_m_d_25	87	0	
+shoulder_m_d_26	76	0	
+shoulder_m_d_28	95	0	
+shoulder_m_d_31	83	1	28->374@9.7
+shoulder_m_d_32	88	1	47->374@9.7
+shoulder_m_d_35	77	0	
+shoulder_m_d_42	82	1	22->374@9.2
+shoulder_m_d_43	88	0	
+shoulder_m_d_46	76	0	
+shoulder_m_d_48	77	0	
+shoulder_m_d_56	89	0	
+shoulder_m_d_60	78	0	
+shoulder_m_d_66	70	0	
+shoulder_m_d_67	77	0	
+shoulder_m_d_72	75	0	
+shoulder_m_d_79	89	0	
+shoulder_m_d_80	90	0	
+shoulder_m_d_86	90	0	
+shoulder_m_d_89	93	0	
+shoulder_m_d_9	88	0	
+shoulder_m_d_93	72	1	4->374@8.6
+shoulder_m_d_97	87	0	
+shoulder_s_d_100	72	0	
+shoulder_s_d_13	61	0	
+shoulder_s_d_14	63	1	51->374@9.9
+shoulder_s_d_24	65	1	26->374@8.7
+shoulder_s_d_26	73	0	
+shoulder_s_d_33	66	0	
+shoulder_s_d_34	67	0	
+shoulder_s_d_37	69	0	
+shoulder_s_d_44	74	0	
+shoulder_s_d_46	68	1	12->374@9.6
+shoulder_s_d_54	69	0	
+shoulder_s_d_7	68	0	
+shoulder_s_d_71	71	0	
+shoulder_s_d_94	69	0	
+swap_m_d_10	92	0	
+swap_m_d_13	81	0	
+swap_m_d_23	76	0	
+swap_m_d_24	84	0	
+swap_m_d_35	70	0	
+swap_m_d_42	93	0	
+swap_m_d_56	83	0	
+swap_m_d_59	86	0	
+swap_m_d_61	84	0	
+swap_m_d_63	84	0	

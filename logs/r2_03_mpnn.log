@@ -4,3 +4,271 @@ staged 123 backbones
 + /home/HarjasG/miniforge3/envs/mpnn/bin/python /home/HarjasG/tnf-track3/ProteinMPNN/protein_mpnn_run.py --jsonl_path gen/r2_mpnn/parsed.jsonl --chain_id_jsonl gen/r2_mpnn/assigned.jsonl --out_folder gen/r2_mpnn/plain --num_seq_per_target 8 --sampling_temp 0.1 --seed 1234 --batch_size 1 --omit_AAs CX --use_soluble_model
 /home/HarjasG/tnf-track3/ProteinMPNN/protein_mpnn_run.py:178: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
   checkpoint = torch.load(checkpoint_path, map_location=device)
+Using ProteinMPNN trained on soluble proteins only!
+----------------------------------------
+fixed_positions_jsonl is NOT loaded
+----------------------------------------
+pssm_jsonl is NOT loaded
+----------------------------------------
+omit_AA_jsonl is NOT loaded
+----------------------------------------
+bias_AA_jsonl is NOT loaded
+----------------------------------------
+tied_positions_jsonl is NOT loaded
+----------------------------------------
+bias by residue dictionary is not loaded, or not provided
+----------------------------------------
+discarded {'bad_chars': 0, 'too_long': 0, 'bad_seq_length': 0}
+----------------------------------------
+Number of edges: 48
+Training noise level: 0.2A
+Generating sequences for: shoulder_m_d_56
+8 sequences of length 234 generated in 10.0844 seconds
+Generating sequences for: shoulder_s_d_44
+8 sequences of length 219 generated in 9.242 seconds
+Generating sequences for: apex_m_d_77
+8 sequences of length 239 generated in 10.1597 seconds
+Generating sequences for: shoulder_m_d_124
+8 sequences of length 232 generated in 9.996 seconds
+Generating sequences for: apex_m_d_75
+8 sequences of length 239 generated in 10.5875 seconds
+Generating sequences for: apex_m_d_55
+8 sequences of length 228 generated in 9.7263 seconds
+Generating sequences for: apex_m_d_31
+8 sequences of length 215 generated in 9.6378 seconds
+Generating sequences for: apex_m_d_67
+8 sequences of length 238 generated in 10.8962 seconds
+Generating sequences for: shoulder_l_d_24
+8 sequences of length 236 generated in 9.7054 seconds
+Generating sequences for: shoulder_m_d_43
+8 sequences of length 233 generated in 9.7212 seconds
+Generating sequences for: shoulder_m_d_72
+8 sequences of length 220 generated in 9.8752 seconds
+Generating sequences for: shoulder_l_d_59
+8 sequences of length 265 generated in 11.0969 seconds
+Generating sequences for: shoulder_m_d_42
+8 sequences of length 227 generated in 10.2111 seconds
+Generating sequences for: shoulder_l_d_3
+8 sequences of length 244 generated in 10.1215 seconds
+Generating sequences for: shoulder_m_d_133
+8 sequences of length 237 generated in 9.7888 seconds
+Generating sequences for: apex_m_d_40
+8 sequences of length 228 generated in 9.3863 seconds
+Generating sequences for: shoulder_l_d_9
+8 sequences of length 262 generated in 11.5539 seconds
+Generating sequences for: swap_m_d_24
+8 sequences of length 229 generated in 10.003 seconds
+Generating sequences for: shoulder_m_d_25
+8 sequences of length 232 generated in 9.6756 seconds
+Generating sequences for: apex_l_d_31
+8 sequences of length 244 generated in 11.2029 seconds
+Generating sequences for: apex_m_d_68
+8 sequences of length 218 generated in 9.8885 seconds
+Generating sequences for: shoulder_l_d_76
+8 sequences of length 240 generated in 9.595 seconds
+Generating sequences for: apex_m_d_50
+8 sequences of length 234 generated in 10.8506 seconds
+Generating sequences for: shoulder_s_d_13
+8 sequences of length 206 generated in 9.288 seconds
+Generating sequences for: shoulder_s_d_94
+8 sequences of length 214 generated in 8.9396 seconds
+Generating sequences for: shoulder_l_d_44
+8 sequences of length 258 generated in 10.6755 seconds
+Generating sequences for: apex_m_d_1
+8 sequences of length 238 generated in 10.5673 seconds
+Generating sequences for: shoulder_s_d_71
+8 sequences of length 216 generated in 9.6795 seconds
+Generating sequences for: shoulder_l_d_57
+8 sequences of length 254 generated in 11.5336 seconds
+Generating sequences for: shoulder_m_d_103
+8 sequences of length 228 generated in 9.324 seconds
+Generating sequences for: shoulder_l_d_82
+8 sequences of length 242 generated in 9.0447 seconds
+Generating sequences for: shoulder_l_d_41
+8 sequences of length 255 generated in 9.9945 seconds
+Generating sequences for: shoulder_m_d_135
+8 sequences of length 232 generated in 10.5528 seconds
+Generating sequences for: shoulder_l_d_60
+8 sequences of length 259 generated in 11.4007 seconds
+Generating sequences for: shoulder_l_d_80
+8 sequences of length 254 generated in 11.2968 seconds
+Generating sequences for: apex_m_d_23
+8 sequences of length 239 generated in 10.5106 seconds
+Generating sequences for: shoulder_l_d_8
+8 sequences of length 252 generated in 9.9066 seconds
+Generating sequences for: shoulder_m_d_46
+8 sequences of length 221 generated in 9.3404 seconds
+Generating sequences for: shoulder_l_d_17
+8 sequences of length 243 generated in 10.2664 seconds
+Generating sequences for: swap_m_d_10
+8 sequences of length 237 generated in 9.3335 seconds
+Generating sequences for: shoulder_l_d_6
+8 sequences of length 251 generated in 10.6608 seconds
+Generating sequences for: apex_l_d_0
+8 sequences of length 258 generated in 11.7585 seconds
+Generating sequences for: shoulder_s_d_24
+8 sequences of length 210 generated in 9.0322 seconds
+Generating sequences for: shoulder_l_d_37
+8 sequences of length 239 generated in 10.1737 seconds
+Generating sequences for: shoulder_l_d_68
+8 sequences of length 259 generated in 10.7838 seconds
+Generating sequences for: shoulder_l_d_53
+8 sequences of length 249 generated in 10.9999 seconds
+Generating sequences for: shoulder_s_d_100
+8 sequences of length 217 generated in 9.8526 seconds
+Generating sequences for: shoulder_m_d_15
+8 sequences of length 237 generated in 9.7456 seconds
+Generating sequences for: apex_m_d_17
+8 sequences of length 240 generated in 9.872 seconds
+Generating sequences for: apex_l_d_12
+8 sequences of length 235 generated in 9.9217 seconds
+Generating sequences for: shoulder_m_d_97
+8 sequences of length 232 generated in 9.914 seconds
+Generating sequences for: shoulder_s_d_33
+8 sequences of length 211 generated in 8.8317 seconds
+Generating sequences for: shoulder_m_d_26
+8 sequences of length 221 generated in 9.4427 seconds
+Generating sequences for: apex_m_d_56
+8 sequences of length 221 generated in 8.9697 seconds
+Generating sequences for: shoulder_m_d_86
+8 sequences of length 235 generated in 10.0438 seconds
+Generating sequences for: swap_m_d_63
+8 sequences of length 229 generated in 10.1842 seconds
+Generating sequences for: swap_m_d_56
+8 sequences of length 228 generated in 10.1134 seconds
+Generating sequences for: apex_m_d_0
+8 sequences of length 221 generated in 9.5624 seconds
+Generating sequences for: shoulder_l_d_10
+8 sequences of length 252 generated in 10.6687 seconds
+Generating sequences for: apex_l_d_2
+8 sequences of length 252 generated in 10.1802 seconds
+Generating sequences for: apex_m_d_52
+8 sequences of length 232 generated in 10.0898 seconds
+Generating sequences for: shoulder_l_d_47
+8 sequences of length 250 generated in 10.6091 seconds
+Generating sequences for: apex_l_d_4
+8 sequences of length 265 generated in 11.7575 seconds
+Generating sequences for: shoulder_l_d_87
+8 sequences of length 258 generated in 10.8303 seconds
+Generating sequences for: shoulder_l_d_46
+8 sequences of length 238 generated in 10.5079 seconds
+Generating sequences for: shoulder_l_d_88
+8 sequences of length 245 generated in 10.2513 seconds
+Generating sequences for: shoulder_m_d_60
+8 sequences of length 223 generated in 9.3151 seconds
+Generating sequences for: shoulder_l_d_65
+8 sequences of length 265 generated in 11.0514 seconds
+Generating sequences for: shoulder_m_d_66
+8 sequences of length 215 generated in 9.1107 seconds
+Generating sequences for: shoulder_m_d_114
+8 sequences of length 229 generated in 7.2008 seconds
+Generating sequences for: shoulder_m_d_31
+8 sequences of length 228 generated in 6.8892 seconds
+Generating sequences for: shoulder_l_d_39
+8 sequences of length 264 generated in 7.9536 seconds
+Generating sequences for: shoulder_m_d_19
+8 sequences of length 215 generated in 6.5254 seconds
+Generating sequences for: apex_l_d_15
+8 sequences of length 249 generated in 7.4379 seconds
+Generating sequences for: swap_m_d_23
+8 sequences of length 221 generated in 6.6288 seconds
+Generating sequences for: apex_l_d_29
+8 sequences of length 246 generated in 7.3498 seconds
+Generating sequences for: shoulder_m_d_121
+8 sequences of length 218 generated in 6.5259 seconds
+Generating sequences for: shoulder_m_d_67
+8 sequences of length 222 generated in 6.7173 seconds
+Generating sequences for: swap_m_d_59
+8 sequences of length 231 generated in 6.9271 seconds
+Generating sequences for: apex_l_d_24
+8 sequences of length 254 generated in 7.5961 seconds
+Generating sequences for: shoulder_s_d_54
+8 sequences of length 214 generated in 6.4291 seconds
+Generating sequences for: shoulder_m_d_89
+8 sequences of length 238 generated in 7.0718 seconds
+Generating sequences for: shoulder_m_d_132
+8 sequences of length 226 generated in 6.6599 seconds
+Generating sequences for: shoulder_m_d_79
+8 sequences of length 234 generated in 6.8449 seconds
+Generating sequences for: shoulder_m_d_9
+8 sequences of length 233 generated in 6.7004 seconds
+Generating sequences for: shoulder_m_d_21
+8 sequences of length 219 generated in 6.3594 seconds
+Generating sequences for: shoulder_m_d_28
+8 sequences of length 240 generated in 6.9911 seconds
+Generating sequences for: apex_l_d_34
+8 sequences of length 246 generated in 7.1597 seconds
+Generating sequences for: shoulder_l_d_84
+8 sequences of length 264 generated in 7.6441 seconds
+Generating sequences for: apex_m_d_78
+8 sequences of length 240 generated in 6.9655 seconds
+Generating sequences for: shoulder_s_d_46
+8 sequences of length 213 generated in 6.1183 seconds
+Generating sequences for: shoulder_m_d_32
+8 sequences of length 233 generated in 6.683 seconds
+Generating sequences for: shoulder_s_d_7
+8 sequences of length 213 generated in 6.1684 seconds
+Generating sequences for: swap_m_d_13
+8 sequences of length 226 generated in 6.4988 seconds
+Generating sequences for: shoulder_l_d_85
+8 sequences of length 263 generated in 7.5567 seconds
+Generating sequences for: apex_l_d_33
+8 sequences of length 256 generated in 7.4061 seconds
+Generating sequences for: shoulder_s_d_37
+8 sequences of length 214 generated in 6.2878 seconds
+Generating sequences for: shoulder_s_d_14
+8 sequences of length 208 generated in 6.0976 seconds
+Generating sequences for: apex_l_d_16
+8 sequences of length 260 generated in 7.5177 seconds
+Generating sequences for: shoulder_s_d_26
+8 sequences of length 218 generated in 6.2538 seconds
+Generating sequences for: shoulder_l_d_14
+8 sequences of length 256 generated in 7.2957 seconds
+Generating sequences for: shoulder_m_d_80
+8 sequences of length 235 generated in 6.737 seconds
+Generating sequences for: swap_m_d_35
+8 sequences of length 215 generated in 6.1642 seconds
+Generating sequences for: shoulder_l_d_50
+8 sequences of length 262 generated in 7.5325 seconds
+Generating sequences for: shoulder_m_d_139
+8 sequences of length 235 generated in 6.8172 seconds
+Generating sequences for: apex_l_d_37
+8 sequences of length 264 generated in 7.6103 seconds
+Generating sequences for: swap_m_d_42
+8 sequences of length 238 generated in 6.9135 seconds
+Generating sequences for: apex_m_d_22
+8 sequences of length 240 generated in 6.9 seconds
+Generating sequences for: shoulder_m_d_93
+8 sequences of length 217 generated in 6.2187 seconds
+Generating sequences for: apex_m_d_51
+8 sequences of length 224 generated in 6.4199 seconds
+Generating sequences for: apex_m_d_69
+8 sequences of length 217 generated in 6.2232 seconds
+Generating sequences for: apex_m_d_49
+8 sequences of length 230 generated in 6.5849 seconds
+Generating sequences for: shoulder_l_d_38
+8 sequences of length 258 generated in 7.3845 seconds
+Generating sequences for: shoulder_m_d_48
+8 sequences of length 222 generated in 6.4686 seconds
+Generating sequences for: apex_l_d_22
+8 sequences of length 264 generated in 7.5258 seconds
+Generating sequences for: apex_l_d_10
+8 sequences of length 239 generated in 6.8481 seconds
+Generating sequences for: shoulder_s_d_34
+8 sequences of length 212 generated in 6.077 seconds
+Generating sequences for: apex_m_d_12
+8 sequences of length 240 generated in 6.8853 seconds
+Generating sequences for: apex_m_d_85
+8 sequences of length 226 generated in 6.397 seconds
+Generating sequences for: shoulder_l_d_78
+8 sequences of length 245 generated in 6.9323 seconds
+Generating sequences for: apex_l_d_9
+8 sequences of length 238 generated in 6.7345 seconds
+Generating sequences for: shoulder_m_d_35
+8 sequences of length 222 generated in 6.3046 seconds
+Generating sequences for: swap_m_d_61
+8 sequences of length 229 generated in 6.5092 seconds
+pool plain: 123 fasta files -> gen/r2_mpnn/plain/seqs
++ /home/HarjasG/miniforge3/envs/mpnn/bin/python /home/HarjasG/tnf-track3/ProteinMPNN/protein_mpnn_run.py --jsonl_path gen/r2_mpnn/parsed.jsonl --chain_id_jsonl gen/r2_mpnn/assigned.jsonl --out_folder gen/r2_mpnn/hisb --num_seq_per_target 8 --sampling_temp 0.1 --seed 1234 --batch_size 1 --omit_AAs CX --use_soluble_model --bias_AA_jsonl gen/r2_mpnn/bias_his.jsonl
+/home/HarjasG/tnf-track3/ProteinMPNN/protein_mpnn_run.py:178: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(checkpoint_path, map_location=device)

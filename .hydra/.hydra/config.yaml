@@ -1,13 +1,13 @@
 inference:
   input_pdb: /work/target/tfr1_A_crop.pdb
-  num_designs: 65
+  num_designs: 100
   design_startnum: 0
   ckpt_override_path: null
   symmetry: null
   recenter: true
   radius: 10.0
   model_only_neighbors: false
-  output_prefix: /work/gen/rfdiff/swap_m/d
+  output_prefix: /work/gen/rfdiff_r2/k374_m/d
   write_trajectory: false
   scaffold_guided: false
   model_runner: SelfConditioning
@@ -91,9 +91,9 @@ denoiser:
   frame_noise_schedule_type: constant
 ppi:
   hotspot_res:
-  - A211
   - A348
   - A371
+  - A374
 potentials:
   guiding_potentials: null
   guide_scale: 10

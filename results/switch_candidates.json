@@ -1,0 +1,1532 @@
+[
+ {
+  "design": "hisb_apex_m_d_1_s3_model_0",
+  "n_his": 3,
+  "total_ddg": 2.212,
+  "fold_shift": 41.7,
+  "mutations": "E59H;N37H;E44H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "strong"
+ },
+ {
+  "design": "plain_apex_m_d_52_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 1.95,
+  "fold_shift": 26.8,
+  "mutations": "E23H;T57H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "moderate"
+ },
+ {
+  "design": "hisb_shoulder_l_d_59_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 1.872,
+  "fold_shift": 23.5,
+  "mutations": "A60H;L86H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "moderate"
+ },
+ {
+  "design": "hisb_shoulder_m_d_15_s2_model_0",
+  "n_his": 2,
+  "total_ddg": 1.645,
+  "fold_shift": 16.0,
+  "mutations": "E61H;L17H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "moderate"
+ },
+ {
+  "design": "hisb_shoulder_m_d_97_s4_model_0",
+  "n_his": 2,
+  "total_ddg": 1.575,
+  "fold_shift": 14.2,
+  "mutations": "K66H;E81H",
+  "scope": "species_specific",
+  "cations": "208;364",
+  "tier": "moderate"
+ },
+ {
+  "design": "hisb_apex_m_d_56_s4_model_0",
+  "n_his": 2,
+  "total_ddg": 1.567,
+  "fold_shift": 14.0,
+  "mutations": "E61H;Y68H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "moderate"
+ },
+ {
+  "design": "hisb_shoulder_l_d_41_s3_model_0",
+  "n_his": 2,
+  "total_ddg": 1.537,
+  "fold_shift": 13.4,
+  "mutations": "A75H;E65H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "moderate"
+ },
+ {
+  "design": "hisb_shoulder_l_d_65_s2_model_0",
+  "n_his": 2,
+  "total_ddg": 1.523,
+  "fold_shift": 13.0,
+  "mutations": "E90H;S97H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "moderate"
+ },
+ {
+  "design": "hisb_apex_m_d_31_s2_model_0",
+  "n_his": 2,
+  "total_ddg": 1.497,
+  "fold_shift": 12.5,
+  "mutations": "T18H;S25H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "moderate"
+ },
+ {
+  "design": "hisb_shoulder_l_d_50_s2_model_0",
+  "n_his": 2,
+  "total_ddg": 1.388,
+  "fold_shift": 10.4,
+  "mutations": "R39H;D71H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "weak"
+ },
+ {
+  "design": "plain_shoulder_s_d_100_s4_model_0",
+  "n_his": 3,
+  "total_ddg": 1.361,
+  "fold_shift": 9.9,
+  "mutations": "A5H;E54H;E20H",
+  "scope": "species_specific",
+  "cations": "208;371;374",
+  "tier": "weak"
+ },
+ {
+  "design": "plain_apex_m_d_22_s2_model_0",
+  "n_his": 2,
+  "total_ddg": 1.347,
+  "fold_shift": 9.7,
+  "mutations": "S75H;N58H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "weak"
+ },
+ {
+  "design": "hisb_shoulder_l_d_37_s2_model_0",
+  "n_his": 3,
+  "total_ddg": 1.34,
+  "fold_shift": 9.6,
+  "mutations": "E75H;E82H;E43H",
+  "scope": "species_specific",
+  "cations": "205;208;371",
+  "tier": "weak"
+ },
+ {
+  "design": "hisb_apex_m_d_23_s4_model_0",
+  "n_his": 3,
+  "total_ddg": 1.319,
+  "fold_shift": 9.2,
+  "mutations": "E62H;T4H;Y70H",
+  "scope": "species_specific",
+  "cations": "208;371;374",
+  "tier": "weak"
+ },
+ {
+  "design": "hisb_apex_m_d_67_s3_model_0",
+  "n_his": 3,
+  "total_ddg": 1.315,
+  "fold_shift": 9.2,
+  "mutations": "I49H;E38H;D20H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "weak"
+ },
+ {
+  "design": "hisb_shoulder_s_d_71_s4_model_0",
+  "n_his": 2,
+  "total_ddg": 1.302,
+  "fold_shift": 9.0,
+  "mutations": "L59H;K52H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "weak"
+ },
+ {
+  "design": "hisb_apex_m_d_49_s4_model_0",
+  "n_his": 3,
+  "total_ddg": 1.293,
+  "fold_shift": 8.9,
+  "mutations": "L52H;R74H;D45H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "weak"
+ },
+ {
+  "design": "hisb_swap_m_d_42_s4_model_0",
+  "n_his": 2,
+  "total_ddg": 1.288,
+  "fold_shift": 8.8,
+  "mutations": "S72H;V32H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "weak"
+ },
+ {
+  "design": "hisb_shoulder_m_d_32_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 1.255,
+  "fold_shift": 8.3,
+  "mutations": "I47H;E36H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "weak"
+ },
+ {
+  "design": "hisb_shoulder_l_d_9_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 1.254,
+  "fold_shift": 8.3,
+  "mutations": "A80H;E70H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "weak"
+ },
+ {
+  "design": "plain_shoulder_s_d_54_s2_model_0",
+  "n_his": 2,
+  "total_ddg": 1.254,
+  "fold_shift": 8.3,
+  "mutations": "A32H;E42H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "weak"
+ },
+ {
+  "design": "plain_swap_m_d_42_s4_model_0",
+  "n_his": 3,
+  "total_ddg": 1.252,
+  "fold_shift": 8.3,
+  "mutations": "V32H;S72H;E65H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "weak"
+ },
+ {
+  "design": "hisb_shoulder_m_d_135_s2_model_0",
+  "n_his": 2,
+  "total_ddg": 1.234,
+  "fold_shift": 8.0,
+  "mutations": "M32H;R25H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "weak"
+ },
+ {
+  "design": "hisb_shoulder_s_d_24_s3_model_0",
+  "n_his": 2,
+  "total_ddg": 1.225,
+  "fold_shift": 7.9,
+  "mutations": "I26H;I19H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "weak"
+ },
+ {
+  "design": "plain_shoulder_s_d_13_s2_model_0",
+  "n_his": 3,
+  "total_ddg": 1.221,
+  "fold_shift": 7.8,
+  "mutations": "T28H;E40H;E35H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "weak"
+ },
+ {
+  "design": "plain_apex_m_d_31_s2_model_0",
+  "n_his": 2,
+  "total_ddg": 1.212,
+  "fold_shift": 7.7,
+  "mutations": "T18H;S25H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "weak"
+ },
+ {
+  "design": "plain_apex_l_d_15_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 1.205,
+  "fold_shift": 7.6,
+  "mutations": "A27H;E90H",
+  "scope": "species_specific",
+  "cations": "371;374",
+  "tier": "weak"
+ },
+ {
+  "design": "plain_apex_m_d_50_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 1.193,
+  "fold_shift": 7.5,
+  "mutations": "L61H;A37H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "weak"
+ },
+ {
+  "design": "hisb_apex_m_d_75_s3_model_0",
+  "n_his": 2,
+  "total_ddg": 1.174,
+  "fold_shift": 7.2,
+  "mutations": "V31H;E25H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "weak"
+ },
+ {
+  "design": "plain_shoulder_m_d_32_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 1.166,
+  "fold_shift": 7.1,
+  "mutations": "I47H;E36H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "weak"
+ },
+ {
+  "design": "hisb_shoulder_m_d_121_s2_model_0",
+  "n_his": 2,
+  "total_ddg": 1.153,
+  "fold_shift": 7.0,
+  "mutations": "E12H;Y68H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "weak"
+ },
+ {
+  "design": "plain_shoulder_l_d_8_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 1.15,
+  "fold_shift": 7.0,
+  "mutations": "N56H;E86H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "weak"
+ },
+ {
+  "design": "plain_apex_m_d_55_s4_model_0",
+  "n_his": 2,
+  "total_ddg": 1.145,
+  "fold_shift": 6.9,
+  "mutations": "D41H;D30H",
+  "scope": "cross_species",
+  "cations": "224;374",
+  "tier": "weak"
+ },
+ {
+  "design": "plain_apex_m_d_67_s3_model_0",
+  "n_his": 3,
+  "total_ddg": 1.142,
+  "fold_shift": 6.9,
+  "mutations": "I49H;E38H;D20H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "weak"
+ },
+ {
+  "design": "plain_shoulder_m_d_48_s1_model_0",
+  "n_his": 3,
+  "total_ddg": 1.13,
+  "fold_shift": 6.7,
+  "mutations": "E54H;E11H;E61H",
+  "scope": "species_specific",
+  "cations": "208;371;374",
+  "tier": "weak"
+ },
+ {
+  "design": "plain_swap_m_d_61_s3_model_0",
+  "n_his": 2,
+  "total_ddg": 1.126,
+  "fold_shift": 6.7,
+  "mutations": "S67H;K40H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "weak"
+ },
+ {
+  "design": "plain_shoulder_m_d_15_s2_model_0",
+  "n_his": 2,
+  "total_ddg": 1.115,
+  "fold_shift": 6.6,
+  "mutations": "E61H;E16H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "weak"
+ },
+ {
+  "design": "hisb_apex_l_d_12_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 1.105,
+  "fold_shift": 6.4,
+  "mutations": "D28H;R35H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "weak"
+ },
+ {
+  "design": "plain_shoulder_m_d_25_s3_model_0",
+  "n_his": 2,
+  "total_ddg": 1.099,
+  "fold_shift": 6.4,
+  "mutations": "Q73H;Y16H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "weak"
+ },
+ {
+  "design": "plain_shoulder_l_d_68_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 1.099,
+  "fold_shift": 6.4,
+  "mutations": "S102H;K54H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "weak"
+ },
+ {
+  "design": "plain_apex_l_d_12_s4_model_0",
+  "n_his": 2,
+  "total_ddg": 1.085,
+  "fold_shift": 6.2,
+  "mutations": "D28H;R35H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "weak"
+ },
+ {
+  "design": "hisb_shoulder_l_d_6_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 1.076,
+  "fold_shift": 6.1,
+  "mutations": "L65H;K59H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "weak"
+ },
+ {
+  "design": "hisb_apex_m_d_55_s4_model_0",
+  "n_his": 1,
+  "total_ddg": 1.032,
+  "fold_shift": 5.7,
+  "mutations": "D41H",
+  "scope": "cross_species",
+  "cations": "374",
+  "tier": "weak"
+ },
+ {
+  "design": "hisb_apex_m_d_85_s2_model_0",
+  "n_his": 2,
+  "total_ddg": 1.026,
+  "fold_shift": 5.6,
+  "mutations": "E62H;E55H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "weak"
+ },
+ {
+  "design": "hisb_swap_m_d_24_s3_model_0",
+  "n_his": 3,
+  "total_ddg": 1.016,
+  "fold_shift": 5.5,
+  "mutations": "A38H;E62H;E70H",
+  "scope": "species_specific",
+  "cations": "208;364;371",
+  "tier": "weak"
+ },
+ {
+  "design": "hisb_shoulder_l_d_80_s3_model_0",
+  "n_his": 2,
+  "total_ddg": 1.012,
+  "fold_shift": 5.5,
+  "mutations": "I93H;A83H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "weak"
+ },
+ {
+  "design": "plain_apex_m_d_78_s4_model_0",
+  "n_his": 3,
+  "total_ddg": 1.003,
+  "fold_shift": 5.4,
+  "mutations": "E10H;E65H;E75H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "weak"
+ },
+ {
+  "design": "hisb_shoulder_m_d_35_s3_model_0",
+  "n_his": 3,
+  "total_ddg": 0.997,
+  "fold_shift": 5.4,
+  "mutations": "E49H;Q23H;E59H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_l_d_10_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 0.986,
+  "fold_shift": 5.3,
+  "mutations": "R97H;R23H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_apex_l_d_34_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 0.981,
+  "fold_shift": 5.2,
+  "mutations": "R42H;S78H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_m_d_60_s2_model_0",
+  "n_his": 2,
+  "total_ddg": 0.981,
+  "fold_shift": 5.2,
+  "mutations": "K51H;S34H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_l_d_53_s4_model_0",
+  "n_his": 2,
+  "total_ddg": 0.979,
+  "fold_shift": 5.2,
+  "mutations": "E89H;D58H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_m_d_67_s4_model_0",
+  "n_his": 2,
+  "total_ddg": 0.969,
+  "fold_shift": 5.1,
+  "mutations": "T65H;E72H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_apex_m_d_17_s4_model_0",
+  "n_his": 2,
+  "total_ddg": 0.958,
+  "fold_shift": 5.0,
+  "mutations": "N69H;E79H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_l_d_85_s4_model_0",
+  "n_his": 2,
+  "total_ddg": 0.958,
+  "fold_shift": 5.0,
+  "mutations": "S64H;E72H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_m_d_80_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 0.955,
+  "fold_shift": 5.0,
+  "mutations": "T57H;E44H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_l_d_8_s4_model_0",
+  "n_his": 2,
+  "total_ddg": 0.953,
+  "fold_shift": 5.0,
+  "mutations": "E86H;E52H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_l_d_88_s3_model_0",
+  "n_his": 3,
+  "total_ddg": 0.95,
+  "fold_shift": 5.0,
+  "mutations": "E68H;E31H;E24H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_apex_m_d_0_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 0.939,
+  "fold_shift": 4.9,
+  "mutations": "D34H;L40H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_l_d_14_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 0.908,
+  "fold_shift": 4.6,
+  "mutations": "N33H;E43H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_s_d_37_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 0.898,
+  "fold_shift": 4.5,
+  "mutations": "E51H;E29H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_s_d_94_s4_model_0",
+  "n_his": 2,
+  "total_ddg": 0.892,
+  "fold_shift": 4.5,
+  "mutations": "E44H;L34H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_apex_l_d_9_s3_model_0",
+  "n_his": 2,
+  "total_ddg": 0.885,
+  "fold_shift": 4.4,
+  "mutations": "E46H;E53H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_m_d_93_s3_model_0",
+  "n_his": 1,
+  "total_ddg": 0.884,
+  "fold_shift": 4.4,
+  "mutations": "V4H",
+  "scope": "cross_species",
+  "cations": "374",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_s_d_94_s4_model_0",
+  "n_his": 2,
+  "total_ddg": 0.865,
+  "fold_shift": 4.3,
+  "mutations": "E44H;L34H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_m_d_42_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 0.862,
+  "fold_shift": 4.3,
+  "mutations": "A18H;E28H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_m_d_80_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 0.847,
+  "fold_shift": 4.2,
+  "mutations": "T57H;E44H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_l_d_41_s3_model_0",
+  "n_his": 2,
+  "total_ddg": 0.825,
+  "fold_shift": 4.0,
+  "mutations": "E98H;E65H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_m_d_93_s3_model_0",
+  "n_his": 2,
+  "total_ddg": 0.822,
+  "fold_shift": 4.0,
+  "mutations": "E53H;E3H",
+  "scope": "species_specific",
+  "cations": "371;374",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_apex_l_d_0_s1_model_0",
+  "n_his": 1,
+  "total_ddg": 0.818,
+  "fold_shift": 4.0,
+  "mutations": "Q28H",
+  "scope": "cross_species",
+  "cations": "374",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_l_d_53_s4_model_0",
+  "n_his": 1,
+  "total_ddg": 0.816,
+  "fold_shift": 4.0,
+  "mutations": "E54H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_l_d_38_s3_model_0",
+  "n_his": 1,
+  "total_ddg": 0.799,
+  "fold_shift": 3.8,
+  "mutations": "E43H",
+  "scope": "species_specific",
+  "cations": "371",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_m_d_121_s2_model_0",
+  "n_his": 2,
+  "total_ddg": 0.793,
+  "fold_shift": 3.8,
+  "mutations": "D9H;E71H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_l_d_44_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 0.791,
+  "fold_shift": 3.8,
+  "mutations": "E41H;D71H",
+  "scope": "species_specific",
+  "cations": "161;208",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_apex_m_d_52_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 0.786,
+  "fold_shift": 3.8,
+  "mutations": "E23H;E54H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_m_d_79_s4_model_0",
+  "n_his": 2,
+  "total_ddg": 0.784,
+  "fold_shift": 3.8,
+  "mutations": "E64H;E17H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_apex_m_d_23_s4_model_0",
+  "n_his": 2,
+  "total_ddg": 0.776,
+  "fold_shift": 3.7,
+  "mutations": "T4H;Y70H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_apex_l_d_4_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 0.773,
+  "fold_shift": 3.7,
+  "mutations": "K69H;E17H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_swap_m_d_13_s2_model_0",
+  "n_his": 2,
+  "total_ddg": 0.76,
+  "fold_shift": 3.6,
+  "mutations": "E32H;E59H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_apex_l_d_29_s2_model_0",
+  "n_his": 2,
+  "total_ddg": 0.733,
+  "fold_shift": 3.4,
+  "mutations": "V61H;K53H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_m_d_48_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 0.729,
+  "fold_shift": 3.4,
+  "mutations": "L65H;E54H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_swap_m_d_23_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 0.724,
+  "fold_shift": 3.4,
+  "mutations": "A12H;L74H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_apex_l_d_33_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 0.718,
+  "fold_shift": 3.4,
+  "mutations": "R14H;A43H",
+  "scope": "species_specific",
+  "cations": "161;208",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_l_d_84_s4_model_0",
+  "n_his": 2,
+  "total_ddg": 0.716,
+  "fold_shift": 3.3,
+  "mutations": "L88H;E42H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_m_d_9_s4_model_0",
+  "n_his": 1,
+  "total_ddg": 0.705,
+  "fold_shift": 3.3,
+  "mutations": "M50H",
+  "scope": "cross_species",
+  "cations": "374",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_s_d_71_s4_model_0",
+  "n_his": 2,
+  "total_ddg": 0.695,
+  "fold_shift": 3.2,
+  "mutations": "L59H;E49H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_apex_m_d_0_s2_model_0",
+  "n_his": 1,
+  "total_ddg": 0.688,
+  "fold_shift": 3.2,
+  "mutations": "T37H",
+  "scope": "cross_species",
+  "cations": "374",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_apex_m_d_77_s4_model_0",
+  "n_his": 2,
+  "total_ddg": 0.687,
+  "fold_shift": 3.2,
+  "mutations": "D38H;E64H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_swap_m_d_10_s1_model_0",
+  "n_his": 1,
+  "total_ddg": 0.674,
+  "fold_shift": 3.1,
+  "mutations": "R81H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_m_d_89_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 0.67,
+  "fold_shift": 3.1,
+  "mutations": "E62H;R55H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_l_d_50_s3_model_0",
+  "n_his": 1,
+  "total_ddg": 0.667,
+  "fold_shift": 3.1,
+  "mutations": "E71H",
+  "scope": "species_specific",
+  "cations": "371",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_m_d_46_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 0.663,
+  "fold_shift": 3.1,
+  "mutations": "D2H;E9H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_l_d_84_s4_model_0",
+  "n_his": 2,
+  "total_ddg": 0.661,
+  "fold_shift": 3.0,
+  "mutations": "E36H;E30H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_apex_m_d_69_s1_model_0",
+  "n_his": 1,
+  "total_ddg": 0.655,
+  "fold_shift": 3.0,
+  "mutations": "E33H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_m_d_72_s3_model_0",
+  "n_his": 1,
+  "total_ddg": 0.63,
+  "fold_shift": 2.9,
+  "mutations": "Y32H",
+  "scope": "species_specific",
+  "cations": "371",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_l_d_14_s1_model_0",
+  "n_his": 1,
+  "total_ddg": 0.605,
+  "fold_shift": 2.8,
+  "mutations": "N33H",
+  "scope": "cross_species",
+  "cations": "374",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_s_d_13_s2_model_0",
+  "n_his": 2,
+  "total_ddg": 0.594,
+  "fold_shift": 2.7,
+  "mutations": "E40H;E31H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_apex_m_d_51_s4_model_0",
+  "n_his": 1,
+  "total_ddg": 0.593,
+  "fold_shift": 2.7,
+  "mutations": "E48H",
+  "scope": "cross_species",
+  "cations": "374",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_swap_m_d_10_s1_model_0",
+  "n_his": 1,
+  "total_ddg": 0.592,
+  "fold_shift": 2.7,
+  "mutations": "R81H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_apex_l_d_24_s2_model_0",
+  "n_his": 1,
+  "total_ddg": 0.581,
+  "fold_shift": 2.7,
+  "mutations": "D27H",
+  "scope": "species_specific",
+  "cations": "371",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_m_d_21_s3_model_0",
+  "n_his": 2,
+  "total_ddg": 0.578,
+  "fold_shift": 2.7,
+  "mutations": "L53H;R4H",
+  "scope": "species_specific",
+  "cations": "364;371",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_m_d_132_s4_model_0",
+  "n_his": 2,
+  "total_ddg": 0.558,
+  "fold_shift": 2.6,
+  "mutations": "D58H;D65H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_m_d_26_s2_model_0",
+  "n_his": 1,
+  "total_ddg": 0.554,
+  "fold_shift": 2.5,
+  "mutations": "L51H",
+  "scope": "species_specific",
+  "cations": "371",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_s_d_44_s3_model_0",
+  "n_his": 2,
+  "total_ddg": 0.536,
+  "fold_shift": 2.5,
+  "mutations": "E21H;E57H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_s_d_7_s2_model_0",
+  "n_his": 1,
+  "total_ddg": 0.527,
+  "fold_shift": 2.4,
+  "mutations": "L46H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_m_d_133_s1_model_0",
+  "n_his": 2,
+  "total_ddg": 0.526,
+  "fold_shift": 2.4,
+  "mutations": "N81H;E70H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_m_d_103_s2_model_0",
+  "n_his": 1,
+  "total_ddg": 0.508,
+  "fold_shift": 2.4,
+  "mutations": "S55H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_s_d_44_s3_model_0",
+  "n_his": 2,
+  "total_ddg": 0.508,
+  "fold_shift": 2.4,
+  "mutations": "E21H;E57H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_l_d_78_s2_model_0",
+  "n_his": 1,
+  "total_ddg": 0.495,
+  "fold_shift": 2.3,
+  "mutations": "A19H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_l_d_57_s2_model_0",
+  "n_his": 1,
+  "total_ddg": 0.452,
+  "fold_shift": 2.1,
+  "mutations": "E62H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_apex_m_d_85_s2_model_0",
+  "n_his": 1,
+  "total_ddg": 0.444,
+  "fold_shift": 2.1,
+  "mutations": "Q29H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_l_d_78_s2_model_0",
+  "n_his": 1,
+  "total_ddg": 0.428,
+  "fold_shift": 2.1,
+  "mutations": "A19H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_m_d_67_s4_model_0",
+  "n_his": 1,
+  "total_ddg": 0.428,
+  "fold_shift": 2.1,
+  "mutations": "E72H",
+  "scope": "cross_species",
+  "cations": "374",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_l_d_3_s2_model_0",
+  "n_his": 1,
+  "total_ddg": 0.42,
+  "fold_shift": 2.0,
+  "mutations": "Q20H",
+  "scope": "species_specific",
+  "cations": "371",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_apex_m_d_1_s2_model_0",
+  "n_his": 1,
+  "total_ddg": 0.407,
+  "fold_shift": 2.0,
+  "mutations": "F27H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_swap_m_d_63_s4_model_0",
+  "n_his": 1,
+  "total_ddg": 0.4,
+  "fold_shift": 2.0,
+  "mutations": "E75H",
+  "scope": "species_specific",
+  "cations": "371",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_m_d_19_s2_model_0",
+  "n_his": 1,
+  "total_ddg": 0.4,
+  "fold_shift": 2.0,
+  "mutations": "K19H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_m_d_124_s1_model_0",
+  "n_his": 1,
+  "total_ddg": 0.398,
+  "fold_shift": 2.0,
+  "mutations": "L18H",
+  "scope": "species_specific",
+  "cations": "574",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_m_d_133_s1_model_0",
+  "n_his": 1,
+  "total_ddg": 0.388,
+  "fold_shift": 1.9,
+  "mutations": "L80H",
+  "scope": "cross_species",
+  "cations": "374",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_swap_m_d_56_s1_model_0",
+  "n_his": 1,
+  "total_ddg": 0.386,
+  "fold_shift": 1.9,
+  "mutations": "D55H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_l_d_76_s1_model_0",
+  "n_his": 1,
+  "total_ddg": 0.385,
+  "fold_shift": 1.9,
+  "mutations": "L67H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_l_d_76_s1_model_0",
+  "n_his": 1,
+  "total_ddg": 0.38,
+  "fold_shift": 1.9,
+  "mutations": "E23H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_swap_m_d_59_s3_model_0",
+  "n_his": 1,
+  "total_ddg": 0.379,
+  "fold_shift": 1.9,
+  "mutations": "E61H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_l_d_47_s2_model_0",
+  "n_his": 1,
+  "total_ddg": 0.377,
+  "fold_shift": 1.9,
+  "mutations": "E23H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_apex_l_d_16_s3_model_0",
+  "n_his": 1,
+  "total_ddg": 0.351,
+  "fold_shift": 1.8,
+  "mutations": "E17H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_m_d_114_s4_model_0",
+  "n_his": 2,
+  "total_ddg": 0.348,
+  "fold_shift": 1.8,
+  "mutations": "E3H;K67H",
+  "scope": "species_specific",
+  "cations": "208;371",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_l_d_60_s1_model_0",
+  "n_his": 1,
+  "total_ddg": 0.339,
+  "fold_shift": 1.8,
+  "mutations": "K59H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_apex_l_d_31_s2_model_0",
+  "n_his": 1,
+  "total_ddg": 0.319,
+  "fold_shift": 1.7,
+  "mutations": "E72H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_m_d_139_s1_model_0",
+  "n_his": 1,
+  "total_ddg": 0.316,
+  "fold_shift": 1.7,
+  "mutations": "E3H",
+  "scope": "species_specific",
+  "cations": "371",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_apex_m_d_12_s4_model_0",
+  "n_his": 1,
+  "total_ddg": 0.3,
+  "fold_shift": 1.7,
+  "mutations": "E67H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_apex_l_d_22_s1_model_0",
+  "n_his": 1,
+  "total_ddg": 0.291,
+  "fold_shift": 1.6,
+  "mutations": "E52H",
+  "scope": "cross_species",
+  "cations": "374",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_apex_m_d_40_s4_model_0",
+  "n_his": 1,
+  "total_ddg": 0.288,
+  "fold_shift": 1.6,
+  "mutations": "K22H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_m_d_56_s3_model_0",
+  "n_his": 1,
+  "total_ddg": 0.283,
+  "fold_shift": 1.6,
+  "mutations": "E62H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_apex_l_d_9_s3_model_0",
+  "n_his": 2,
+  "total_ddg": 0.278,
+  "fold_shift": 1.6,
+  "mutations": "E39H;E53H",
+  "scope": "species_specific",
+  "cations": "208;374",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_m_d_72_s3_model_0",
+  "n_his": 1,
+  "total_ddg": 0.271,
+  "fold_shift": 1.6,
+  "mutations": "E48H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_m_d_43_s1_model_0",
+  "n_his": 1,
+  "total_ddg": 0.27,
+  "fold_shift": 1.6,
+  "mutations": "E74H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_m_d_132_s4_model_0",
+  "n_his": 1,
+  "total_ddg": 0.267,
+  "fold_shift": 1.6,
+  "mutations": "D65H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_m_d_89_s3_model_0",
+  "n_his": 1,
+  "total_ddg": 0.266,
+  "fold_shift": 1.6,
+  "mutations": "R55H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_apex_m_d_68_s4_model_0",
+  "n_his": 1,
+  "total_ddg": 0.264,
+  "fold_shift": 1.6,
+  "mutations": "E23H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_swap_m_d_35_s3_model_0",
+  "n_his": 1,
+  "total_ddg": 0.262,
+  "fold_shift": 1.6,
+  "mutations": "E47H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_m_d_86_s2_model_0",
+  "n_his": 1,
+  "total_ddg": 0.257,
+  "fold_shift": 1.5,
+  "mutations": "N72H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_m_d_86_s2_model_0",
+  "n_his": 1,
+  "total_ddg": 0.256,
+  "fold_shift": 1.5,
+  "mutations": "N72H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_s_d_7_s1_model_0",
+  "n_his": 1,
+  "total_ddg": 0.255,
+  "fold_shift": 1.5,
+  "mutations": "E45H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_l_d_24_s3_model_0",
+  "n_his": 1,
+  "total_ddg": 0.243,
+  "fold_shift": 1.5,
+  "mutations": "E64H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_apex_m_d_68_s4_model_0",
+  "n_his": 1,
+  "total_ddg": 0.227,
+  "fold_shift": 1.5,
+  "mutations": "E23H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_s_d_26_s2_model_0",
+  "n_his": 1,
+  "total_ddg": 0.223,
+  "fold_shift": 1.5,
+  "mutations": "K26H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_l_d_82_s2_model_0",
+  "n_his": 1,
+  "total_ddg": 0.207,
+  "fold_shift": 1.4,
+  "mutations": "E62H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_apex_l_d_15_s1_model_0",
+  "n_his": 1,
+  "total_ddg": 0.201,
+  "fold_shift": 1.4,
+  "mutations": "A82H",
+  "scope": "species_specific",
+  "cations": "371",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_m_d_66_s1_model_0",
+  "n_his": 1,
+  "total_ddg": 0.166,
+  "fold_shift": 1.3,
+  "mutations": "E24H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "plain_shoulder_m_d_31_s2_model_0",
+  "n_his": 1,
+  "total_ddg": 0.149,
+  "fold_shift": 1.3,
+  "mutations": "E21H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_l_d_68_s1_model_0",
+  "n_his": 1,
+  "total_ddg": 0.135,
+  "fold_shift": 1.3,
+  "mutations": "E109H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_l_d_87_s4_model_0",
+  "n_his": 1,
+  "total_ddg": 0.134,
+  "fold_shift": 1.3,
+  "mutations": "K82H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ },
+ {
+  "design": "hisb_shoulder_m_d_103_s2_model_0",
+  "n_his": 1,
+  "total_ddg": 0.12,
+  "fold_shift": 1.2,
+  "mutations": "E52H",
+  "scope": "species_specific",
+  "cations": "208",
+  "tier": "sub"
+ }
+]
