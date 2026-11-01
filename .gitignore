@@ -229,3 +229,6 @@ gen/mpnn/_backbones/
 # Boltz predicted structures: large, regenerable, paths recorded in scores.json.
 boltz/*/pred/
 pilot/*/pred/
+
+# Upload staging is regenerable from the tree; keep the manifest, not the copy.
+upload/

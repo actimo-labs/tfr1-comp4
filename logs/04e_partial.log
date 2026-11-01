@@ -1,0 +1,8 @@
+[04e] 494 predicted complexes; glycan shadow = 73 residues
+
+[04e] PASS 89/494
+       rejected, only: 380
+       rejected, transferrin: 313
+       rejected, C-term: 165
+       rejected, glycan: 106
+[out] gen/epitope_qc_partial.tsv
