@@ -221,3 +221,11 @@ __marimo__/
 # Stage run logs are the evidence for the numbers in runlog/ and target/*.md.
 # The brief (section 0) says to commit run logs, so exempt them from *.log above.
 !logs/*.log
+
+# Symlink pool used only to hand RFdiffusion output to ProteinMPNN in one dir.
+gen/rfdiff_all/
+# MPNN staging copy of the backbones (duplicates gen/rfdiff/).
+gen/mpnn/_backbones/
+# Boltz predicted structures: large, regenerable, paths recorded in scores.json.
+boltz/*/pred/
+pilot/*/pred/

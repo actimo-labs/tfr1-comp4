@@ -1,0 +1,20 @@
+[2026-11-01 02:13:57] waiting for mpnn session to exit...
+[2026-11-01 03:11:27] mpnn session gone; plain=540 hisb=540
+[2026-11-01 03:11:27] === autopilot start ===
+[2026-11-01 03:11:27] START 35_select
+[2026-11-01 03:11:27] OK    35_select  (0s)
+[2026-11-01 03:11:27] selected 900 designs for the human screen
+[2026-11-01 03:11:27] START 04_boltz_human
+[2026-11-01 03:11:28] FAIL  04_boltz_human  (1s) - see logs/04_boltz_human.log
+[2026-11-01 03:11:28] START 04b_controls
+[2026-11-01 03:11:28] FAIL  04b_controls  (0s) - see logs/04b_controls.log
+[2026-11-01 03:11:28] START 04c_calibrate
+[2026-11-01 03:11:28] FAIL  04c_calibrate  (0s) - see logs/04c_calibrate.log
+[2026-11-01 03:11:28] === autopilot: GPU screen chain complete ===
+[2026-11-01 03:11:28] state: {
+ "35_select": "ok",
+ "04_boltz_human": "failed",
+ "04b_controls": "failed",
+ "04c_calibrate": "failed"
+}
+AUTOPILOT_A_DONE

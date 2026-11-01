@@ -4,3 +4,2202 @@ staged 540 backbones
 + /home/HarjasG/miniforge3/envs/mpnn/bin/python /home/HarjasG/tnf-track3/ProteinMPNN/protein_mpnn_run.py --jsonl_path gen/mpnn/parsed.jsonl --chain_id_jsonl gen/mpnn/assigned.jsonl --out_folder gen/mpnn/plain --num_seq_per_target 4 --sampling_temp 0.1 --seed 37 --batch_size 1 --omit_AAs CX --use_soluble_model
 /home/HarjasG/tnf-track3/ProteinMPNN/protein_mpnn_run.py:178: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
   checkpoint = torch.load(checkpoint_path, map_location=device)
+Using ProteinMPNN trained on soluble proteins only!
+----------------------------------------
+fixed_positions_jsonl is NOT loaded
+----------------------------------------
+pssm_jsonl is NOT loaded
+----------------------------------------
+omit_AA_jsonl is NOT loaded
+----------------------------------------
+bias_AA_jsonl is NOT loaded
+----------------------------------------
+tied_positions_jsonl is NOT loaded
+----------------------------------------
+bias by residue dictionary is not loaded, or not provided
+----------------------------------------
+discarded {'bad_chars': 0, 'too_long': 0, 'bad_seq_length': 0}
+----------------------------------------
+Number of edges: 48
+Training noise level: 0.2A
+Generating sequences for: shoulder_s_d_59
+4 sequences of length 219 generated in 3.3262 seconds
+Generating sequences for: shoulder_m_d_130
+4 sequences of length 237 generated in 3.5775 seconds
+Generating sequences for: shoulder_l_d_74
+4 sequences of length 259 generated in 3.8593 seconds
+Generating sequences for: shoulder_m_d_1
+4 sequences of length 219 generated in 3.2782 seconds
+Generating sequences for: apex_m_d_9
+4 sequences of length 231 generated in 3.469 seconds
+Generating sequences for: shoulder_s_d_15
+4 sequences of length 200 generated in 3.0038 seconds
+Generating sequences for: apex_l_d_1
+4 sequences of length 255 generated in 3.7915 seconds
+Generating sequences for: shoulder_m_d_95
+4 sequences of length 237 generated in 3.5442 seconds
+Generating sequences for: shoulder_m_d_56
+4 sequences of length 234 generated in 3.5128 seconds
+Generating sequences for: shoulder_s_d_49
+4 sequences of length 218 generated in 3.2866 seconds
+Generating sequences for: shoulder_m_d_88
+4 sequences of length 236 generated in 3.5955 seconds
+Generating sequences for: shoulder_s_d_107
+4 sequences of length 219 generated in 3.294 seconds
+Generating sequences for: shoulder_l_d_23
+4 sequences of length 251 generated in 3.7128 seconds
+Generating sequences for: shoulder_m_d_23
+4 sequences of length 231 generated in 3.4269 seconds
+Generating sequences for: apex_m_d_32
+4 sequences of length 217 generated in 3.2237 seconds
+Generating sequences for: shoulder_s_d_44
+4 sequences of length 219 generated in 3.2499 seconds
+Generating sequences for: apex_m_d_53
+4 sequences of length 227 generated in 3.3655 seconds
+Generating sequences for: shoulder_m_d_104
+4 sequences of length 221 generated in 3.2855 seconds
+Generating sequences for: shoulder_s_d_67
+4 sequences of length 201 generated in 2.9918 seconds
+Generating sequences for: shoulder_l_d_79
+4 sequences of length 238 generated in 3.51 seconds
+Generating sequences for: shoulder_s_d_8
+4 sequences of length 209 generated in 3.1108 seconds
+Generating sequences for: apex_m_d_89
+4 sequences of length 221 generated in 3.2647 seconds
+Generating sequences for: apex_m_d_77
+4 sequences of length 239 generated in 3.5364 seconds
+Generating sequences for: shoulder_l_d_16
+4 sequences of length 239 generated in 3.4867 seconds
+Generating sequences for: shoulder_m_d_124
+4 sequences of length 232 generated in 3.3654 seconds
+Generating sequences for: apex_m_d_75
+4 sequences of length 239 generated in 3.4567 seconds
+Generating sequences for: shoulder_m_d_73
+4 sequences of length 217 generated in 3.1694 seconds
+Generating sequences for: shoulder_s_d_68
+4 sequences of length 219 generated in 3.2211 seconds
+Generating sequences for: swap_m_d_29
+4 sequences of length 233 generated in 3.4127 seconds
+Generating sequences for: apex_m_d_47
+4 sequences of length 230 generated in 3.3592 seconds
+Generating sequences for: shoulder_s_d_9
+4 sequences of length 207 generated in 3.0249 seconds
+Generating sequences for: swap_m_d_15
+4 sequences of length 227 generated in 3.2915 seconds
+Generating sequences for: apex_m_d_34
+4 sequences of length 216 generated in 3.138 seconds
+Generating sequences for: apex_m_d_55
+4 sequences of length 228 generated in 3.303 seconds
+Generating sequences for: shoulder_s_d_17
+4 sequences of length 205 generated in 2.9483 seconds
+Generating sequences for: shoulder_m_d_34
+4 sequences of length 237 generated in 3.4007 seconds
+Generating sequences for: apex_m_d_87
+4 sequences of length 228 generated in 3.2841 seconds
+Generating sequences for: swap_m_d_8
+4 sequences of length 226 generated in 3.2531 seconds
+Generating sequences for: apex_m_d_31
+4 sequences of length 215 generated in 3.102 seconds
+Generating sequences for: shoulder_s_d_19
+4 sequences of length 204 generated in 2.9515 seconds
+Generating sequences for: shoulder_l_d_15
+4 sequences of length 257 generated in 3.6953 seconds
+Generating sequences for: apex_m_d_67
+4 sequences of length 238 generated in 3.4333 seconds
+Generating sequences for: shoulder_s_d_90
+4 sequences of length 200 generated in 2.903 seconds
+Generating sequences for: shoulder_m_d_14
+4 sequences of length 232 generated in 3.349 seconds
+Generating sequences for: shoulder_l_d_24
+4 sequences of length 236 generated in 3.4179 seconds
+Generating sequences for: shoulder_m_d_43
+4 sequences of length 233 generated in 3.3629 seconds
+Generating sequences for: shoulder_l_d_67
+4 sequences of length 239 generated in 3.4441 seconds
+Generating sequences for: shoulder_m_d_72
+4 sequences of length 220 generated in 3.1231 seconds
+Generating sequences for: shoulder_l_d_59
+4 sequences of length 265 generated in 3.7965 seconds
+Generating sequences for: apex_m_d_27
+4 sequences of length 233 generated in 3.3534 seconds
+Generating sequences for: shoulder_s_d_10
+4 sequences of length 205 generated in 2.9757 seconds
+Generating sequences for: shoulder_m_d_134
+4 sequences of length 231 generated in 3.3497 seconds
+Generating sequences for: apex_m_d_45
+4 sequences of length 220 generated in 3.1809 seconds
+Generating sequences for: swap_m_d_25
+4 sequences of length 215 generated in 3.0719 seconds
+Generating sequences for: shoulder_s_d_77
+4 sequences of length 211 generated in 3.0171 seconds
+Generating sequences for: apex_m_d_5
+4 sequences of length 235 generated in 3.3347 seconds
+Generating sequences for: shoulder_s_d_109
+4 sequences of length 203 generated in 2.9097 seconds
+Generating sequences for: shoulder_m_d_111
+4 sequences of length 226 generated in 3.2255 seconds
+Generating sequences for: swap_m_d_43
+4 sequences of length 228 generated in 3.256 seconds
+Generating sequences for: apex_m_d_70
+4 sequences of length 235 generated in 3.3536 seconds
+Generating sequences for: shoulder_m_d_20
+4 sequences of length 237 generated in 3.3766 seconds
+Generating sequences for: apex_m_d_13
+4 sequences of length 224 generated in 3.1918 seconds
+Generating sequences for: shoulder_m_d_42
+4 sequences of length 227 generated in 3.2326 seconds
+Generating sequences for: shoulder_l_d_28
+4 sequences of length 237 generated in 3.4067 seconds
+Generating sequences for: shoulder_l_d_3
+4 sequences of length 244 generated in 3.4646 seconds
+Generating sequences for: shoulder_m_d_118
+4 sequences of length 223 generated in 3.1782 seconds
+Generating sequences for: shoulder_m_d_133
+4 sequences of length 237 generated in 3.372 seconds
+Generating sequences for: apex_m_d_40
+4 sequences of length 228 generated in 3.2539 seconds
+Generating sequences for: shoulder_s_d_29
+4 sequences of length 204 generated in 2.926 seconds
+Generating sequences for: apex_m_d_8
+4 sequences of length 230 generated in 3.3105 seconds
+Generating sequences for: shoulder_s_d_99
+4 sequences of length 205 generated in 2.9301 seconds
+Generating sequences for: apex_m_d_15
+4 sequences of length 237 generated in 3.3762 seconds
+Generating sequences for: shoulder_s_d_58
+4 sequences of length 201 generated in 2.8738 seconds
+Generating sequences for: shoulder_m_d_109
+4 sequences of length 230 generated in 3.2975 seconds
+Generating sequences for: shoulder_s_d_2
+4 sequences of length 208 generated in 2.969 seconds
+Generating sequences for: shoulder_s_d_105
+4 sequences of length 211 generated in 3.0017 seconds
+Generating sequences for: shoulder_m_d_131
+4 sequences of length 239 generated in 3.3995 seconds
+Generating sequences for: swap_m_d_17
+4 sequences of length 228 generated in 3.2402 seconds
+Generating sequences for: shoulder_l_d_9
+4 sequences of length 262 generated in 3.7136 seconds
+Generating sequences for: apex_l_d_27
+4 sequences of length 248 generated in 3.5152 seconds
+Generating sequences for: shoulder_l_d_20
+4 sequences of length 260 generated in 3.6848 seconds
+Generating sequences for: apex_m_d_65
+4 sequences of length 233 generated in 3.3191 seconds
+Generating sequences for: swap_m_d_3
+4 sequences of length 236 generated in 3.3588 seconds
+Generating sequences for: shoulder_s_d_12
+4 sequences of length 202 generated in 2.8917 seconds
+Generating sequences for: shoulder_l_d_12
+4 sequences of length 240 generated in 3.4107 seconds
+Generating sequences for: shoulder_l_d_25
+4 sequences of length 238 generated in 3.3862 seconds
+Generating sequences for: shoulder_l_d_61
+4 sequences of length 235 generated in 3.3428 seconds
+Generating sequences for: swap_m_d_41
+4 sequences of length 240 generated in 3.4161 seconds
+Generating sequences for: apex_l_d_21
+4 sequences of length 260 generated in 3.6794 seconds
+Generating sequences for: swap_m_d_20
+4 sequences of length 235 generated in 3.3502 seconds
+Generating sequences for: swap_m_d_24
+4 sequences of length 229 generated in 3.2462 seconds
+Generating sequences for: shoulder_s_d_83
+4 sequences of length 210 generated in 2.9853 seconds
+Generating sequences for: shoulder_l_d_29
+4 sequences of length 238 generated in 3.3709 seconds
+Generating sequences for: swap_m_d_9
+4 sequences of length 238 generated in 3.391 seconds
+Generating sequences for: shoulder_m_d_138
+4 sequences of length 224 generated in 3.1845 seconds
+Generating sequences for: shoulder_s_d_89
+4 sequences of length 217 generated in 3.0885 seconds
+Generating sequences for: shoulder_s_d_101
+4 sequences of length 204 generated in 2.9132 seconds
+Generating sequences for: apex_m_d_28
+4 sequences of length 228 generated in 3.2335 seconds
+Generating sequences for: shoulder_l_d_26
+4 sequences of length 249 generated in 3.5373 seconds
+Generating sequences for: apex_m_d_79
+4 sequences of length 236 generated in 3.3372 seconds
+Generating sequences for: shoulder_m_d_25
+4 sequences of length 232 generated in 3.2686 seconds
+Generating sequences for: shoulder_s_d_18
+4 sequences of length 202 generated in 2.866 seconds
+Generating sequences for: swap_m_d_19
+4 sequences of length 215 generated in 3.0464 seconds
+Generating sequences for: swap_m_d_39
+4 sequences of length 215 generated in 3.0422 seconds
+Generating sequences for: shoulder_l_d_81
+4 sequences of length 253 generated in 3.5791 seconds
+Generating sequences for: apex_m_d_21
+4 sequences of length 235 generated in 3.3349 seconds
+Generating sequences for: shoulder_l_d_69
+4 sequences of length 256 generated in 3.6113 seconds
+Generating sequences for: shoulder_s_d_50
+4 sequences of length 213 generated in 3.0323 seconds
+Generating sequences for: apex_l_d_23
+4 sequences of length 243 generated in 3.4353 seconds
+Generating sequences for: apex_m_d_60
+4 sequences of length 240 generated in 3.375 seconds
+Generating sequences for: apex_m_d_42
+4 sequences of length 227 generated in 3.2105 seconds
+Generating sequences for: shoulder_m_d_41
+4 sequences of length 227 generated in 3.2035 seconds
+Generating sequences for: apex_l_d_31
+4 sequences of length 244 generated in 3.4438 seconds
+Generating sequences for: apex_m_d_68
+4 sequences of length 218 generated in 3.0942 seconds
+Generating sequences for: shoulder_l_d_71
+4 sequences of length 258 generated in 3.6373 seconds
+Generating sequences for: shoulder_m_d_55
+4 sequences of length 222 generated in 3.1429 seconds
+Generating sequences for: apex_m_d_76
+4 sequences of length 217 generated in 3.0748 seconds
+Generating sequences for: shoulder_m_d_115
+4 sequences of length 222 generated in 3.1549 seconds
+Generating sequences for: shoulder_m_d_37
+4 sequences of length 239 generated in 3.3792 seconds
+Generating sequences for: shoulder_m_d_16
+4 sequences of length 235 generated in 3.3416 seconds
+Generating sequences for: shoulder_l_d_76
+4 sequences of length 240 generated in 3.4098 seconds
+Generating sequences for: apex_m_d_50
+4 sequences of length 234 generated in 3.3217 seconds
+Generating sequences for: shoulder_s_d_13
+4 sequences of length 206 generated in 2.9583 seconds
+Generating sequences for: shoulder_l_d_0
+4 sequences of length 241 generated in 3.4234 seconds
+Generating sequences for: shoulder_m_d_96
+4 sequences of length 236 generated in 3.3627 seconds
+Generating sequences for: shoulder_s_d_4
+4 sequences of length 200 generated in 2.8564 seconds
+Generating sequences for: shoulder_m_d_24
+4 sequences of length 234 generated in 3.3197 seconds
+Generating sequences for: shoulder_m_d_120
+4 sequences of length 226 generated in 3.2137 seconds
+Generating sequences for: shoulder_s_d_94
+4 sequences of length 214 generated in 3.0553 seconds
+Generating sequences for: shoulder_m_d_110
+4 sequences of length 217 generated in 3.0845 seconds
+Generating sequences for: shoulder_s_d_91
+4 sequences of length 218 generated in 3.0921 seconds
+Generating sequences for: shoulder_s_d_51
+4 sequences of length 207 generated in 2.9432 seconds
+Generating sequences for: apex_m_d_74
+4 sequences of length 237 generated in 3.3657 seconds
+Generating sequences for: shoulder_l_d_44
+4 sequences of length 258 generated in 3.6495 seconds
+Generating sequences for: shoulder_l_d_64
+4 sequences of length 245 generated in 3.4739 seconds
+Generating sequences for: apex_m_d_64
+4 sequences of length 217 generated in 3.084 seconds
+Generating sequences for: swap_m_d_33
+4 sequences of length 220 generated in 3.1576 seconds
+Generating sequences for: shoulder_l_d_32
+4 sequences of length 247 generated in 3.5058 seconds
+Generating sequences for: swap_m_d_51
+4 sequences of length 231 generated in 3.2916 seconds
+Generating sequences for: apex_m_d_33
+4 sequences of length 219 generated in 3.1125 seconds
+Generating sequences for: apex_m_d_1
+4 sequences of length 238 generated in 3.3881 seconds
+Generating sequences for: shoulder_m_d_40
+4 sequences of length 223 generated in 3.1813 seconds
+Generating sequences for: shoulder_l_d_30
+4 sequences of length 261 generated in 3.6961 seconds
+Generating sequences for: shoulder_s_d_71
+4 sequences of length 216 generated in 3.0592 seconds
+Generating sequences for: shoulder_l_d_31
+4 sequences of length 255 generated in 3.6038 seconds
+Generating sequences for: apex_m_d_3
+4 sequences of length 220 generated in 3.1141 seconds
+Generating sequences for: shoulder_m_d_52
+4 sequences of length 224 generated in 3.1711 seconds
+Generating sequences for: shoulder_l_d_57
+4 sequences of length 254 generated in 3.5748 seconds
+Generating sequences for: shoulder_s_d_106
+4 sequences of length 216 generated in 3.0626 seconds
+Generating sequences for: shoulder_m_d_103
+4 sequences of length 228 generated in 3.2236 seconds
+Generating sequences for: swap_m_d_55
+4 sequences of length 239 generated in 3.37 seconds
+Generating sequences for: apex_m_d_44
+4 sequences of length 234 generated in 3.2947 seconds
+Generating sequences for: shoulder_l_d_82
+4 sequences of length 242 generated in 3.4318 seconds
+Generating sequences for: shoulder_m_d_76
+4 sequences of length 222 generated in 3.1493 seconds
+Generating sequences for: shoulder_l_d_41
+4 sequences of length 255 generated in 3.599 seconds
+Generating sequences for: shoulder_m_d_135
+4 sequences of length 232 generated in 3.2734 seconds
+Generating sequences for: shoulder_l_d_60
+4 sequences of length 259 generated in 3.6341 seconds
+Generating sequences for: shoulder_l_d_80
+4 sequences of length 254 generated in 3.5704 seconds
+Generating sequences for: shoulder_m_d_64
+4 sequences of length 234 generated in 3.2955 seconds
+Generating sequences for: shoulder_s_d_85
+4 sequences of length 203 generated in 2.8629 seconds
+Generating sequences for: apex_m_d_26
+4 sequences of length 235 generated in 3.2846 seconds
+Generating sequences for: shoulder_s_d_31
+4 sequences of length 205 generated in 2.8799 seconds
+Generating sequences for: shoulder_s_d_93
+4 sequences of length 208 generated in 2.917 seconds
+Generating sequences for: apex_m_d_48
+4 sequences of length 239 generated in 3.3621 seconds
+Generating sequences for: shoulder_m_d_71
+4 sequences of length 224 generated in 3.1724 seconds
+Generating sequences for: shoulder_m_d_75
+4 sequences of length 229 generated in 3.2166 seconds
+Generating sequences for: shoulder_l_d_42
+4 sequences of length 248 generated in 3.4707 seconds
+Generating sequences for: shoulder_m_d_63
+4 sequences of length 225 generated in 3.1563 seconds
+Generating sequences for: shoulder_l_d_43
+4 sequences of length 261 generated in 3.6754 seconds
+Generating sequences for: apex_m_d_58
+4 sequences of length 240 generated in 3.3661 seconds
+Generating sequences for: shoulder_s_d_66
+4 sequences of length 207 generated in 2.9126 seconds
+Generating sequences for: apex_m_d_23
+4 sequences of length 239 generated in 3.3587 seconds
+Generating sequences for: shoulder_m_d_137
+4 sequences of length 228 generated in 3.2049 seconds
+Generating sequences for: swap_m_d_44
+4 sequences of length 232 generated in 3.2808 seconds
+Generating sequences for: shoulder_l_d_8
+4 sequences of length 252 generated in 3.5226 seconds
+Generating sequences for: shoulder_m_d_46
+4 sequences of length 221 generated in 3.099 seconds
+Generating sequences for: shoulder_m_d_122
+4 sequences of length 236 generated in 3.3233 seconds
+Generating sequences for: shoulder_l_d_77
+4 sequences of length 240 generated in 3.3913 seconds
+Generating sequences for: swap_m_d_1
+4 sequences of length 228 generated in 3.2399 seconds
+Generating sequences for: shoulder_s_d_45
+4 sequences of length 215 generated in 3.0309 seconds
+Generating sequences for: shoulder_m_d_8
+4 sequences of length 226 generated in 3.1832 seconds
+Generating sequences for: shoulder_s_d_42
+4 sequences of length 201 generated in 2.83 seconds
+Generating sequences for: apex_m_d_14
+4 sequences of length 216 generated in 3.0028 seconds
+Generating sequences for: shoulder_l_d_17
+4 sequences of length 243 generated in 3.3775 seconds
+Generating sequences for: swap_m_d_10
+4 sequences of length 237 generated in 3.3242 seconds
+Generating sequences for: shoulder_m_d_94
+4 sequences of length 216 generated in 3.0513 seconds
+Generating sequences for: shoulder_m_d_18
+4 sequences of length 218 generated in 3.0742 seconds
+Generating sequences for: shoulder_m_d_50
+4 sequences of length 220 generated in 3.0816 seconds
+Generating sequences for: shoulder_l_d_21
+4 sequences of length 241 generated in 3.3684 seconds
+Generating sequences for: shoulder_l_d_6
+4 sequences of length 251 generated in 3.5001 seconds
+Generating sequences for: shoulder_m_d_12
+4 sequences of length 237 generated in 3.3348 seconds
+Generating sequences for: apex_m_d_10
+4 sequences of length 225 generated in 3.1975 seconds
+Generating sequences for: shoulder_m_d_39
+4 sequences of length 228 generated in 3.1934 seconds
+Generating sequences for: apex_m_d_20
+4 sequences of length 237 generated in 3.3156 seconds
+Generating sequences for: apex_l_d_0
+4 sequences of length 258 generated in 3.5981 seconds
+Generating sequences for: shoulder_s_d_24
+4 sequences of length 210 generated in 2.9562 seconds
+Generating sequences for: apex_m_d_6
+4 sequences of length 216 generated in 3.07 seconds
+Generating sequences for: apex_l_d_28
+4 sequences of length 240 generated in 3.6219 seconds
+Generating sequences for: shoulder_l_d_18
+4 sequences of length 242 generated in 3.4396 seconds
+Generating sequences for: swap_m_d_58
+4 sequences of length 221 generated in 3.1256 seconds
+Generating sequences for: shoulder_l_d_73
+4 sequences of length 256 generated in 3.5825 seconds
+Generating sequences for: shoulder_l_d_37
+4 sequences of length 239 generated in 3.368 seconds
+Generating sequences for: shoulder_l_d_68
+4 sequences of length 259 generated in 3.6253 seconds
+Generating sequences for: swap_m_d_32
+4 sequences of length 220 generated in 3.1041 seconds
+Generating sequences for: apex_l_d_26
+4 sequences of length 259 generated in 3.6114 seconds
+Generating sequences for: shoulder_l_d_53
+4 sequences of length 249 generated in 3.5257 seconds
+Generating sequences for: apex_l_d_6
+4 sequences of length 257 generated in 3.5624 seconds
+Generating sequences for: shoulder_m_d_108
+4 sequences of length 224 generated in 3.1189 seconds
+Generating sequences for: shoulder_s_d_100
+4 sequences of length 217 generated in 3.036 seconds
+Generating sequences for: shoulder_s_d_40
+4 sequences of length 218 generated in 3.0759 seconds
+Generating sequences for: shoulder_m_d_15
+4 sequences of length 237 generated in 3.3188 seconds
+Generating sequences for: shoulder_s_d_80
+4 sequences of length 209 generated in 2.9244 seconds
+Generating sequences for: shoulder_l_d_22
+4 sequences of length 253 generated in 3.5372 seconds
+Generating sequences for: shoulder_s_d_70
+4 sequences of length 202 generated in 2.8611 seconds
+Generating sequences for: shoulder_m_d_49
+4 sequences of length 231 generated in 3.2491 seconds
+Generating sequences for: swap_m_d_30
+4 sequences of length 240 generated in 3.3756 seconds
+Generating sequences for: shoulder_s_d_63
+4 sequences of length 205 generated in 2.889 seconds
+Generating sequences for: apex_m_d_17
+4 sequences of length 240 generated in 3.3804 seconds
+Generating sequences for: apex_m_d_11
+4 sequences of length 224 generated in 3.1461 seconds
+Generating sequences for: shoulder_m_d_84
+4 sequences of length 215 generated in 3.0324 seconds
+Generating sequences for: shoulder_m_d_112
+4 sequences of length 232 generated in 3.2584 seconds
+Generating sequences for: shoulder_s_d_81
+4 sequences of length 214 generated in 3.0124 seconds
+Generating sequences for: shoulder_s_d_28
+4 sequences of length 218 generated in 3.0633 seconds
+Generating sequences for: shoulder_m_d_45
+4 sequences of length 229 generated in 3.2066 seconds
+Generating sequences for: apex_m_d_83
+4 sequences of length 222 generated in 3.1249 seconds
+Generating sequences for: apex_l_d_32
+4 sequences of length 241 generated in 3.3839 seconds
+Generating sequences for: apex_l_d_12
+4 sequences of length 235 generated in 3.3113 seconds
+Generating sequences for: shoulder_m_d_97
+4 sequences of length 232 generated in 3.2549 seconds
+Generating sequences for: apex_l_d_30
+4 sequences of length 249 generated in 3.4462 seconds
+Generating sequences for: shoulder_s_d_33
+4 sequences of length 211 generated in 2.9262 seconds
+Generating sequences for: shoulder_l_d_54
+4 sequences of length 257 generated in 3.6065 seconds
+Generating sequences for: shoulder_s_d_88
+4 sequences of length 200 generated in 2.8255 seconds
+Generating sequences for: shoulder_l_d_83
+4 sequences of length 246 generated in 3.4723 seconds
+Generating sequences for: shoulder_m_d_29
+4 sequences of length 234 generated in 3.2914 seconds
+Generating sequences for: shoulder_l_d_40
+4 sequences of length 261 generated in 3.6724 seconds
+Generating sequences for: apex_l_d_19
+4 sequences of length 253 generated in 3.5676 seconds
+Generating sequences for: apex_m_d_57
+4 sequences of length 240 generated in 3.3849 seconds
+Generating sequences for: shoulder_m_d_3
+4 sequences of length 221 generated in 3.1177 seconds
+Generating sequences for: shoulder_m_d_26
+4 sequences of length 221 generated in 3.1267 seconds
+Generating sequences for: apex_m_d_56
+4 sequences of length 221 generated in 3.1632 seconds
+Generating sequences for: shoulder_m_d_78
+4 sequences of length 226 generated in 3.1729 seconds
+Generating sequences for: shoulder_m_d_86
+4 sequences of length 235 generated in 3.348 seconds
+Generating sequences for: swap_m_d_63
+4 sequences of length 229 generated in 3.3206 seconds
+Generating sequences for: swap_m_d_56
+4 sequences of length 228 generated in 3.3049 seconds
+Generating sequences for: apex_m_d_62
+4 sequences of length 225 generated in 3.333 seconds
+Generating sequences for: shoulder_l_d_66
+4 sequences of length 239 generated in 3.4224 seconds
+Generating sequences for: swap_m_d_53
+4 sequences of length 233 generated in 3.2962 seconds
+Generating sequences for: apex_m_d_0
+4 sequences of length 221 generated in 3.1541 seconds
+Generating sequences for: swap_m_d_64
+4 sequences of length 224 generated in 3.167 seconds
+Generating sequences for: shoulder_m_d_38
+4 sequences of length 226 generated in 3.2362 seconds
+Generating sequences for: swap_m_d_21
+4 sequences of length 227 generated in 3.2278 seconds
+Generating sequences for: apex_m_d_30
+4 sequences of length 230 generated in 3.3191 seconds
+Generating sequences for: shoulder_l_d_10
+4 sequences of length 252 generated in 3.5792 seconds
+Generating sequences for: swap_m_d_27
+4 sequences of length 233 generated in 3.298 seconds
+Generating sequences for: shoulder_l_d_1
+4 sequences of length 253 generated in 3.5579 seconds
+Generating sequences for: apex_l_d_2
+4 sequences of length 252 generated in 3.5338 seconds
+Generating sequences for: shoulder_s_d_84
+4 sequences of length 209 generated in 2.933 seconds
+Generating sequences for: shoulder_s_d_104
+4 sequences of length 215 generated in 3.0306 seconds
+Generating sequences for: shoulder_s_d_6
+4 sequences of length 207 generated in 2.9372 seconds
+Generating sequences for: apex_m_d_52
+4 sequences of length 232 generated in 3.3099 seconds
+Generating sequences for: apex_l_d_13
+4 sequences of length 246 generated in 3.4511 seconds
+Generating sequences for: apex_l_d_20
+4 sequences of length 262 generated in 3.6976 seconds
+Generating sequences for: shoulder_l_d_47
+4 sequences of length 250 generated in 3.5441 seconds
+Generating sequences for: apex_m_d_61
+4 sequences of length 223 generated in 3.1622 seconds
+Generating sequences for: apex_m_d_39
+4 sequences of length 234 generated in 3.313 seconds
+Generating sequences for: apex_l_d_4
+4 sequences of length 265 generated in 3.7261 seconds
+Generating sequences for: shoulder_l_d_87
+4 sequences of length 258 generated in 3.614 seconds
+Generating sequences for: shoulder_m_d_70
+4 sequences of length 232 generated in 3.267 seconds
+Generating sequences for: shoulder_m_d_2
+4 sequences of length 226 generated in 3.1631 seconds
+Generating sequences for: shoulder_l_d_46
+4 sequences of length 238 generated in 3.304 seconds
+Generating sequences for: shoulder_m_d_74
+4 sequences of length 217 generated in 3.0065 seconds
+Generating sequences for: swap_m_d_18
+4 sequences of length 224 generated in 3.1385 seconds
+Generating sequences for: swap_m_d_37
+4 sequences of length 228 generated in 3.2358 seconds
+Generating sequences for: swap_m_d_26
+4 sequences of length 229 generated in 3.2371 seconds
+Generating sequences for: shoulder_l_d_88
+4 sequences of length 245 generated in 3.429 seconds
+Generating sequences for: swap_m_d_57
+4 sequences of length 236 generated in 3.3169 seconds
+Generating sequences for: shoulder_s_d_86
+4 sequences of length 200 generated in 2.827 seconds
+Generating sequences for: shoulder_s_d_62
+4 sequences of length 219 generated in 3.0867 seconds
+Generating sequences for: shoulder_s_d_20
+4 sequences of length 209 generated in 2.9359 seconds
+Generating sequences for: shoulder_m_d_60
+4 sequences of length 223 generated in 3.1267 seconds
+Generating sequences for: shoulder_l_d_35
+4 sequences of length 264 generated in 3.6908 seconds
+Generating sequences for: shoulder_s_d_102
+4 sequences of length 208 generated in 2.9246 seconds
+Generating sequences for: apex_m_d_81
+4 sequences of length 222 generated in 3.132 seconds
+Generating sequences for: shoulder_l_d_65
+4 sequences of length 265 generated in 3.7159 seconds
+Generating sequences for: swap_m_d_62
+4 sequences of length 234 generated in 3.263 seconds
+Generating sequences for: shoulder_s_d_69
+4 sequences of length 200 generated in 2.8053 seconds
+Generating sequences for: shoulder_m_d_66
+4 sequences of length 215 generated in 3.0206 seconds
+Generating sequences for: shoulder_m_d_114
+4 sequences of length 229 generated in 3.1976 seconds
+Generating sequences for: shoulder_s_d_16
+4 sequences of length 220 generated in 3.1287 seconds
+Generating sequences for: shoulder_m_d_92
+4 sequences of length 229 generated in 3.2513 seconds
+Generating sequences for: shoulder_l_d_19
+4 sequences of length 265 generated in 3.7095 seconds
+Generating sequences for: shoulder_m_d_31
+4 sequences of length 228 generated in 3.2022 seconds
+Generating sequences for: shoulder_s_d_75
+4 sequences of length 204 generated in 2.8668 seconds
+Generating sequences for: apex_l_d_35
+4 sequences of length 263 generated in 3.6834 seconds
+Generating sequences for: shoulder_l_d_39
+4 sequences of length 264 generated in 3.6897 seconds
+Generating sequences for: shoulder_m_d_19
+4 sequences of length 215 generated in 3.0254 seconds
+Generating sequences for: apex_m_d_25
+4 sequences of length 240 generated in 3.3528 seconds
+Generating sequences for: apex_l_d_15
+4 sequences of length 249 generated in 3.4862 seconds
+Generating sequences for: swap_m_d_23
+4 sequences of length 221 generated in 3.1026 seconds
+Generating sequences for: apex_l_d_29
+4 sequences of length 246 generated in 3.4317 seconds
+Generating sequences for: shoulder_s_d_27
+4 sequences of length 204 generated in 2.8734 seconds
+Generating sequences for: shoulder_l_d_2
+4 sequences of length 246 generated in 3.4722 seconds
+Generating sequences for: shoulder_s_d_82
+4 sequences of length 205 generated in 3.2756 seconds
+Generating sequences for: shoulder_s_d_78
+4 sequences of length 207 generated in 2.9219 seconds
+Generating sequences for: shoulder_m_d_27
+4 sequences of length 240 generated in 3.356 seconds
+Generating sequences for: shoulder_m_d_121
+4 sequences of length 218 generated in 3.0564 seconds
+Generating sequences for: shoulder_m_d_119
+4 sequences of length 233 generated in 3.28 seconds
+Generating sequences for: apex_l_d_3
+4 sequences of length 263 generated in 3.7116 seconds
+Generating sequences for: swap_m_d_11
+4 sequences of length 233 generated in 3.2994 seconds
+Generating sequences for: shoulder_m_d_67
+4 sequences of length 222 generated in 3.1132 seconds
+Generating sequences for: swap_m_d_59
+4 sequences of length 231 generated in 3.2613 seconds
+Generating sequences for: apex_l_d_5
+4 sequences of length 257 generated in 3.6009 seconds
+Generating sequences for: shoulder_m_d_99
+4 sequences of length 227 generated in 3.179 seconds
+Generating sequences for: shoulder_m_d_59
+4 sequences of length 234 generated in 3.2736 seconds
+Generating sequences for: shoulder_m_d_61
+4 sequences of length 220 generated in 3.104 seconds
+Generating sequences for: shoulder_m_d_0
+4 sequences of length 236 generated in 3.3643 seconds
+Generating sequences for: shoulder_m_d_101
+4 sequences of length 226 generated in 3.1807 seconds
+Generating sequences for: apex_m_d_38
+4 sequences of length 219 generated in 3.0644 seconds
+Generating sequences for: swap_m_d_5
+4 sequences of length 220 generated in 3.0886 seconds
+Generating sequences for: shoulder_m_d_123
+4 sequences of length 223 generated in 3.1281 seconds
+Generating sequences for: apex_m_d_80
+4 sequences of length 238 generated in 3.3238 seconds
+Generating sequences for: apex_l_d_24
+4 sequences of length 254 generated in 3.5311 seconds
+Generating sequences for: shoulder_s_d_48
+4 sequences of length 208 generated in 2.9096 seconds
+Generating sequences for: shoulder_m_d_116
+4 sequences of length 236 generated in 3.3016 seconds
+Generating sequences for: shoulder_s_d_54
+4 sequences of length 214 generated in 3.0067 seconds
+Generating sequences for: apex_l_d_36
+4 sequences of length 239 generated in 3.3431 seconds
+Generating sequences for: apex_m_d_36
+4 sequences of length 234 generated in 3.2629 seconds
+Generating sequences for: shoulder_s_d_53
+4 sequences of length 208 generated in 2.9152 seconds
+Generating sequences for: apex_m_d_63
+4 sequences of length 215 generated in 3.0105 seconds
+Generating sequences for: swap_m_d_50
+4 sequences of length 216 generated in 3.0229 seconds
+Generating sequences for: shoulder_m_d_82
+4 sequences of length 221 generated in 3.0943 seconds
+Generating sequences for: shoulder_m_d_107
+4 sequences of length 220 generated in 3.0756 seconds
+Generating sequences for: shoulder_m_d_89
+4 sequences of length 238 generated in 3.3315 seconds
+Generating sequences for: shoulder_m_d_132
+4 sequences of length 226 generated in 3.172 seconds
+Generating sequences for: swap_m_d_36
+4 sequences of length 230 generated in 3.2126 seconds
+Generating sequences for: shoulder_l_d_52
+4 sequences of length 249 generated in 3.4791 seconds
+Generating sequences for: shoulder_m_d_79
+4 sequences of length 234 generated in 3.2757 seconds
+Generating sequences for: swap_m_d_45
+4 sequences of length 239 generated in 3.3408 seconds
+Generating sequences for: apex_m_d_2
+4 sequences of length 222 generated in 3.123 seconds
+Generating sequences for: shoulder_s_d_108
+4 sequences of length 220 generated in 3.0832 seconds
+Generating sequences for: apex_m_d_43
+4 sequences of length 215 generated in 3.0311 seconds
+Generating sequences for: swap_m_d_49
+4 sequences of length 222 generated in 3.1139 seconds
+Generating sequences for: shoulder_s_d_11
+4 sequences of length 213 generated in 3.0063 seconds
+Generating sequences for: shoulder_m_d_9
+4 sequences of length 233 generated in 3.2603 seconds
+Generating sequences for: shoulder_s_d_65
+4 sequences of length 210 generated in 2.9432 seconds
+Generating sequences for: shoulder_s_d_103
+4 sequences of length 201 generated in 2.8346 seconds
+Generating sequences for: swap_m_d_60
+4 sequences of length 220 generated in 3.0773 seconds
+Generating sequences for: shoulder_s_d_56
+4 sequences of length 219 generated in 3.0587 seconds
+Generating sequences for: shoulder_m_d_13
+4 sequences of length 222 generated in 3.1226 seconds
+Generating sequences for: apex_m_d_4
+4 sequences of length 240 generated in 3.3465 seconds
+Generating sequences for: shoulder_m_d_105
+4 sequences of length 220 generated in 3.0785 seconds
+Generating sequences for: shoulder_m_d_21
+4 sequences of length 219 generated in 3.0643 seconds
+Generating sequences for: shoulder_m_d_113
+4 sequences of length 226 generated in 3.1634 seconds
+Generating sequences for: shoulder_l_d_51
+4 sequences of length 246 generated in 3.4483 seconds
+Generating sequences for: apex_m_d_41
+4 sequences of length 230 generated in 3.222 seconds
+Generating sequences for: shoulder_m_d_28
+4 sequences of length 240 generated in 3.3874 seconds
+Generating sequences for: apex_m_d_54
+4 sequences of length 218 generated in 3.0558 seconds
+Generating sequences for: shoulder_l_d_72
+4 sequences of length 248 generated in 3.4704 seconds
+Generating sequences for: apex_m_d_18
+4 sequences of length 217 generated in 3.0404 seconds
+Generating sequences for: shoulder_m_d_65
+4 sequences of length 226 generated in 3.1686 seconds
+Generating sequences for: shoulder_l_d_58
+4 sequences of length 265 generated in 3.6973 seconds
+Generating sequences for: apex_l_d_34
+4 sequences of length 246 generated in 3.4277 seconds
+Generating sequences for: apex_l_d_41
+4 sequences of length 264 generated in 3.6908 seconds
+Generating sequences for: shoulder_m_d_85
+4 sequences of length 224 generated in 3.1379 seconds
+Generating sequences for: shoulder_s_d_76
+4 sequences of length 214 generated in 3.0027 seconds
+Generating sequences for: shoulder_m_d_117
+4 sequences of length 223 generated in 3.1256 seconds
+Generating sequences for: shoulder_s_d_1
+4 sequences of length 210 generated in 2.9383 seconds
+Generating sequences for: shoulder_l_d_84
+4 sequences of length 264 generated in 3.6836 seconds
+Generating sequences for: apex_m_d_78
+4 sequences of length 240 generated in 3.3499 seconds
+Generating sequences for: swap_m_d_14
+4 sequences of length 221 generated in 3.0938 seconds
+Generating sequences for: shoulder_m_d_91
+4 sequences of length 220 generated in 3.0819 seconds
+Generating sequences for: shoulder_m_d_53
+4 sequences of length 219 generated in 3.0631 seconds
+Generating sequences for: shoulder_s_d_46
+4 sequences of length 213 generated in 2.9946 seconds
+Generating sequences for: shoulder_s_d_47
+4 sequences of length 214 generated in 2.9999 seconds
+Generating sequences for: shoulder_l_d_4
+4 sequences of length 243 generated in 3.3852 seconds
+Generating sequences for: shoulder_m_d_127
+4 sequences of length 227 generated in 3.1837 seconds
+Generating sequences for: shoulder_m_d_32
+4 sequences of length 233 generated in 3.2657 seconds
+Generating sequences for: shoulder_s_d_22
+4 sequences of length 211 generated in 2.9792 seconds
+Generating sequences for: shoulder_s_d_7
+4 sequences of length 213 generated in 2.9956 seconds
+Generating sequences for: shoulder_s_d_21
+4 sequences of length 204 generated in 2.8616 seconds
+Generating sequences for: shoulder_m_d_47
+4 sequences of length 228 generated in 3.187 seconds
+Generating sequences for: swap_m_d_28
+4 sequences of length 227 generated in 3.1789 seconds
+Generating sequences for: apex_l_d_44
+4 sequences of length 252 generated in 3.5054 seconds
+Generating sequences for: swap_m_d_13
+4 sequences of length 226 generated in 3.1568 seconds
+Generating sequences for: shoulder_s_d_74
+4 sequences of length 216 generated in 3.018 seconds
+Generating sequences for: shoulder_m_d_102
+4 sequences of length 226 generated in 3.1584 seconds
+Generating sequences for: shoulder_m_d_136
+4 sequences of length 219 generated in 3.0661 seconds
+Generating sequences for: shoulder_m_d_125
+4 sequences of length 218 generated in 3.0487 seconds
+Generating sequences for: shoulder_s_d_98
+4 sequences of length 201 generated in 2.819 seconds
+Generating sequences for: shoulder_l_d_85
+4 sequences of length 263 generated in 4.089 seconds
+Generating sequences for: swap_m_d_47
+4 sequences of length 240 generated in 3.3776 seconds
+Generating sequences for: shoulder_l_d_27
+4 sequences of length 235 generated in 3.2952 seconds
+Generating sequences for: shoulder_m_d_81
+4 sequences of length 216 generated in 3.1006 seconds
+Generating sequences for: apex_l_d_33
+4 sequences of length 256 generated in 3.5988 seconds
+Generating sequences for: shoulder_l_d_62
+4 sequences of length 260 generated in 3.6441 seconds
+Generating sequences for: shoulder_l_d_86
+4 sequences of length 260 generated in 3.6357 seconds
+Generating sequences for: shoulder_s_d_37
+4 sequences of length 214 generated in 3.0029 seconds
+Generating sequences for: shoulder_l_d_70
+4 sequences of length 259 generated in 3.6091 seconds
+Generating sequences for: shoulder_s_d_14
+4 sequences of length 208 generated in 2.9266 seconds
+Generating sequences for: shoulder_m_d_90
+4 sequences of length 233 generated in 3.289 seconds
+Generating sequences for: apex_l_d_39
+4 sequences of length 246 generated in 3.4372 seconds
+Generating sequences for: swap_m_d_7
+4 sequences of length 238 generated in 3.329 seconds
+Generating sequences for: shoulder_s_d_95
+4 sequences of length 203 generated in 2.8441 seconds
+Generating sequences for: apex_m_d_66
+4 sequences of length 234 generated in 3.2769 seconds
+Generating sequences for: swap_m_d_40
+4 sequences of length 227 generated in 3.1802 seconds
+Generating sequences for: apex_l_d_40
+4 sequences of length 239 generated in 3.3353 seconds
+Generating sequences for: apex_m_d_88
+4 sequences of length 216 generated in 3.0455 seconds
+Generating sequences for: shoulder_l_d_49
+4 sequences of length 237 generated in 3.3791 seconds
+Generating sequences for: shoulder_m_d_7
+4 sequences of length 219 generated in 3.076 seconds
+Generating sequences for: apex_l_d_16
+4 sequences of length 260 generated in 3.6417 seconds
+Generating sequences for: apex_m_d_86
+4 sequences of length 231 generated in 3.2407 seconds
+Generating sequences for: shoulder_s_d_36
+4 sequences of length 217 generated in 3.0704 seconds
+Generating sequences for: shoulder_s_d_39
+4 sequences of length 212 generated in 3.0346 seconds
+Generating sequences for: shoulder_s_d_26
+4 sequences of length 218 generated in 3.0756 seconds
+Generating sequences for: apex_m_d_71
+4 sequences of length 218 generated in 3.0583 seconds
+Generating sequences for: shoulder_s_d_35
+4 sequences of length 204 generated in 2.8592 seconds
+Generating sequences for: swap_m_d_12
+4 sequences of length 220 generated in 3.0904 seconds
+Generating sequences for: shoulder_s_d_73
+4 sequences of length 205 generated in 2.8779 seconds
+Generating sequences for: shoulder_s_d_52
+4 sequences of length 215 generated in 3.0201 seconds
+Generating sequences for: apex_m_d_37
+4 sequences of length 226 generated in 3.1627 seconds
+Generating sequences for: swap_m_d_34
+4 sequences of length 235 generated in 3.2854 seconds
+Generating sequences for: shoulder_s_d_61
+4 sequences of length 203 generated in 2.8623 seconds
+Generating sequences for: shoulder_s_d_72
+4 sequences of length 213 generated in 2.9916 seconds
+Generating sequences for: swap_m_d_48
+4 sequences of length 216 generated in 3.0512 seconds
+Generating sequences for: shoulder_s_d_79
+4 sequences of length 212 generated in 2.9843 seconds
+Generating sequences for: shoulder_l_d_75
+4 sequences of length 239 generated in 3.3427 seconds
+Generating sequences for: shoulder_s_d_32
+4 sequences of length 206 generated in 2.8924 seconds
+Generating sequences for: swap_m_d_38
+4 sequences of length 227 generated in 3.1818 seconds
+Generating sequences for: swap_m_d_2
+4 sequences of length 224 generated in 3.1578 seconds
+Generating sequences for: apex_l_d_17
+4 sequences of length 236 generated in 3.3087 seconds
+Generating sequences for: shoulder_l_d_14
+4 sequences of length 256 generated in 3.567 seconds
+Generating sequences for: shoulder_m_d_44
+4 sequences of length 234 generated in 3.2764 seconds
+Generating sequences for: shoulder_s_d_55
+4 sequences of length 212 generated in 2.982 seconds
+Generating sequences for: apex_m_d_29
+4 sequences of length 221 generated in 3.1158 seconds
+Generating sequences for: shoulder_l_d_11
+4 sequences of length 254 generated in 3.5491 seconds
+Generating sequences for: apex_l_d_43
+4 sequences of length 247 generated in 3.4518 seconds
+Generating sequences for: swap_m_d_31
+4 sequences of length 215 generated in 3.0408 seconds
+Generating sequences for: shoulder_l_d_13
+4 sequences of length 255 generated in 3.562 seconds
+Generating sequences for: apex_m_d_72
+4 sequences of length 217 generated in 3.0514 seconds
+Generating sequences for: swap_m_d_4
+4 sequences of length 234 generated in 3.267 seconds
+Generating sequences for: shoulder_m_d_6
+4 sequences of length 224 generated in 3.1296 seconds
+Generating sequences for: shoulder_m_d_4
+4 sequences of length 234 generated in 3.2966 seconds
+Generating sequences for: shoulder_m_d_80
+4 sequences of length 235 generated in 3.3398 seconds
+Generating sequences for: shoulder_l_d_7
+4 sequences of length 243 generated in 3.415 seconds
+Generating sequences for: swap_m_d_35
+4 sequences of length 215 generated in 3.023 seconds
+Generating sequences for: apex_l_d_8
+4 sequences of length 252 generated in 3.5131 seconds
+Generating sequences for: apex_l_d_42
+4 sequences of length 250 generated in 3.4906 seconds
+Generating sequences for: shoulder_m_d_126
+4 sequences of length 231 generated in 3.3088 seconds
+Generating sequences for: shoulder_l_d_50
+4 sequences of length 262 generated in 3.6661 seconds
+Generating sequences for: shoulder_m_d_129
+4 sequences of length 225 generated in 3.1993 seconds
+Generating sequences for: shoulder_m_d_17
+4 sequences of length 227 generated in 3.2237 seconds
+Generating sequences for: apex_l_d_38
+4 sequences of length 256 generated in 3.5693 seconds
+Generating sequences for: shoulder_l_d_48
+4 sequences of length 235 generated in 3.2794 seconds
+Generating sequences for: shoulder_l_d_55
+4 sequences of length 260 generated in 3.6371 seconds
+Generating sequences for: shoulder_l_d_33
+4 sequences of length 259 generated in 3.6297 seconds
+Generating sequences for: shoulder_m_d_139
+4 sequences of length 235 generated in 3.2861 seconds
+Generating sequences for: shoulder_m_d_106
+4 sequences of length 218 generated in 3.0483 seconds
+Generating sequences for: shoulder_l_d_89
+4 sequences of length 249 generated in 3.4739 seconds
+Generating sequences for: shoulder_m_d_62
+4 sequences of length 223 generated in 3.1249 seconds
+Generating sequences for: apex_m_d_46
+4 sequences of length 221 generated in 3.0988 seconds
+Generating sequences for: shoulder_s_d_60
+4 sequences of length 202 generated in 2.8275 seconds
+Generating sequences for: shoulder_s_d_25
+4 sequences of length 218 generated in 3.0489 seconds
+Generating sequences for: apex_m_d_35
+4 sequences of length 228 generated in 3.1807 seconds
+Generating sequences for: swap_m_d_22
+4 sequences of length 224 generated in 3.1345 seconds
+Generating sequences for: shoulder_s_d_5
+4 sequences of length 204 generated in 2.8582 seconds
+Generating sequences for: shoulder_m_d_5
+4 sequences of length 230 generated in 3.209 seconds
+Generating sequences for: shoulder_m_d_57
+4 sequences of length 237 generated in 3.3041 seconds
+Generating sequences for: apex_l_d_37
+4 sequences of length 264 generated in 3.6671 seconds
+Generating sequences for: swap_m_d_42
+4 sequences of length 238 generated in 3.3465 seconds
+Generating sequences for: shoulder_m_d_69
+4 sequences of length 232 generated in 3.2564 seconds
+Generating sequences for: apex_m_d_22
+4 sequences of length 240 generated in 3.3788 seconds
+Generating sequences for: shoulder_m_d_87
+4 sequences of length 238 generated in 3.3273 seconds
+Generating sequences for: swap_m_d_52
+4 sequences of length 233 generated in 3.2818 seconds
+Generating sequences for: shoulder_m_d_51
+4 sequences of length 230 generated in 3.2277 seconds
+Generating sequences for: shoulder_l_d_34
+4 sequences of length 246 generated in 3.4308 seconds
+Generating sequences for: shoulder_m_d_98
+4 sequences of length 225 generated in 3.1624 seconds
+Generating sequences for: shoulder_s_d_87
+4 sequences of length 202 generated in 2.8532 seconds
+Generating sequences for: shoulder_m_d_33
+4 sequences of length 217 generated in 3.0512 seconds
+Generating sequences for: shoulder_m_d_93
+4 sequences of length 217 generated in 3.0562 seconds
+Generating sequences for: shoulder_s_d_97
+4 sequences of length 220 generated in 3.0838 seconds
+Generating sequences for: apex_l_d_25
+4 sequences of length 259 generated in 3.6106 seconds
+Generating sequences for: apex_m_d_82
+4 sequences of length 219 generated in 3.0897 seconds
+Generating sequences for: apex_m_d_51
+4 sequences of length 224 generated in 3.1591 seconds
+Generating sequences for: apex_m_d_16
+4 sequences of length 219 generated in 3.0871 seconds
+Generating sequences for: apex_m_d_73
+4 sequences of length 239 generated in 3.3679 seconds
+Generating sequences for: apex_m_d_69
+4 sequences of length 217 generated in 3.0605 seconds
+Generating sequences for: apex_l_d_7
+4 sequences of length 260 generated in 3.6681 seconds
+Generating sequences for: shoulder_s_d_43
+4 sequences of length 201 generated in 2.8609 seconds
+Generating sequences for: shoulder_m_d_83
+4 sequences of length 220 generated in 3.1215 seconds
+Generating sequences for: apex_m_d_49
+4 sequences of length 230 generated in 3.2177 seconds
+Generating sequences for: shoulder_m_d_77
+4 sequences of length 237 generated in 3.3077 seconds
+Generating sequences for: shoulder_m_d_128
+4 sequences of length 219 generated in 3.0832 seconds
+Generating sequences for: swap_m_d_16
+4 sequences of length 219 generated in 3.0842 seconds
+Generating sequences for: apex_m_d_24
+4 sequences of length 234 generated in 3.2778 seconds
+Generating sequences for: shoulder_m_d_54
+4 sequences of length 225 generated in 3.1548 seconds
+Generating sequences for: shoulder_l_d_38
+4 sequences of length 258 generated in 3.6276 seconds
+Generating sequences for: shoulder_l_d_56
+4 sequences of length 263 generated in 3.6813 seconds
+Generating sequences for: shoulder_m_d_48
+4 sequences of length 222 generated in 3.103 seconds
+Generating sequences for: shoulder_s_d_96
+4 sequences of length 215 generated in 3.0307 seconds
+Generating sequences for: apex_l_d_11
+4 sequences of length 255 generated in 3.5698 seconds
+Generating sequences for: shoulder_l_d_63
+4 sequences of length 241 generated in 3.362 seconds
+Generating sequences for: shoulder_m_d_22
+4 sequences of length 216 generated in 3.0222 seconds
+Generating sequences for: apex_l_d_22
+4 sequences of length 264 generated in 3.6779 seconds
+Generating sequences for: shoulder_s_d_0
+4 sequences of length 207 generated in 2.8906 seconds
+Generating sequences for: shoulder_s_d_92
+4 sequences of length 205 generated in 2.883 seconds
+Generating sequences for: shoulder_m_d_100
+4 sequences of length 219 generated in 3.0625 seconds
+Generating sequences for: shoulder_m_d_10
+4 sequences of length 215 generated in 3.0066 seconds
+Generating sequences for: apex_l_d_10
+4 sequences of length 239 generated in 3.338 seconds
+Generating sequences for: apex_l_d_14
+4 sequences of length 242 generated in 3.3775 seconds
+Generating sequences for: shoulder_s_d_34
+4 sequences of length 212 generated in 2.9707 seconds
+Generating sequences for: shoulder_s_d_64
+4 sequences of length 200 generated in 2.8231 seconds
+Generating sequences for: swap_m_d_6
+4 sequences of length 233 generated in 3.2488 seconds
+Generating sequences for: shoulder_m_d_58
+4 sequences of length 219 generated in 3.0549 seconds
+Generating sequences for: shoulder_s_d_41
+4 sequences of length 215 generated in 3.0028 seconds
+Generating sequences for: apex_m_d_12
+4 sequences of length 240 generated in 3.3572 seconds
+Generating sequences for: shoulder_s_d_30
+4 sequences of length 217 generated in 3.0308 seconds
+Generating sequences for: shoulder_m_d_68
+4 sequences of length 218 generated in 3.047 seconds
+Generating sequences for: apex_m_d_59
+4 sequences of length 233 generated in 3.2518 seconds
+Generating sequences for: shoulder_l_d_36
+4 sequences of length 255 generated in 3.5653 seconds
+Generating sequences for: shoulder_m_d_30
+4 sequences of length 239 generated in 3.3207 seconds
+Generating sequences for: swap_m_d_0
+4 sequences of length 227 generated in 3.1739 seconds
+Generating sequences for: shoulder_l_d_45
+4 sequences of length 237 generated in 3.3086 seconds
+Generating sequences for: shoulder_s_d_3
+4 sequences of length 220 generated in 3.0787 seconds
+Generating sequences for: shoulder_s_d_38
+4 sequences of length 219 generated in 3.0712 seconds
+Generating sequences for: apex_m_d_85
+4 sequences of length 226 generated in 3.1826 seconds
+Generating sequences for: shoulder_l_d_5
+4 sequences of length 260 generated in 3.6351 seconds
+Generating sequences for: swap_m_d_46
+4 sequences of length 227 generated in 3.1867 seconds
+Generating sequences for: apex_m_d_7
+4 sequences of length 222 generated in 3.1221 seconds
+Generating sequences for: apex_m_d_84
+4 sequences of length 239 generated in 3.3453 seconds
+Generating sequences for: shoulder_l_d_78
+4 sequences of length 245 generated in 3.4318 seconds
+Generating sequences for: swap_m_d_54
+4 sequences of length 233 generated in 3.2612 seconds
+Generating sequences for: apex_l_d_18
+4 sequences of length 237 generated in 3.3114 seconds
+Generating sequences for: apex_l_d_9
+4 sequences of length 238 generated in 3.3198 seconds
+Generating sequences for: shoulder_s_d_23
+4 sequences of length 213 generated in 2.9842 seconds
+Generating sequences for: shoulder_m_d_11
+4 sequences of length 225 generated in 3.1417 seconds
+Generating sequences for: shoulder_m_d_35
+4 sequences of length 222 generated in 3.1089 seconds
+Generating sequences for: shoulder_m_d_36
+4 sequences of length 236 generated in 3.2768 seconds
+Generating sequences for: apex_m_d_19
+4 sequences of length 219 generated in 3.0372 seconds
+Generating sequences for: swap_m_d_61
+4 sequences of length 229 generated in 3.2204 seconds
+Generating sequences for: shoulder_s_d_57
+4 sequences of length 217 generated in 3.04 seconds
+pool plain: 540 fasta files -> gen/mpnn/plain/seqs
++ /home/HarjasG/miniforge3/envs/mpnn/bin/python /home/HarjasG/tnf-track3/ProteinMPNN/protein_mpnn_run.py --jsonl_path gen/mpnn/parsed.jsonl --chain_id_jsonl gen/mpnn/assigned.jsonl --out_folder gen/mpnn/hisb --num_seq_per_target 4 --sampling_temp 0.1 --seed 37 --batch_size 1 --omit_AAs CX --use_soluble_model --bias_AA_jsonl gen/mpnn/bias_his.jsonl
+/home/HarjasG/tnf-track3/ProteinMPNN/protein_mpnn_run.py:178: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  checkpoint = torch.load(checkpoint_path, map_location=device)
+Using ProteinMPNN trained on soluble proteins only!
+----------------------------------------
+fixed_positions_jsonl is NOT loaded
+----------------------------------------
+pssm_jsonl is NOT loaded
+----------------------------------------
+omit_AA_jsonl is NOT loaded
+----------------------------------------
+tied_positions_jsonl is NOT loaded
+----------------------------------------
+bias by residue dictionary is not loaded, or not provided
+----------------------------------------
+discarded {'bad_chars': 0, 'too_long': 0, 'bad_seq_length': 0}
+----------------------------------------
+Number of edges: 48
+Training noise level: 0.2A
+Generating sequences for: shoulder_s_d_59
+4 sequences of length 219 generated in 3.3127 seconds
+Generating sequences for: shoulder_m_d_130
+4 sequences of length 237 generated in 3.5659 seconds
+Generating sequences for: shoulder_l_d_74
+4 sequences of length 259 generated in 3.8348 seconds
+Generating sequences for: shoulder_m_d_1
+4 sequences of length 219 generated in 3.252 seconds
+Generating sequences for: apex_m_d_9
+4 sequences of length 231 generated in 3.4182 seconds
+Generating sequences for: shoulder_s_d_15
+4 sequences of length 200 generated in 2.9808 seconds
+Generating sequences for: apex_l_d_1
+4 sequences of length 255 generated in 3.7912 seconds
+Generating sequences for: shoulder_m_d_95
+4 sequences of length 237 generated in 3.5465 seconds
+Generating sequences for: shoulder_m_d_56
+4 sequences of length 234 generated in 3.4927 seconds
+Generating sequences for: shoulder_s_d_49
+4 sequences of length 218 generated in 3.2589 seconds
+Generating sequences for: shoulder_m_d_88
+4 sequences of length 236 generated in 3.5113 seconds
+Generating sequences for: shoulder_s_d_107
+4 sequences of length 219 generated in 3.2665 seconds
+Generating sequences for: shoulder_l_d_23
+4 sequences of length 251 generated in 3.7288 seconds
+Generating sequences for: shoulder_m_d_23
+4 sequences of length 231 generated in 3.445 seconds
+Generating sequences for: apex_m_d_32
+4 sequences of length 217 generated in 3.2329 seconds
+Generating sequences for: shoulder_s_d_44
+4 sequences of length 219 generated in 3.2587 seconds
+Generating sequences for: apex_m_d_53
+4 sequences of length 227 generated in 3.3762 seconds
+Generating sequences for: shoulder_m_d_104
+4 sequences of length 221 generated in 3.3113 seconds
+Generating sequences for: shoulder_s_d_67
+4 sequences of length 201 generated in 3.0064 seconds
+Generating sequences for: shoulder_l_d_79
+4 sequences of length 238 generated in 3.5499 seconds
+Generating sequences for: shoulder_s_d_8
+4 sequences of length 209 generated in 3.1321 seconds
+Generating sequences for: apex_m_d_89
+4 sequences of length 221 generated in 3.2851 seconds
+Generating sequences for: apex_m_d_77
+4 sequences of length 239 generated in 3.5427 seconds
+Generating sequences for: shoulder_l_d_16
+4 sequences of length 239 generated in 3.5731 seconds
+Generating sequences for: shoulder_m_d_124
+4 sequences of length 232 generated in 3.4461 seconds
+Generating sequences for: apex_m_d_75
+4 sequences of length 239 generated in 3.5502 seconds
+Generating sequences for: shoulder_m_d_73
+4 sequences of length 217 generated in 3.2412 seconds
+Generating sequences for: shoulder_s_d_68
+4 sequences of length 219 generated in 3.2526 seconds
+Generating sequences for: swap_m_d_29
+4 sequences of length 233 generated in 3.4535 seconds
+Generating sequences for: apex_m_d_47
+4 sequences of length 230 generated in 3.4418 seconds
+Generating sequences for: shoulder_s_d_9
+4 sequences of length 207 generated in 3.1047 seconds
+Generating sequences for: swap_m_d_15
+4 sequences of length 227 generated in 3.3997 seconds
+Generating sequences for: apex_m_d_34
+4 sequences of length 216 generated in 3.2292 seconds
+Generating sequences for: apex_m_d_55
+4 sequences of length 228 generated in 3.3967 seconds
+Generating sequences for: shoulder_s_d_17
+4 sequences of length 205 generated in 3.0534 seconds
+Generating sequences for: shoulder_m_d_34
+4 sequences of length 237 generated in 3.5252 seconds
+Generating sequences for: apex_m_d_87
+4 sequences of length 228 generated in 3.4025 seconds
+Generating sequences for: swap_m_d_8
+4 sequences of length 226 generated in 3.3763 seconds
+Generating sequences for: apex_m_d_31
+4 sequences of length 215 generated in 3.2047 seconds
+Generating sequences for: shoulder_s_d_19
+4 sequences of length 204 generated in 3.0481 seconds
+Generating sequences for: shoulder_l_d_15
+4 sequences of length 257 generated in 3.8225 seconds
+Generating sequences for: apex_m_d_67
+4 sequences of length 238 generated in 3.6622 seconds
+Generating sequences for: shoulder_s_d_90
+4 sequences of length 200 generated in 3.159 seconds
+Generating sequences for: shoulder_m_d_14
+4 sequences of length 232 generated in 3.4724 seconds
+Generating sequences for: shoulder_l_d_24
+4 sequences of length 236 generated in 3.5435 seconds
+Generating sequences for: shoulder_m_d_43
+4 sequences of length 233 generated in 3.4791 seconds
+Generating sequences for: shoulder_l_d_67
+4 sequences of length 239 generated in 3.5929 seconds
+Generating sequences for: shoulder_m_d_72
+4 sequences of length 220 generated in 3.2785 seconds
+Generating sequences for: shoulder_l_d_59
+4 sequences of length 265 generated in 3.952 seconds
+Generating sequences for: apex_m_d_27
+4 sequences of length 233 generated in 3.4756 seconds
+Generating sequences for: shoulder_s_d_10
+4 sequences of length 205 generated in 3.0753 seconds
+Generating sequences for: shoulder_m_d_134
+4 sequences of length 231 generated in 3.463 seconds
+Generating sequences for: apex_m_d_45
+4 sequences of length 220 generated in 3.3178 seconds
+Generating sequences for: swap_m_d_25
+4 sequences of length 215 generated in 3.2496 seconds
+Generating sequences for: shoulder_s_d_77
+4 sequences of length 211 generated in 3.1874 seconds
+Generating sequences for: apex_m_d_5
+4 sequences of length 235 generated in 3.5197 seconds
+Generating sequences for: shoulder_s_d_109
+4 sequences of length 203 generated in 3.0412 seconds
+Generating sequences for: shoulder_m_d_111
+4 sequences of length 226 generated in 3.3703 seconds
+Generating sequences for: swap_m_d_43
+4 sequences of length 228 generated in 3.4008 seconds
+Generating sequences for: apex_m_d_70
+4 sequences of length 235 generated in 3.5119 seconds
+Generating sequences for: shoulder_m_d_20
+4 sequences of length 237 generated in 3.5462 seconds
+Generating sequences for: apex_m_d_13
+4 sequences of length 224 generated in 3.358 seconds
+Generating sequences for: shoulder_m_d_42
+4 sequences of length 227 generated in 3.3898 seconds
+Generating sequences for: shoulder_l_d_28
+4 sequences of length 237 generated in 3.54 seconds
+Generating sequences for: shoulder_l_d_3
+4 sequences of length 244 generated in 3.6384 seconds
+Generating sequences for: shoulder_m_d_118
+4 sequences of length 223 generated in 3.3297 seconds
+Generating sequences for: shoulder_m_d_133
+4 sequences of length 237 generated in 3.534 seconds
+Generating sequences for: apex_m_d_40
+4 sequences of length 228 generated in 3.4107 seconds
+Generating sequences for: shoulder_s_d_29
+4 sequences of length 204 generated in 3.0717 seconds
+Generating sequences for: apex_m_d_8
+4 sequences of length 230 generated in 3.4494 seconds
+Generating sequences for: shoulder_s_d_99
+4 sequences of length 205 generated in 3.072 seconds
+Generating sequences for: apex_m_d_15
+4 sequences of length 237 generated in 3.5242 seconds
+Generating sequences for: shoulder_s_d_58
+4 sequences of length 201 generated in 3.0062 seconds
+Generating sequences for: shoulder_m_d_109
+4 sequences of length 230 generated in 3.4159 seconds
+Generating sequences for: shoulder_s_d_2
+4 sequences of length 208 generated in 3.0883 seconds
+Generating sequences for: shoulder_s_d_105
+4 sequences of length 211 generated in 3.1152 seconds
+Generating sequences for: shoulder_m_d_131
+4 sequences of length 239 generated in 3.5373 seconds
+Generating sequences for: swap_m_d_17
+4 sequences of length 228 generated in 3.3808 seconds
+Generating sequences for: shoulder_l_d_9
+4 sequences of length 262 generated in 3.8859 seconds
+Generating sequences for: apex_l_d_27
+4 sequences of length 248 generated in 3.6615 seconds
+Generating sequences for: shoulder_l_d_20
+4 sequences of length 260 generated in 3.8404 seconds
+Generating sequences for: apex_m_d_65
+4 sequences of length 233 generated in 3.4411 seconds
+Generating sequences for: swap_m_d_3
+4 sequences of length 236 generated in 3.4694 seconds
+Generating sequences for: shoulder_s_d_12
+4 sequences of length 202 generated in 2.983 seconds
+Generating sequences for: shoulder_l_d_12
+4 sequences of length 240 generated in 3.5177 seconds
+Generating sequences for: shoulder_l_d_25
+4 sequences of length 238 generated in 3.4832 seconds
+Generating sequences for: shoulder_l_d_61
+4 sequences of length 235 generated in 3.4131 seconds
+Generating sequences for: swap_m_d_41
+4 sequences of length 240 generated in 3.4874 seconds
+Generating sequences for: apex_l_d_21
+4 sequences of length 260 generated in 3.7617 seconds
+Generating sequences for: swap_m_d_20
+4 sequences of length 235 generated in 3.39 seconds
+Generating sequences for: swap_m_d_24
+4 sequences of length 229 generated in 3.3013 seconds
+Generating sequences for: shoulder_s_d_83
+4 sequences of length 210 generated in 3.0453 seconds
+Generating sequences for: shoulder_l_d_29
+4 sequences of length 238 generated in 3.4277 seconds
+Generating sequences for: swap_m_d_9
+4 sequences of length 238 generated in 3.4431 seconds
+Generating sequences for: shoulder_m_d_138
+4 sequences of length 224 generated in 3.2513 seconds
+Generating sequences for: shoulder_s_d_89
+4 sequences of length 217 generated in 3.1512 seconds
+Generating sequences for: shoulder_s_d_101
+4 sequences of length 204 generated in 2.9522 seconds
+Generating sequences for: apex_m_d_28
+4 sequences of length 228 generated in 3.2892 seconds
+Generating sequences for: shoulder_l_d_26
+4 sequences of length 249 generated in 3.583 seconds
+Generating sequences for: apex_m_d_79
+4 sequences of length 236 generated in 3.4011 seconds
+Generating sequences for: shoulder_m_d_25
+4 sequences of length 232 generated in 3.3456 seconds
+Generating sequences for: shoulder_s_d_18
+4 sequences of length 202 generated in 2.9231 seconds
+Generating sequences for: swap_m_d_19
+4 sequences of length 215 generated in 3.135 seconds
+Generating sequences for: swap_m_d_39
+4 sequences of length 215 generated in 3.1108 seconds
+Generating sequences for: shoulder_l_d_81
+4 sequences of length 253 generated in 3.6553 seconds
+Generating sequences for: apex_m_d_21
+4 sequences of length 235 generated in 3.3929 seconds
+Generating sequences for: shoulder_l_d_69
+4 sequences of length 256 generated in 3.6727 seconds
+Generating sequences for: shoulder_s_d_50
+4 sequences of length 213 generated in 3.1029 seconds
+Generating sequences for: apex_l_d_23
+4 sequences of length 243 generated in 3.5193 seconds
+Generating sequences for: apex_m_d_60
+4 sequences of length 240 generated in 3.4838 seconds
+Generating sequences for: apex_m_d_42
+4 sequences of length 227 generated in 3.2615 seconds
+Generating sequences for: shoulder_m_d_41
+4 sequences of length 227 generated in 3.2736 seconds
+Generating sequences for: apex_l_d_31
+4 sequences of length 244 generated in 3.4991 seconds
+Generating sequences for: apex_m_d_68
+4 sequences of length 218 generated in 3.131 seconds
+Generating sequences for: shoulder_l_d_71
+4 sequences of length 258 generated in 3.7103 seconds
+Generating sequences for: shoulder_m_d_55
+4 sequences of length 222 generated in 3.1972 seconds
+Generating sequences for: apex_m_d_76
+4 sequences of length 217 generated in 3.1376 seconds
+Generating sequences for: shoulder_m_d_115
+4 sequences of length 222 generated in 3.2295 seconds
+Generating sequences for: shoulder_m_d_37
+4 sequences of length 239 generated in 3.4529 seconds
+Generating sequences for: shoulder_m_d_16
+4 sequences of length 235 generated in 3.4101 seconds
+Generating sequences for: shoulder_l_d_76
+4 sequences of length 240 generated in 3.487 seconds
+Generating sequences for: apex_m_d_50
+4 sequences of length 234 generated in 3.3787 seconds
+Generating sequences for: shoulder_s_d_13
+4 sequences of length 206 generated in 3.0111 seconds
+Generating sequences for: shoulder_l_d_0
+4 sequences of length 241 generated in 3.5102 seconds
+Generating sequences for: shoulder_m_d_96
+4 sequences of length 236 generated in 3.4346 seconds
+Generating sequences for: shoulder_s_d_4
+4 sequences of length 200 generated in 2.9032 seconds
+Generating sequences for: shoulder_m_d_24
+4 sequences of length 234 generated in 3.363 seconds
+Generating sequences for: shoulder_m_d_120
+4 sequences of length 226 generated in 3.2804 seconds
+Generating sequences for: shoulder_s_d_94
+4 sequences of length 214 generated in 3.1661 seconds
+Generating sequences for: shoulder_m_d_110
+4 sequences of length 217 generated in 3.1582 seconds
+Generating sequences for: shoulder_s_d_91
+4 sequences of length 218 generated in 3.1451 seconds
+Generating sequences for: shoulder_s_d_51
+4 sequences of length 207 generated in 2.979 seconds
+Generating sequences for: apex_m_d_74
+4 sequences of length 237 generated in 3.3953 seconds
+Generating sequences for: shoulder_l_d_44
+4 sequences of length 258 generated in 3.6827 seconds
+Generating sequences for: shoulder_l_d_64
+4 sequences of length 245 generated in 3.5306 seconds
+Generating sequences for: apex_m_d_64
+4 sequences of length 217 generated in 3.1522 seconds
+Generating sequences for: swap_m_d_33
+4 sequences of length 220 generated in 3.1675 seconds
+Generating sequences for: shoulder_l_d_32
+4 sequences of length 247 generated in 3.5484 seconds
+Generating sequences for: swap_m_d_51
+4 sequences of length 231 generated in 3.3194 seconds
+Generating sequences for: apex_m_d_33
+4 sequences of length 219 generated in 3.1439 seconds
+Generating sequences for: apex_m_d_1
+4 sequences of length 238 generated in 3.4277 seconds
+Generating sequences for: shoulder_m_d_40
+4 sequences of length 223 generated in 3.2131 seconds
+Generating sequences for: shoulder_l_d_30
+4 sequences of length 261 generated in 3.7396 seconds
+Generating sequences for: shoulder_s_d_71
+4 sequences of length 216 generated in 3.1237 seconds
+Generating sequences for: shoulder_l_d_31
+4 sequences of length 255 generated in 3.6578 seconds
+Generating sequences for: apex_m_d_3
+4 sequences of length 220 generated in 3.174 seconds
+Generating sequences for: shoulder_m_d_52
+4 sequences of length 224 generated in 3.2289 seconds
+Generating sequences for: shoulder_l_d_57
+4 sequences of length 254 generated in 3.6407 seconds
+Generating sequences for: shoulder_s_d_106
+4 sequences of length 216 generated in 3.1142 seconds
+Generating sequences for: shoulder_m_d_103
+4 sequences of length 228 generated in 3.2822 seconds
+Generating sequences for: swap_m_d_55
+4 sequences of length 239 generated in 3.4396 seconds
+Generating sequences for: apex_m_d_44
+4 sequences of length 234 generated in 3.386 seconds
+Generating sequences for: shoulder_l_d_82
+4 sequences of length 242 generated in 3.4815 seconds
+Generating sequences for: shoulder_m_d_76
+4 sequences of length 222 generated in 3.1931 seconds
+Generating sequences for: shoulder_l_d_41
+4 sequences of length 255 generated in 3.6544 seconds
+Generating sequences for: shoulder_m_d_135
+4 sequences of length 232 generated in 3.3345 seconds
+Generating sequences for: shoulder_l_d_60
+4 sequences of length 259 generated in 3.7055 seconds
+Generating sequences for: shoulder_l_d_80
+4 sequences of length 254 generated in 3.6383 seconds
+Generating sequences for: shoulder_m_d_64
+4 sequences of length 234 generated in 3.3404 seconds
+Generating sequences for: shoulder_s_d_85
+4 sequences of length 203 generated in 2.936 seconds
+Generating sequences for: apex_m_d_26
+4 sequences of length 235 generated in 3.3608 seconds
+Generating sequences for: shoulder_s_d_31
+4 sequences of length 205 generated in 2.9515 seconds
+Generating sequences for: shoulder_s_d_93
+4 sequences of length 208 generated in 2.9917 seconds
+Generating sequences for: apex_m_d_48
+4 sequences of length 239 generated in 3.4257 seconds
+Generating sequences for: shoulder_m_d_71
+4 sequences of length 224 generated in 3.2189 seconds
+Generating sequences for: shoulder_m_d_75
+4 sequences of length 229 generated in 3.2756 seconds
+Generating sequences for: shoulder_l_d_42
+4 sequences of length 248 generated in 3.5505 seconds
+Generating sequences for: shoulder_m_d_63
+4 sequences of length 225 generated in 3.2087 seconds
+Generating sequences for: shoulder_l_d_43
+4 sequences of length 261 generated in 3.7171 seconds
+Generating sequences for: apex_m_d_58
+4 sequences of length 240 generated in 3.4227 seconds
+Generating sequences for: shoulder_s_d_66
+4 sequences of length 207 generated in 2.9665 seconds
+Generating sequences for: apex_m_d_23
+4 sequences of length 239 generated in 3.4205 seconds
+Generating sequences for: shoulder_m_d_137
+4 sequences of length 228 generated in 3.2606 seconds
+Generating sequences for: swap_m_d_44
+4 sequences of length 232 generated in 3.3212 seconds
+Generating sequences for: shoulder_l_d_8
+4 sequences of length 252 generated in 3.5891 seconds
+Generating sequences for: shoulder_m_d_46
+4 sequences of length 221 generated in 3.15 seconds
+Generating sequences for: shoulder_m_d_122
+4 sequences of length 236 generated in 3.362 seconds
+Generating sequences for: shoulder_l_d_77
+4 sequences of length 240 generated in 3.4191 seconds
+Generating sequences for: swap_m_d_1
+4 sequences of length 228 generated in 3.2507 seconds
+Generating sequences for: shoulder_s_d_45
+4 sequences of length 215 generated in 3.0449 seconds
+Generating sequences for: shoulder_m_d_8
+4 sequences of length 226 generated in 3.22 seconds
+Generating sequences for: shoulder_s_d_42
+4 sequences of length 201 generated in 2.897 seconds
+Generating sequences for: apex_m_d_14
+4 sequences of length 216 generated in 3.0507 seconds
+Generating sequences for: shoulder_l_d_17
+4 sequences of length 243 generated in 3.412 seconds
+Generating sequences for: swap_m_d_10
+4 sequences of length 237 generated in 3.377 seconds
+Generating sequences for: shoulder_m_d_94
+4 sequences of length 216 generated in 3.0862 seconds
+Generating sequences for: shoulder_m_d_18
+4 sequences of length 218 generated in 3.1164 seconds
+Generating sequences for: shoulder_m_d_50
+4 sequences of length 220 generated in 3.149 seconds
+Generating sequences for: shoulder_l_d_21
+4 sequences of length 241 generated in 3.4428 seconds
+Generating sequences for: shoulder_l_d_6
+4 sequences of length 251 generated in 3.5821 seconds
+Generating sequences for: shoulder_m_d_12
+4 sequences of length 237 generated in 3.3836 seconds
+Generating sequences for: apex_m_d_10
+4 sequences of length 225 generated in 3.2177 seconds
+Generating sequences for: shoulder_m_d_39
+4 sequences of length 228 generated in 3.2601 seconds
+Generating sequences for: apex_m_d_20
+4 sequences of length 237 generated in 3.3848 seconds
+Generating sequences for: apex_l_d_0
+4 sequences of length 258 generated in 3.7105 seconds
+Generating sequences for: shoulder_s_d_24
+4 sequences of length 210 generated in 3.0091 seconds
+Generating sequences for: apex_m_d_6
+4 sequences of length 216 generated in 3.0779 seconds
+Generating sequences for: apex_l_d_28
+4 sequences of length 240 generated in 3.4257 seconds
+Generating sequences for: shoulder_l_d_18
+4 sequences of length 242 generated in 3.4351 seconds
+Generating sequences for: swap_m_d_58
+4 sequences of length 221 generated in 3.1439 seconds
+Generating sequences for: shoulder_l_d_73
+4 sequences of length 256 generated in 3.657 seconds
+Generating sequences for: shoulder_l_d_37
+4 sequences of length 239 generated in 3.4033 seconds
+Generating sequences for: shoulder_l_d_68
+4 sequences of length 259 generated in 3.6961 seconds
+Generating sequences for: swap_m_d_32
+4 sequences of length 220 generated in 3.156 seconds
+Generating sequences for: apex_l_d_26
+4 sequences of length 259 generated in 3.7161 seconds
+Generating sequences for: shoulder_l_d_53
+4 sequences of length 249 generated in 3.5468 seconds
+Generating sequences for: apex_l_d_6
+4 sequences of length 257 generated in 3.6397 seconds
+Generating sequences for: shoulder_m_d_108
+4 sequences of length 224 generated in 3.1808 seconds
+Generating sequences for: shoulder_s_d_100
+4 sequences of length 217 generated in 3.0791 seconds
+Generating sequences for: shoulder_s_d_40
+4 sequences of length 218 generated in 3.1128 seconds
+Generating sequences for: shoulder_m_d_15
+4 sequences of length 237 generated in 3.3647 seconds
+Generating sequences for: shoulder_s_d_80
+4 sequences of length 209 generated in 2.9801 seconds
+Generating sequences for: shoulder_l_d_22
+4 sequences of length 253 generated in 3.6093 seconds
+Generating sequences for: shoulder_s_d_70
+4 sequences of length 202 generated in 2.8902 seconds
+Generating sequences for: shoulder_m_d_49
+4 sequences of length 231 generated in 3.2633 seconds
+Generating sequences for: swap_m_d_30
+4 sequences of length 240 generated in 3.4104 seconds
+Generating sequences for: shoulder_s_d_63
+4 sequences of length 205 generated in 2.9398 seconds
+Generating sequences for: apex_m_d_17
+4 sequences of length 240 generated in 3.4269 seconds
+Generating sequences for: apex_m_d_11
+4 sequences of length 224 generated in 3.1803 seconds
+Generating sequences for: shoulder_m_d_84
+4 sequences of length 215 generated in 3.0523 seconds
+Generating sequences for: shoulder_m_d_112
+4 sequences of length 232 generated in 3.2946 seconds
+Generating sequences for: shoulder_s_d_81
+4 sequences of length 214 generated in 3.037 seconds
+Generating sequences for: shoulder_s_d_28
+4 sequences of length 218 generated in 3.0988 seconds
+Generating sequences for: shoulder_m_d_45
+4 sequences of length 229 generated in 3.2365 seconds
+Generating sequences for: apex_m_d_83
+4 sequences of length 222 generated in 3.1328 seconds
+Generating sequences for: apex_l_d_32
+4 sequences of length 241 generated in 3.3798 seconds
+Generating sequences for: apex_l_d_12
+4 sequences of length 235 generated in 3.3198 seconds
+Generating sequences for: shoulder_m_d_97
+4 sequences of length 232 generated in 3.2693 seconds
+Generating sequences for: apex_l_d_30
+4 sequences of length 249 generated in 3.5009 seconds
+Generating sequences for: shoulder_s_d_33
+4 sequences of length 211 generated in 2.9826 seconds
+Generating sequences for: shoulder_l_d_54
+4 sequences of length 257 generated in 3.6209 seconds
+Generating sequences for: shoulder_s_d_88
+4 sequences of length 200 generated in 2.8483 seconds
+Generating sequences for: shoulder_l_d_83
+4 sequences of length 246 generated in 3.5213 seconds
+Generating sequences for: shoulder_m_d_29
+4 sequences of length 234 generated in 3.3072 seconds
+Generating sequences for: shoulder_l_d_40
+4 sequences of length 261 generated in 3.6674 seconds
+Generating sequences for: apex_l_d_19
+4 sequences of length 253 generated in 3.5615 seconds
+Generating sequences for: apex_m_d_57
+4 sequences of length 240 generated in 3.382 seconds
+Generating sequences for: shoulder_m_d_3
+4 sequences of length 221 generated in 3.1219 seconds
+Generating sequences for: shoulder_m_d_26
+4 sequences of length 221 generated in 3.1269 seconds
+Generating sequences for: apex_m_d_56
+4 sequences of length 221 generated in 3.1175 seconds
+Generating sequences for: shoulder_m_d_78
+4 sequences of length 226 generated in 3.1803 seconds
+Generating sequences for: shoulder_m_d_86
+4 sequences of length 235 generated in 3.3066 seconds
+Generating sequences for: swap_m_d_63
+4 sequences of length 229 generated in 3.2234 seconds
+Generating sequences for: swap_m_d_56
+4 sequences of length 228 generated in 3.2128 seconds
+Generating sequences for: apex_m_d_62
+4 sequences of length 225 generated in 3.1658 seconds
+Generating sequences for: shoulder_l_d_66
+4 sequences of length 239 generated in 3.3527 seconds
+Generating sequences for: swap_m_d_53
+4 sequences of length 233 generated in 3.2723 seconds
+Generating sequences for: apex_m_d_0
+4 sequences of length 221 generated in 3.108 seconds
+Generating sequences for: swap_m_d_64
+4 sequences of length 224 generated in 3.1488 seconds
+Generating sequences for: shoulder_m_d_38
+4 sequences of length 226 generated in 3.1879 seconds
+Generating sequences for: swap_m_d_21
+4 sequences of length 227 generated in 3.1974 seconds
+Generating sequences for: apex_m_d_30
+4 sequences of length 230 generated in 3.2393 seconds
+Generating sequences for: shoulder_l_d_10
+4 sequences of length 252 generated in 3.5457 seconds
+Generating sequences for: swap_m_d_27
+4 sequences of length 233 generated in 3.2747 seconds
+Generating sequences for: shoulder_l_d_1
+4 sequences of length 253 generated in 3.5547 seconds
+Generating sequences for: apex_l_d_2
+4 sequences of length 252 generated in 3.5313 seconds
+Generating sequences for: shoulder_s_d_84
+4 sequences of length 209 generated in 2.9461 seconds
+Generating sequences for: shoulder_s_d_104
+4 sequences of length 215 generated in 3.0231 seconds
+Generating sequences for: shoulder_s_d_6
+4 sequences of length 207 generated in 2.916 seconds
+Generating sequences for: apex_m_d_52
+4 sequences of length 232 generated in 3.2694 seconds
+Generating sequences for: apex_l_d_13
+4 sequences of length 246 generated in 3.4666 seconds
+Generating sequences for: apex_l_d_20
+4 sequences of length 262 generated in 3.668 seconds
+Generating sequences for: shoulder_l_d_47
+4 sequences of length 250 generated in 3.5015 seconds
+Generating sequences for: apex_m_d_61
+4 sequences of length 223 generated in 3.1301 seconds
+Generating sequences for: apex_m_d_39
+4 sequences of length 234 generated in 3.2808 seconds
+Generating sequences for: apex_l_d_4
+4 sequences of length 265 generated in 3.7084 seconds
+Generating sequences for: shoulder_l_d_87
+4 sequences of length 258 generated in 3.6065 seconds
+Generating sequences for: shoulder_m_d_70
+4 sequences of length 232 generated in 3.2859 seconds
+Generating sequences for: shoulder_m_d_2
+4 sequences of length 226 generated in 3.2091 seconds
+Generating sequences for: shoulder_l_d_46
+4 sequences of length 238 generated in 3.3437 seconds
+Generating sequences for: shoulder_m_d_74
+4 sequences of length 217 generated in 3.0615 seconds
+Generating sequences for: swap_m_d_18
+4 sequences of length 224 generated in 3.1544 seconds
+Generating sequences for: swap_m_d_37
+4 sequences of length 228 generated in 3.1988 seconds
+Generating sequences for: swap_m_d_26
+4 sequences of length 229 generated in 3.2224 seconds
+Generating sequences for: shoulder_l_d_88
+4 sequences of length 245 generated in 3.4371 seconds
+Generating sequences for: swap_m_d_57
+4 sequences of length 236 generated in 3.3109 seconds
+Generating sequences for: shoulder_s_d_86
+4 sequences of length 200 generated in 2.8222 seconds
+Generating sequences for: shoulder_s_d_62
+4 sequences of length 219 generated in 3.0919 seconds
+Generating sequences for: shoulder_s_d_20
+4 sequences of length 209 generated in 2.9397 seconds
+Generating sequences for: shoulder_m_d_60
+4 sequences of length 223 generated in 3.133 seconds
+Generating sequences for: shoulder_l_d_35
+4 sequences of length 264 generated in 3.6901 seconds
+Generating sequences for: shoulder_s_d_102
+4 sequences of length 208 generated in 2.9289 seconds
+Generating sequences for: apex_m_d_81
+4 sequences of length 222 generated in 3.1184 seconds
+Generating sequences for: shoulder_l_d_65
+4 sequences of length 265 generated in 3.7175 seconds
+Generating sequences for: swap_m_d_62
+4 sequences of length 234 generated in 3.3129 seconds
+Generating sequences for: shoulder_s_d_69
+4 sequences of length 200 generated in 2.8515 seconds
+Generating sequences for: shoulder_m_d_66
+4 sequences of length 215 generated in 3.0084 seconds
+Generating sequences for: shoulder_m_d_114
+4 sequences of length 229 generated in 3.1658 seconds
+Generating sequences for: shoulder_s_d_16
+4 sequences of length 220 generated in 3.088 seconds
+Generating sequences for: shoulder_m_d_92
+4 sequences of length 229 generated in 3.2308 seconds
+Generating sequences for: shoulder_l_d_19
+4 sequences of length 265 generated in 3.7285 seconds
+Generating sequences for: shoulder_m_d_31
+4 sequences of length 228 generated in 3.2081 seconds
+Generating sequences for: shoulder_s_d_75
+4 sequences of length 204 generated in 2.8825 seconds
+Generating sequences for: apex_l_d_35
+4 sequences of length 263 generated in 3.699 seconds
+Generating sequences for: shoulder_l_d_39
+4 sequences of length 264 generated in 3.6995 seconds
+Generating sequences for: shoulder_m_d_19
+4 sequences of length 215 generated in 3.0403 seconds
+Generating sequences for: apex_m_d_25
+4 sequences of length 240 generated in 3.3859 seconds
+Generating sequences for: apex_l_d_15
+4 sequences of length 249 generated in 3.5037 seconds
+Generating sequences for: swap_m_d_23
+4 sequences of length 221 generated in 3.0934 seconds
+Generating sequences for: apex_l_d_29
+4 sequences of length 246 generated in 3.4329 seconds
+Generating sequences for: shoulder_s_d_27
+4 sequences of length 204 generated in 2.8645 seconds
+Generating sequences for: shoulder_l_d_2
+4 sequences of length 246 generated in 3.4348 seconds
+Generating sequences for: shoulder_s_d_82
+4 sequences of length 205 generated in 2.8787 seconds
+Generating sequences for: shoulder_s_d_78
+4 sequences of length 207 generated in 2.9136 seconds
+Generating sequences for: shoulder_m_d_27
+4 sequences of length 240 generated in 3.3585 seconds
+Generating sequences for: shoulder_m_d_121
+4 sequences of length 218 generated in 3.0502 seconds
+Generating sequences for: shoulder_m_d_119
+4 sequences of length 233 generated in 3.2687 seconds
+Generating sequences for: apex_l_d_3
+4 sequences of length 263 generated in 3.6776 seconds
+Generating sequences for: swap_m_d_11
+4 sequences of length 233 generated in 3.2591 seconds
+Generating sequences for: shoulder_m_d_67
+4 sequences of length 222 generated in 3.1138 seconds
+Generating sequences for: swap_m_d_59
+4 sequences of length 231 generated in 3.2449 seconds
+Generating sequences for: apex_l_d_5
+4 sequences of length 257 generated in 3.6154 seconds
+Generating sequences for: shoulder_m_d_99
+4 sequences of length 227 generated in 3.163 seconds
+Generating sequences for: shoulder_m_d_59
+4 sequences of length 234 generated in 3.2689 seconds
+Generating sequences for: shoulder_m_d_61
+4 sequences of length 220 generated in 3.0972 seconds
+Generating sequences for: shoulder_m_d_0
+4 sequences of length 236 generated in 3.3593 seconds
+Generating sequences for: shoulder_m_d_101
+4 sequences of length 226 generated in 3.1715 seconds
+Generating sequences for: apex_m_d_38
+4 sequences of length 219 generated in 3.0627 seconds
+Generating sequences for: swap_m_d_5
+4 sequences of length 220 generated in 3.0824 seconds
+Generating sequences for: shoulder_m_d_123
+4 sequences of length 223 generated in 3.1253 seconds
+Generating sequences for: apex_m_d_80
+4 sequences of length 238 generated in 3.3216 seconds
+Generating sequences for: apex_l_d_24
+4 sequences of length 254 generated in 3.5969 seconds
+Generating sequences for: shoulder_s_d_48
+4 sequences of length 208 generated in 2.9406 seconds
+Generating sequences for: shoulder_m_d_116
+4 sequences of length 236 generated in 3.3292 seconds
+Generating sequences for: shoulder_s_d_54
+4 sequences of length 214 generated in 3.0042 seconds
+Generating sequences for: apex_l_d_36
+4 sequences of length 239 generated in 3.4042 seconds
+Generating sequences for: apex_m_d_36
+4 sequences of length 234 generated in 3.3136 seconds
+Generating sequences for: shoulder_s_d_53
+4 sequences of length 208 generated in 2.9348 seconds
+Generating sequences for: apex_m_d_63
+4 sequences of length 215 generated in 3.0402 seconds
+Generating sequences for: swap_m_d_50
+4 sequences of length 216 generated in 3.0479 seconds
+Generating sequences for: shoulder_m_d_82
+4 sequences of length 221 generated in 3.1161 seconds
+Generating sequences for: shoulder_m_d_107
+4 sequences of length 220 generated in 3.1089 seconds
+Generating sequences for: shoulder_m_d_89
+4 sequences of length 238 generated in 3.3386 seconds
+Generating sequences for: shoulder_m_d_132
+4 sequences of length 226 generated in 3.1871 seconds
+Generating sequences for: swap_m_d_36
+4 sequences of length 230 generated in 3.2311 seconds
+Generating sequences for: shoulder_l_d_52
+4 sequences of length 249 generated in 3.4886 seconds
+Generating sequences for: shoulder_m_d_79
+4 sequences of length 234 generated in 3.298 seconds
+Generating sequences for: swap_m_d_45
+4 sequences of length 239 generated in 3.3556 seconds
+Generating sequences for: apex_m_d_2
+4 sequences of length 222 generated in 3.1183 seconds
+Generating sequences for: shoulder_s_d_108
+4 sequences of length 220 generated in 3.0863 seconds
+Generating sequences for: apex_m_d_43
+4 sequences of length 215 generated in 3.0199 seconds
+Generating sequences for: swap_m_d_49
+4 sequences of length 222 generated in 3.1288 seconds
+Generating sequences for: shoulder_s_d_11
+4 sequences of length 213 generated in 3.0036 seconds
+Generating sequences for: shoulder_m_d_9
+4 sequences of length 233 generated in 3.2908 seconds
+Generating sequences for: shoulder_s_d_65
+4 sequences of length 210 generated in 2.9651 seconds
+Generating sequences for: shoulder_s_d_103
+4 sequences of length 201 generated in 2.8468 seconds
+Generating sequences for: swap_m_d_60
+4 sequences of length 220 generated in 3.0926 seconds
+Generating sequences for: shoulder_s_d_56
+4 sequences of length 219 generated in 3.0716 seconds
+Generating sequences for: shoulder_m_d_13
+4 sequences of length 222 generated in 3.1192 seconds
+Generating sequences for: apex_m_d_4
+4 sequences of length 240 generated in 3.3719 seconds
+Generating sequences for: shoulder_m_d_105
+4 sequences of length 220 generated in 3.0686 seconds
+Generating sequences for: shoulder_m_d_21
+4 sequences of length 219 generated in 3.0524 seconds
+Generating sequences for: shoulder_m_d_113
+4 sequences of length 226 generated in 3.1689 seconds
+Generating sequences for: shoulder_l_d_51
+4 sequences of length 246 generated in 3.4677 seconds
+Generating sequences for: apex_m_d_41
+4 sequences of length 230 generated in 3.231 seconds
+Generating sequences for: shoulder_m_d_28
+4 sequences of length 240 generated in 3.3726 seconds
+Generating sequences for: apex_m_d_54
+4 sequences of length 218 generated in 3.0668 seconds
+Generating sequences for: shoulder_l_d_72
+4 sequences of length 248 generated in 3.4805 seconds
+Generating sequences for: apex_m_d_18
+4 sequences of length 217 generated in 3.056 seconds
+Generating sequences for: shoulder_m_d_65
+4 sequences of length 226 generated in 3.175 seconds
+Generating sequences for: shoulder_l_d_58
+4 sequences of length 265 generated in 3.7214 seconds
+Generating sequences for: apex_l_d_34
+4 sequences of length 246 generated in 3.4456 seconds
+Generating sequences for: apex_l_d_41
+4 sequences of length 264 generated in 3.7055 seconds
+Generating sequences for: shoulder_m_d_85
+4 sequences of length 224 generated in 3.1525 seconds
+Generating sequences for: shoulder_s_d_76
+4 sequences of length 214 generated in 3.0153 seconds
+Generating sequences for: shoulder_m_d_117
+4 sequences of length 223 generated in 3.1417 seconds
+Generating sequences for: shoulder_s_d_1
+4 sequences of length 210 generated in 2.958 seconds
+Generating sequences for: shoulder_l_d_84
+4 sequences of length 264 generated in 3.7019 seconds
+Generating sequences for: apex_m_d_78
+4 sequences of length 240 generated in 3.3941 seconds
+Generating sequences for: swap_m_d_14
+4 sequences of length 221 generated in 3.104 seconds
+Generating sequences for: shoulder_m_d_91
+4 sequences of length 220 generated in 3.097 seconds
+Generating sequences for: shoulder_m_d_53
+4 sequences of length 219 generated in 3.0811 seconds
+Generating sequences for: shoulder_s_d_46
+4 sequences of length 213 generated in 3.0151 seconds
+Generating sequences for: shoulder_s_d_47
+4 sequences of length 214 generated in 3.0191 seconds
+Generating sequences for: shoulder_l_d_4
+4 sequences of length 243 generated in 3.3503 seconds
+Generating sequences for: shoulder_m_d_127
+4 sequences of length 227 generated in 3.162 seconds
+Generating sequences for: shoulder_m_d_32
+4 sequences of length 233 generated in 3.2884 seconds
+Generating sequences for: shoulder_s_d_22
+4 sequences of length 211 generated in 2.9715 seconds
+Generating sequences for: shoulder_s_d_7
+4 sequences of length 213 generated in 2.9935 seconds
+Generating sequences for: shoulder_s_d_21
+4 sequences of length 204 generated in 2.8743 seconds
+Generating sequences for: shoulder_m_d_47
+4 sequences of length 228 generated in 3.2098 seconds
+Generating sequences for: swap_m_d_28
+4 sequences of length 227 generated in 3.1958 seconds
+Generating sequences for: apex_l_d_44
+4 sequences of length 252 generated in 3.5341 seconds
+Generating sequences for: swap_m_d_13
+4 sequences of length 226 generated in 3.1735 seconds
+Generating sequences for: shoulder_s_d_74
+4 sequences of length 216 generated in 3.0387 seconds
+Generating sequences for: shoulder_m_d_102
+4 sequences of length 226 generated in 3.1698 seconds
+Generating sequences for: shoulder_m_d_136
+4 sequences of length 219 generated in 3.0816 seconds
+Generating sequences for: shoulder_m_d_125
+4 sequences of length 218 generated in 3.0757 seconds
+Generating sequences for: shoulder_s_d_98
+4 sequences of length 201 generated in 2.8532 seconds
+Generating sequences for: shoulder_l_d_85
+4 sequences of length 263 generated in 3.6839 seconds
+Generating sequences for: swap_m_d_47
+4 sequences of length 240 generated in 3.3185 seconds
+Generating sequences for: shoulder_l_d_27
+4 sequences of length 235 generated in 3.2819 seconds
+Generating sequences for: shoulder_m_d_81
+4 sequences of length 216 generated in 3.033 seconds
+Generating sequences for: apex_l_d_33
+4 sequences of length 256 generated in 3.5767 seconds
+Generating sequences for: shoulder_l_d_62
+4 sequences of length 260 generated in 3.6417 seconds
+Generating sequences for: shoulder_l_d_86
+4 sequences of length 260 generated in 3.6501 seconds
+Generating sequences for: shoulder_s_d_37
+4 sequences of length 214 generated in 3.0214 seconds
+Generating sequences for: shoulder_l_d_70
+4 sequences of length 259 generated in 3.6478 seconds
+Generating sequences for: shoulder_s_d_14
+4 sequences of length 208 generated in 2.9301 seconds
+Generating sequences for: shoulder_m_d_90
+4 sequences of length 233 generated in 3.2813 seconds
+Generating sequences for: apex_l_d_39
+4 sequences of length 246 generated in 3.4512 seconds
+Generating sequences for: swap_m_d_7
+4 sequences of length 238 generated in 3.3354 seconds
+Generating sequences for: shoulder_s_d_95
+4 sequences of length 203 generated in 2.8821 seconds
+Generating sequences for: apex_m_d_66
+4 sequences of length 234 generated in 3.3029 seconds
+Generating sequences for: swap_m_d_40
+4 sequences of length 227 generated in 3.2104 seconds
+Generating sequences for: apex_l_d_40
+4 sequences of length 239 generated in 3.35 seconds
+Generating sequences for: apex_m_d_88
+4 sequences of length 216 generated in 3.0454 seconds
+Generating sequences for: shoulder_l_d_49
+4 sequences of length 237 generated in 3.3217 seconds
+Generating sequences for: shoulder_m_d_7
+4 sequences of length 219 generated in 3.0685 seconds
+Generating sequences for: apex_l_d_16
+4 sequences of length 260 generated in 3.6504 seconds
+Generating sequences for: apex_m_d_86
+4 sequences of length 231 generated in 3.2461 seconds
+Generating sequences for: shoulder_s_d_36
+4 sequences of length 217 generated in 3.0589 seconds
+Generating sequences for: shoulder_s_d_39
+4 sequences of length 212 generated in 3.0204 seconds
+Generating sequences for: shoulder_s_d_26
+4 sequences of length 218 generated in 3.0641 seconds
+Generating sequences for: apex_m_d_71
+4 sequences of length 218 generated in 3.0603 seconds
+Generating sequences for: shoulder_s_d_35
+4 sequences of length 204 generated in 2.8727 seconds
+Generating sequences for: swap_m_d_12
+4 sequences of length 220 generated in 3.0968 seconds
+Generating sequences for: shoulder_s_d_73
+4 sequences of length 205 generated in 2.9017 seconds
+Generating sequences for: shoulder_s_d_52
+4 sequences of length 215 generated in 3.0484 seconds
+Generating sequences for: apex_m_d_37
+4 sequences of length 226 generated in 3.1808 seconds
+Generating sequences for: swap_m_d_34
+4 sequences of length 235 generated in 3.3159 seconds
+Generating sequences for: shoulder_s_d_61
+4 sequences of length 203 generated in 2.8585 seconds
+Generating sequences for: shoulder_s_d_72
+4 sequences of length 213 generated in 3.0058 seconds
+Generating sequences for: swap_m_d_48
+4 sequences of length 216 generated in 3.037 seconds
+Generating sequences for: shoulder_s_d_79
+4 sequences of length 212 generated in 3.0226 seconds
+Generating sequences for: shoulder_l_d_75
+4 sequences of length 239 generated in 3.343 seconds
+Generating sequences for: shoulder_s_d_32
+4 sequences of length 206 generated in 2.9017 seconds
+Generating sequences for: swap_m_d_38
+4 sequences of length 227 generated in 3.223 seconds
+Generating sequences for: swap_m_d_2
+4 sequences of length 224 generated in 3.1594 seconds
+Generating sequences for: apex_l_d_17
+4 sequences of length 236 generated in 3.3285 seconds
+Generating sequences for: shoulder_l_d_14
+4 sequences of length 256 generated in 3.605 seconds
+Generating sequences for: shoulder_m_d_44
+4 sequences of length 234 generated in 3.305 seconds
+Generating sequences for: shoulder_s_d_55
+4 sequences of length 212 generated in 2.9855 seconds
+Generating sequences for: apex_m_d_29
+4 sequences of length 221 generated in 3.1129 seconds
+Generating sequences for: shoulder_l_d_11
+4 sequences of length 254 generated in 3.5572 seconds
+Generating sequences for: apex_l_d_43
+4 sequences of length 247 generated in 3.4493 seconds
+Generating sequences for: swap_m_d_31
+4 sequences of length 215 generated in 3.0157 seconds
+Generating sequences for: shoulder_l_d_13
+4 sequences of length 255 generated in 3.5856 seconds
+Generating sequences for: apex_m_d_72
+4 sequences of length 217 generated in 3.061 seconds
+Generating sequences for: swap_m_d_4
+4 sequences of length 234 generated in 3.2971 seconds
+Generating sequences for: shoulder_m_d_6
+4 sequences of length 224 generated in 3.1686 seconds
+Generating sequences for: shoulder_m_d_4
+4 sequences of length 234 generated in 3.2887 seconds
+Generating sequences for: shoulder_m_d_80
+4 sequences of length 235 generated in 3.3131 seconds
+Generating sequences for: shoulder_l_d_7
+4 sequences of length 243 generated in 3.4149 seconds
+Generating sequences for: swap_m_d_35
+4 sequences of length 215 generated in 3.0207 seconds
+Generating sequences for: apex_l_d_8
+4 sequences of length 252 generated in 3.523 seconds
+Generating sequences for: apex_l_d_42
+4 sequences of length 250 generated in 3.5207 seconds
+Generating sequences for: shoulder_m_d_126
+4 sequences of length 231 generated in 3.2484 seconds
+Generating sequences for: shoulder_l_d_50
+4 sequences of length 262 generated in 3.6774 seconds
+Generating sequences for: shoulder_m_d_129
+4 sequences of length 225 generated in 3.1583 seconds
+Generating sequences for: shoulder_m_d_17
+4 sequences of length 227 generated in 3.1812 seconds
+Generating sequences for: apex_l_d_38
+4 sequences of length 256 generated in 3.58 seconds
+Generating sequences for: shoulder_l_d_48
+4 sequences of length 235 generated in 3.3065 seconds
+Generating sequences for: shoulder_l_d_55
+4 sequences of length 260 generated in 3.6388 seconds
+Generating sequences for: shoulder_l_d_33
+4 sequences of length 259 generated in 3.6158 seconds
+Generating sequences for: shoulder_m_d_139
+4 sequences of length 235 generated in 3.2964 seconds
+Generating sequences for: shoulder_m_d_106
+4 sequences of length 218 generated in 3.0752 seconds
+Generating sequences for: shoulder_l_d_89
+4 sequences of length 249 generated in 3.5007 seconds
+Generating sequences for: shoulder_m_d_62
+4 sequences of length 223 generated in 3.15 seconds
+Generating sequences for: apex_m_d_46
+4 sequences of length 221 generated in 3.1197 seconds
+Generating sequences for: shoulder_s_d_60
+4 sequences of length 202 generated in 2.8288 seconds
+Generating sequences for: shoulder_s_d_25
+4 sequences of length 218 generated in 3.084 seconds
+Generating sequences for: apex_m_d_35
+4 sequences of length 228 generated in 3.1981 seconds
+Generating sequences for: swap_m_d_22
+4 sequences of length 224 generated in 3.1642 seconds
+Generating sequences for: shoulder_s_d_5
+4 sequences of length 204 generated in 2.894 seconds
+Generating sequences for: shoulder_m_d_5
+4 sequences of length 230 generated in 3.232 seconds
+Generating sequences for: shoulder_m_d_57
+4 sequences of length 237 generated in 3.3361 seconds
+Generating sequences for: apex_l_d_37
+4 sequences of length 264 generated in 3.7316 seconds
+Generating sequences for: swap_m_d_42
+4 sequences of length 238 generated in 3.3289 seconds
+Generating sequences for: shoulder_m_d_69
+4 sequences of length 232 generated in 3.2552 seconds
+Generating sequences for: apex_m_d_22
+4 sequences of length 240 generated in 3.3626 seconds
+Generating sequences for: shoulder_m_d_87
+4 sequences of length 238 generated in 3.3448 seconds
+Generating sequences for: swap_m_d_52
+4 sequences of length 233 generated in 3.2748 seconds
+Generating sequences for: shoulder_m_d_51
+4 sequences of length 230 generated in 3.255 seconds
+Generating sequences for: shoulder_l_d_34
+4 sequences of length 246 generated in 3.4708 seconds
+Generating sequences for: shoulder_m_d_98
+4 sequences of length 225 generated in 3.1824 seconds
+Generating sequences for: shoulder_s_d_87
+4 sequences of length 202 generated in 2.8446 seconds
+Generating sequences for: shoulder_m_d_33
+4 sequences of length 217 generated in 3.0553 seconds
+Generating sequences for: shoulder_m_d_93
+4 sequences of length 217 generated in 3.0532 seconds
+Generating sequences for: shoulder_s_d_97
+4 sequences of length 220 generated in 3.1231 seconds
+Generating sequences for: apex_l_d_25
+4 sequences of length 259 generated in 3.6339 seconds
+Generating sequences for: apex_m_d_82
+4 sequences of length 219 generated in 3.0858 seconds
+Generating sequences for: apex_m_d_51
+4 sequences of length 224 generated in 3.1425 seconds
+Generating sequences for: apex_m_d_16
+4 sequences of length 219 generated in 3.0801 seconds
+Generating sequences for: apex_m_d_73
+4 sequences of length 239 generated in 3.3483 seconds
+Generating sequences for: apex_m_d_69
+4 sequences of length 217 generated in 3.0542 seconds
+Generating sequences for: apex_l_d_7
+4 sequences of length 260 generated in 3.6475 seconds
+Generating sequences for: shoulder_s_d_43
+4 sequences of length 201 generated in 2.833 seconds
+Generating sequences for: shoulder_m_d_83
+4 sequences of length 220 generated in 3.0952 seconds
+Generating sequences for: apex_m_d_49
+4 sequences of length 230 generated in 3.2266 seconds
+Generating sequences for: shoulder_m_d_77
+4 sequences of length 237 generated in 3.3218 seconds
+Generating sequences for: shoulder_m_d_128
+4 sequences of length 219 generated in 3.0825 seconds
+Generating sequences for: swap_m_d_16
+4 sequences of length 219 generated in 3.0864 seconds
+Generating sequences for: apex_m_d_24
+4 sequences of length 234 generated in 3.2778 seconds
+Generating sequences for: shoulder_m_d_54
+4 sequences of length 225 generated in 3.1438 seconds
+Generating sequences for: shoulder_l_d_38
+4 sequences of length 258 generated in 3.6338 seconds
+Generating sequences for: shoulder_l_d_56
+4 sequences of length 263 generated in 3.6914 seconds
+Generating sequences for: shoulder_m_d_48
+4 sequences of length 222 generated in 3.2081 seconds
+Generating sequences for: shoulder_s_d_96
+4 sequences of length 215 generated in 3.1221 seconds
+Generating sequences for: apex_l_d_11
+4 sequences of length 255 generated in 3.5863 seconds
+Generating sequences for: shoulder_l_d_63
+4 sequences of length 241 generated in 3.3805 seconds
+Generating sequences for: shoulder_m_d_22
+4 sequences of length 216 generated in 3.1078 seconds
+Generating sequences for: apex_l_d_22
+4 sequences of length 264 generated in 3.8655 seconds
+Generating sequences for: shoulder_s_d_0
+4 sequences of length 207 generated in 2.909 seconds
+Generating sequences for: shoulder_s_d_92
+4 sequences of length 205 generated in 2.8792 seconds
+Generating sequences for: shoulder_m_d_100
+4 sequences of length 219 generated in 3.0935 seconds
+Generating sequences for: shoulder_m_d_10
+4 sequences of length 215 generated in 3.0293 seconds
+Generating sequences for: apex_l_d_10
+4 sequences of length 239 generated in 3.3686 seconds
+Generating sequences for: apex_l_d_14
+4 sequences of length 242 generated in 3.4059 seconds
+Generating sequences for: shoulder_s_d_34
+4 sequences of length 212 generated in 2.9953 seconds
+Generating sequences for: shoulder_s_d_64
+4 sequences of length 200 generated in 2.8287 seconds
+Generating sequences for: swap_m_d_6
+4 sequences of length 233 generated in 3.4536 seconds
+Generating sequences for: shoulder_m_d_58
+4 sequences of length 219 generated in 3.1222 seconds
+Generating sequences for: shoulder_s_d_41
+4 sequences of length 215 generated in 3.0252 seconds
+Generating sequences for: apex_m_d_12
+4 sequences of length 240 generated in 3.3853 seconds
+Generating sequences for: shoulder_s_d_30
+4 sequences of length 217 generated in 3.0486 seconds
+Generating sequences for: shoulder_m_d_68
+4 sequences of length 218 generated in 3.0861 seconds
+Generating sequences for: apex_m_d_59
+4 sequences of length 233 generated in 3.2637 seconds
+Generating sequences for: shoulder_l_d_36
+4 sequences of length 255 generated in 3.5807 seconds
+Generating sequences for: shoulder_m_d_30
+4 sequences of length 239 generated in 3.3465 seconds
+Generating sequences for: swap_m_d_0
+4 sequences of length 227 generated in 3.2007 seconds
+Generating sequences for: shoulder_l_d_45
+4 sequences of length 237 generated in 3.3064 seconds
+Generating sequences for: shoulder_s_d_3
+4 sequences of length 220 generated in 3.0883 seconds
+Generating sequences for: shoulder_s_d_38
+4 sequences of length 219 generated in 3.0765 seconds
+Generating sequences for: apex_m_d_85
+4 sequences of length 226 generated in 3.1646 seconds
+Generating sequences for: shoulder_l_d_5
+4 sequences of length 260 generated in 3.6355 seconds
+Generating sequences for: swap_m_d_46
+4 sequences of length 227 generated in 3.2102 seconds
+Generating sequences for: apex_m_d_7
+4 sequences of length 222 generated in 3.1681 seconds
+Generating sequences for: apex_m_d_84
+4 sequences of length 239 generated in 3.3493 seconds
+Generating sequences for: shoulder_l_d_78
+4 sequences of length 245 generated in 3.4453 seconds
+Generating sequences for: swap_m_d_54
+4 sequences of length 233 generated in 3.2759 seconds
+Generating sequences for: apex_l_d_18
+4 sequences of length 237 generated in 3.3181 seconds
+Generating sequences for: apex_l_d_9
+4 sequences of length 238 generated in 3.3389 seconds
+Generating sequences for: shoulder_s_d_23
+4 sequences of length 213 generated in 2.9948 seconds
+Generating sequences for: shoulder_m_d_11
+4 sequences of length 225 generated in 3.1637 seconds
+Generating sequences for: shoulder_m_d_35
+4 sequences of length 222 generated in 3.1198 seconds
+Generating sequences for: shoulder_m_d_36
+4 sequences of length 236 generated in 3.3074 seconds
+Generating sequences for: apex_m_d_19
+4 sequences of length 219 generated in 3.08 seconds
+Generating sequences for: swap_m_d_61
+4 sequences of length 229 generated in 3.2301 seconds
+Generating sequences for: shoulder_s_d_57
+4 sequences of length 217 generated in 3.0645 seconds
+pool hisb: 540 fasta files -> gen/mpnn/hisb/seqs

@@ -1,0 +1,27 @@
+[35] 4320 raw MPNN designs
+[35] composition filter dropped 1223, kept 3097
+       homopolymer Ax5: 340
+       homopolymer Ax6: 232
+       N-X-S/T sequon: 136
+       homopolymer Ax7: 123
+       homopolymer Ex5: 70
+       homopolymer Ax8: 63
+[35] best-1-per-backbone-per-pool -> 1005 designs
+[35] capped to 900 with proportional batch quotas
+
+[35] selected by batch / pool:
+       apex_l       hisb   37
+       apex_l       plain  40
+       apex_m       hisb   73
+       apex_m       plain  77
+       shoulder_l   hisb   74
+       shoulder_l   plain  78
+       shoulder_m   hisb   114
+       shoulder_m   plain  114
+       shoulder_s   hisb   88
+       shoulder_s   plain  90
+       swap_m       hisb   53
+       swap_m       plain  62
+
+[out] /home/HarjasG/tnf-track3/tfr1-comp4/gen/selected.fasta  (900 designs)
+[out] /home/HarjasG/tnf-track3/tfr1-comp4/gen/selected.tsv

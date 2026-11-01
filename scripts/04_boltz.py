@@ -269,7 +269,14 @@ def main() -> int:
         write_yaml(yaml_dir / f"{name}.yaml", seq, target, tmpl)
 
     pred_dir = work / "pred"
-    cmd = ["boltz", "predict", str(yaml_dir),
+    # Resolve the boltz binary next to the interpreter running us. Invoking a
+    # bare "boltz" only works if the conda env happens to be ACTIVATED, which
+    # is true in an interactive shell and false when the autopilot calls this
+    # script by absolute interpreter path -- that cost a failed stage once.
+    boltz_bin = Path(sys.executable).with_name("boltz")
+    if not boltz_bin.exists():
+        boltz_bin = Path("boltz")
+    cmd = [str(boltz_bin), "predict", str(yaml_dir),
            "--out_dir", str(pred_dir), "--model", "boltz2",
            "--accelerator", "gpu", "--devices", str(args.devices),
            "--recycling_steps", str(args.recycling_steps),
