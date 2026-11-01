@@ -74,6 +74,26 @@ def mouse_by_alignment(human_seq_by_num: dict[int, str]) -> dict[int, str]:
     Returns {human_resnum: mouse_one_letter}; positions with no mouse
     counterpart (the single apical indel) are omitted, which deletes that
     residue from the mouse target rather than inventing one.
+
+    VERIFIED 2026-11-01: 638 entries over human 122-760, 78.1% identity
+    position-wise against the structure sequence, and the page-stated apical
+    substitutions reproduce (204->Q, 208->N, 348->K, 371->Q, 374->K).
+
+    Two consequences worth stating rather than discovering later:
+
+    1. The mouse target is 638 residues against a 639-residue template CIF,
+       because human 210 has no mouse counterpart. Boltz aligns template to
+       sequence so the one unmatched template residue is tolerated, but do NOT
+       compare the human and mouse strings index-by-index -- everything after
+       210 is shifted by one and a naive zip reports ~14% identity instead of
+       78%. Compare BY POSITION.
+
+    2. This aligner places the apical gap at human 210; the challenge page
+       places it at L212. Stage 00 anchors to the page for reporting, this
+       function does not. The two are equal-cost alignments of the same single
+       deletion and 210/211/212 are all non-conserved either way, so the mouse
+       TARGET is materially identical. Any residue-level mouse claim in a
+       dossier must use the stage-00 page-anchored mapping, not this one.
     """
     from Bio import Align, SeqIO
     h = str(next(SeqIO.parse(ROOT / "target/human_tfr1_121_760.fasta",
