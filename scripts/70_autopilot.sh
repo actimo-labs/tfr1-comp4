@@ -78,12 +78,21 @@ fi
 note "selected $(grep -c '^>' gen/selected.fasta) designs for the human screen"
 
 # ---- 04: Boltz human screen, FULL 639-residue monomer -------------------
-# full monomer not the apical crop: the crop is 1.4x faster but inverts the
-# ranking (pilot: d_1_s1 scored 0.361 cropped vs 0.775 full, and the crop
-# promoted a weaker design above it). See runlog/00-schedule.md.
+# full monomer not the apical crop. The crop is 1.4x faster but hides
+# off-target docking: the pilot's top design by ipTM (0.775) binds the
+# transferrin site and a glycan sequon and hits 0/5 hotspots, and the crop
+# scored it low only because the crop lacks the site it wanted. 04e is the
+# real filter. See runlog/00-schedule.md and its CORRECTION section.
 stage 04_boltz_human "$BOLTZ_PY" scripts/04_boltz.py \
     --extra-seqs gen/selected.fasta \
     --tag screen --target-mode full --species human
+
+# ---- 04e: epitope fidelity gate (HARD) ---------------------------------
+# Must run before anything downstream spends time on a design. The pilot's
+# top-scoring design by ipTM binds the transferrin site and a glycan sequon
+# and hits zero targeted hotspots; confidence alone cannot catch that.
+stage 04e_epitope_qc "$PH_PY" -I scripts/04e_epitope_qc.py \
+    --pred boltz/screen/pred --out gen/epitope_qc.tsv
 
 # ---- 04b/04c: controls and calibration ----------------------------------
 # Positives matter this round. 11RN's VP1u RBD is a real apical binder and

@@ -105,6 +105,20 @@ class ChainSelect(Select):
         return residue.id[0] == " "
 
 
+
+def _propka_bin():
+    """Resolve propka3 next to the running interpreter, then fall back to PATH.
+
+    venv-phscan/bin/propka3 exists but the venv's bin is NOT on PATH when the
+    interpreter is invoked by absolute path, which is how every automated
+    caller runs this. Same latent breakage as the bare "boltz" call in stage
+    04: fine interactively, fails unattended.
+    """
+    cand = Path(sys.executable).with_name("propka3")
+    if cand.exists():
+        return str(cand)
+    return shutil.which("propka3")
+
 def linkage_ddg(pka_free, pka_bound, ph_low=PH_LOW, ph_high=PH_HIGH):
     """Binding penalty (kcal/mol) incurred by moving from ph_high to ph_low.
 
@@ -120,8 +134,9 @@ def linkage_ddg(pka_free, pka_bound, ph_low=PH_LOW, ph_high=PH_HIGH):
 
 def run_propka(pdb_path, workdir):
     """Return {(chain, resnum): pka} for HIS residues."""
-    if shutil.which("propka3") is None:
-        sys.exit("propka3 not on PATH -- pip install propka")
+    if _propka_bin() is None:
+        sys.exit("propka3 not found next to the interpreter or on PATH "
+                 "-- pip install propka")
     pdb_path = Path(pdb_path).resolve()
     local = Path(workdir) / pdb_path.name
     # Callers sometimes already wrote the file into workdir.
@@ -129,7 +144,7 @@ def run_propka(pdb_path, workdir):
         shutil.copy(pdb_path, local)
     try:
         subprocess.run(
-            ["propka3", local.name],
+            [_propka_bin(), local.name],
             cwd=workdir,
             check=True,
             capture_output=True,

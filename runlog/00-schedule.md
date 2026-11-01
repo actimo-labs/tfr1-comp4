@@ -135,3 +135,33 @@ AF2-IG does the cheap triage ahead of Boltz rather than after it.
 
 The generation crop is unaffected — it is a *generation* device and the
 validation target was always the uncropped monomer.
+
+### CORRECTION to the Boltz target-mode rationale above
+
+The table above is right that the full monomer and the apical crop disagree,
+and the decision to score on the full monomer stands. **The stated reason was
+wrong** and is corrected here.
+
+I wrote that the crop "would have discarded `d_1_s1`, the strongest binder in
+the pilot." It is not a binder of our epitope at all. Stage 04e shows
+`plain_d_1_s1` contacts residues 317-320, 469-473, 636-648 and 680-689 — the
+N317 glycan sequon and, fatally, **inside the transferrin site (619-670)** —
+and hits **zero** of the five targeted hotspots. Its ipTM of 0.775 is real
+confidence in a pose we do not want.
+
+The crop scored it 0.361 **because the crop does not contain the site it
+wanted to bind**. The crop was right by accident.
+
+So: score on the full monomer, because it *exposes* off-target docking that a
+crop hides — not because it rescues good designs. And interface confidence
+alone cannot be the filter, which is why 04e is now a hard gate rather than a
+ranking term.
+
+| pilot design | ipTM | hotspots hit | verdict |
+|---|---|---|---|
+| plain_d_1_s1 | 0.775 | 0/5 | **REJECT** — Tf site + glycan |
+| plain_d_1_s2 | 0.509 | 4/5 | pass |
+| plain_d_0_s4 | 0.429 | 3/5 | pass |
+| plain_d_1_s4 | 0.293 | 4/5 | pass |
+
+The best design by score is the one the assay would punish hardest.
