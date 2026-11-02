@@ -227,6 +227,10 @@ def main() -> int:
     ap.add_argument("--override", action="store_true")
     ap.add_argument("--no-template", action="store_true")
     ap.add_argument("--no-composition-filter", action="store_true")
+    ap.add_argument("--seed", type=int, default=None,
+                    help="Boltz sampling seed. Used by the self-consistency "
+                         "gate: a second seed must reproduce the POSE, not "
+                         "merely the score.")
     args = ap.parse_args()
 
     binders: dict[str, str] = {}
@@ -303,6 +307,8 @@ def main() -> int:
            "--diffusion_samples", str(args.diffusion_samples),
            "--sampling_steps", str(args.sampling_steps),
            "--output_format", "pdb"]
+    if args.seed is not None:
+        cmd += ["--seed", str(args.seed)]
     if args.override:
         cmd.append("--override")
     print("+", " ".join(cmd), flush=True)

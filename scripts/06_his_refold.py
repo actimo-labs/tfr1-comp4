@@ -170,8 +170,8 @@ def main() -> int:
     print("+", " ".join(cmd), flush=True)
     subprocess.run(cmd, check=True)
 
-    scored = {r["name"]: r for r in json.loads(
-        (args.boltz_root / args.tag / "scores.json").read_text())}
+    _sr = json.loads((args.boltz_root / args.tag / "scores.json").read_text())
+    scored = {r["name"]: r for r in (_sr["scores"] if isinstance(_sr, dict) else _sr)}
 
     args.out.parent.mkdir(parents=True, exist_ok=True)
     rows, survivors = [], 0
@@ -179,9 +179,9 @@ def main() -> int:
         s = scored.get(v["name"])
         if not s:
             continue
-        parent_s = parent_scores.get(v["parent"], {}).get("iptm_min")
+        parent_s = parent_scores.get(v["parent"], {}).get("iptm_min", parent_scores.get(v["parent"], {}).get("binder_target_iptm"))
         drop = (
-            None if not parent_s else round((parent_s - s["iptm_min"]) / parent_s, 3)
+            None if not parent_s else round((parent_s - s.get("iptm_min", s.get("binder_target_iptm"))) / parent_s, 3)
         )
         # Binding at 7.4 is an absolute property, so the absolute score is the
         # primary test. The drop rule exists only to catch a variant that was
@@ -189,8 +189,8 @@ def main() -> int:
         # it penalises strong parents: a variant at 0.49 that fell 26% from a
         # 0.66 parent was being failed while a 0.31 survivor passed. A variant
         # comfortably strong in absolute terms is exempt from the drop rule.
-        strong = s["iptm_min"] >= args.strong_iptm
-        ok = s["iptm_min"] >= args.cutoff and (
+        strong = s.get("iptm_min", s.get("binder_target_iptm")) >= args.strong_iptm
+        ok = s.get("iptm_min", s.get("binder_target_iptm")) >= args.cutoff and (
             strong or drop is None or drop <= args.max_drop
         )
         survivors += ok
@@ -199,7 +199,7 @@ def main() -> int:
                ("name", "parent", "mutations", "n_his", "ddg",
                 "min_his_sep_A", "native_his_ddg", "sequence")},
             "parent_iptm": parent_s,
-            "variant_iptm": round(s["iptm_min"], 4),
+            "variant_iptm": round(s.get("iptm_min", s.get("binder_target_iptm")), 4),
             "target_pair_iptm": round(s["target_pair_iptm"] or 0.0, 4),
             "frac_drop": drop,
             "survives_pH74": int(ok),
