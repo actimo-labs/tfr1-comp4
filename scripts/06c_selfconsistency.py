@@ -15,8 +15,14 @@ For each design, both seeds give a contact set on the target. We report
 
   jaccard   |A n B| / |A u B|    overlap of the two contact sets
   centroid  distance between the binder centre of mass in the two poses,
-            after superposing on the target (the target is template-pinned to
-            the same structure in both runs, so its frame is already common)
+            AFTER SUPERPOSING THE TWO TARGETS on their CA atoms.
+
+            The superposition is not optional. Boltz writes every prediction in
+            its own global frame, so raw centroids are not comparable: the
+            first version of this script compared them directly and reported
+            55-87 A shifts for designs whose contact sets were IDENTICAL
+            (jaccard 1.0). Template pinning constrains the target's
+            CONFORMATION, not its placement in space.
 
 A design passes when the two seeds agree on where it binds:
   jaccard >= --min-jaccard  AND  centroid shift <= --max-shift
@@ -38,19 +44,33 @@ CONTACT = 5.0
 
 
 def pose(path, binder="X", target="A"):
+    """Return (contact set in construct numbering, binder centroid, target CA
+    coords keyed by residue number). The target CAs let the caller superpose
+    the two frames before comparing centroids."""
     m = next(PDBParser(QUIET=True).get_structure("x", path).get_models())
     try:
         B = [r for r in m[binder] if r.id[0] == " "]
         T = {r.id[1]: r for r in m[target] if r.id[0] == " "}
     except KeyError:
-        return None, None
+        return None, None, None
     bx = np.array([a.coord for r in B for a in r])
     contacts = set()
     for i, r in T.items():
         tx = np.array([a.coord for a in r])
         if np.linalg.norm(bx[:, None, :] - tx[None, :, :], axis=-1).min() < CONTACT:
             contacts.add(i + OFFSET)
-    return contacts, bx.mean(axis=0)
+    ca = {i: r["CA"].coord for i, r in T.items() if "CA" in r}
+    return contacts, bx.mean(axis=0), ca
+
+
+def kabsch(P, Q):
+    """Rotation+translation taking P onto Q (both N x 3)."""
+    pc, qc = P.mean(0), Q.mean(0)
+    H = (P - pc).T @ (Q - qc)
+    U, _, Vt = np.linalg.svd(H)
+    d = np.sign(np.linalg.det(Vt.T @ U.T))
+    R = Vt.T @ np.diag([1.0, 1.0, d]) @ U.T
+    return R, qc - R @ pc
 
 
 def find(root, name):
@@ -78,8 +98,14 @@ def main():
             rows.append(dict(name=n, jaccard=None, shift=None, n1=None, n2=None,
                              passes=False, reason="missing a seed"))
             continue
-        c1, m1 = pose(p1)
-        c2, m2 = pose(p2)
+        c1, m1, ca1 = pose(p1)
+        c2, m2, ca2 = pose(p2)
+        if c1 is not None and c2 is not None and ca1 and ca2:
+            shared = sorted(set(ca1) & set(ca2))
+            if len(shared) >= 20:
+                R, t = kabsch(np.array([ca1[i] for i in shared]),
+                              np.array([ca2[i] for i in shared]))
+                m1 = R @ m1 + t          # move seed-1 binder into seed-2 frame
         if c1 is None or c2 is None:
             rows.append(dict(name=n, jaccard=None, shift=None, n1=None, n2=None,
                              passes=False, reason="unparseable"))

@@ -1,0 +1,6 @@
+name,human_iptm,ddg,scope,reason
+hisb_shoulder_m_d_93_s3__V4H,0.7554,0.884,cross_species,>70% identity to plain_shoulder_m_d_93_s3__E53H_E3H
+hisb_shoulder_s_d_13_s2,0.7071787714958191,0.0,none,>70% identity to plain_shoulder_s_d_13_s2
+hisb_shoulder_m_d_93_s3__V4H,0.7554,0.884,cross_species,>70% identity to plain_shoulder_m_d_93_s3__E53H_E3H
+plain_apex_m_d_23_s4__T4H_Y70H,0.7213,0.776,species_specific,>70% identity to hisb_apex_m_d_23_s4
+hisb_shoulder_s_d_13_s2,0.7071787714958191,0.0,none,>70% identity to plain_shoulder_s_d_13_s2

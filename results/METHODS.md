@@ -114,7 +114,7 @@ applied only at binder positions within 10 Å of a conserved cation.
 | **05b** | **conservation policy on switch sites** | vetoed-cation sites discarded; scope labelled | **this campaign** |
 | 06 | His refold | variant ipTM ≥0.35 and (≥0.40 or ≤25% drop) | comp-02 |
 | 06b | mouse screen | second-stage, on human survivors only | §5 of the brief |
-| 06c | two-seed pose agreement | Jaccard ≥0.50, centroid shift ≤5 Å | comp-03 |
+| 06c | two-seed pose agreement | Jaccard ≥0.50, centroid shift ≤5 Å **after superposing the targets** | comp-03 |
 
 ### 5a. Why epitope fidelity is a hard gate
 
@@ -160,6 +160,12 @@ is not in it.
 | designs with a usable switch | 221 |
 | **survive the pH 7.4 His refold** | **57** |
 | of those, cross-species switch | 4 |
+| **agree across two seeds (pose gate)** | **49 / 57** |
+| mouse-scored | 62 (57 survivors + 5 controls) |
+| **submitted** | **20** |
+
+Final slate: 6 cross-reactive (class A), 7 human pH switches (B), 2 affinity
+(C), 5 unmutated controls (D). **20 distinct backbones**, 61-118 aa.
 
 ## 7. Honest statement on each objective
 
@@ -172,19 +178,41 @@ Results are reported in tiers (strong ≥2.0, moderate ≥1.4, weak ≥1.0) with
 fold-shift stated, not as pass/fail. This sits at the weak end of the published
 strategy-1 range (122× on TNFR2, up to ~1000× on EphA2).
 
-**Objective 2 — mouse cross-reactivity.** **The weakest result, and expected
-to be.** Only 4 designs survive with a conserved-cation switch, all weak (3–6×).
-The cause was measured, not guessed: across the 123 on-epitope backbones the
-closest binder atom sits at median **5.1 Å from Y211/L209 but 11.6 Å from K374**.
-RFdiffusion centres binders on the protruding apical tip regardless of where it
-is pointed — round 2 removed 209/211 from the hotspot set entirely and 169 of
-170 designs still gripped them at 5.1 Å. A histidine cannot bridge 11.6 Å.
+**Objective 2 — mouse cross-reactivity.** Better than the mechanism work
+suggested, for a reason worth stating plainly.
+
+Measured across the 57 refold survivors scored against the mouse target:
+median mouse:human ipTM ratio **0.33**, but **8 designs at ratio ≥0.75** and
+**5 at ≥0.90**, the best at **1.34** (`hisb_shoulder_m_d_67_s4__E72H`, human
+0.451 / mouse 0.606 — it binds mouse *better* than human). Six survive the pose
+gate and are submitted as class A.
+
+**A conserved-cation switch does NOT imply a cross-reactive binder.** These are
+independent properties and we initially conflated them. Of the four surviving
+cross-species-switch designs the mouse:human ratios are 1.34, 0.46, 0.20 and
+0.19 — and the best human binder of the campaign (ipTM 0.755) sits at 0.19.
+Meanwhile several designs whose switch is *human-only* cross-react well (1.34,
+1.33, 1.07). In hindsight this is obvious: the switch is **one residue**, the
+interface is 15–20, and most of those differ between species. Objective 2 is
+therefore ranked on **measured mouse retention**, not on our mechanism label.
+
+So cross-reactive *binding* is achievable here; what is hard is cross-reactive
+*switching*. On that, the cause was measured rather than guessed: across the
+123 on-epitope backbones the closest binder atom sits at median **5.1 Å from
+Y211/L209 but 11.6 Å from K374**, the only clean conserved cation. RFdiffusion
+centres binders on the protruding apical tip regardless of where it is pointed
+— round 2 removed 209/211 from the hotspot set entirely and 169 of 170 designs
+still gripped them at 5.1 Å. A histidine cannot bridge 11.6 Å.
 
 The targeted His bias did work at its specific job — cross-species switches by
 pool were plain 0, global-His 3, **targeted 5** — but K374-centric designs bind
 measurably worse (top-five ipTM 0.148–0.270 vs 0.813 for the best round-1
 design) and survive the refold at 10% vs 33%. **The conserved anchor sits where
 binding is hard.** That trade-off is the central finding of this campaign.
+
+**No design in this slate is claimed to be both strongly pH-selective and
+cross-reactive.** The class-A designs cross-react but switch weakly (0.16–1.39
+kcal/mol); the class-B designs switch up to 16× but are human-only.
 
 **Objective 3 — human affinity.** **The strongest result.** 61 on-epitope
 designs at ipTM ≥0.5, best 0.813, at a functional epitope overlapping 5 of the 9
@@ -205,6 +233,14 @@ receptor recycling should be unaffected.
   (`scaffoldguided` + `Complex_Fold_base_ckpt.pt`) but was **not run** — time
   went to the K374 problem instead. This is a real diversity limitation of the
   slate and is stated rather than hidden.
+- **The pose gate was initially broken and is worth recording.** Its first
+  version compared binder centroids between the two seeds without superposing
+  the targets, and reported 0/57 agreeing with 55-87 A shifts for designs whose
+  contact sets were *identical* (Jaccard 1.0). Boltz writes each prediction in
+  its own global frame; template pinning constrains conformation, not
+  placement. After superposing on target CA atoms: **49/57 agree**, 3 flip to a
+  genuinely different site. One of those three had already been selected into
+  class A on a mouse ratio of 1.14 and was removed.
 - **Four conditions / three conditions.** The challenge page's ranking intro
   says "four conditions" then names three. Every ranking criterion is scoped to
   a named condition, so no stated criterion consumes a fourth. Proceeded on

@@ -1,0 +1,43 @@
+target : mouse / full / 638 aa
+template: /home/HarjasG/tnf-track3/tfr1-comp4/target/tfr1_A.cif
+designs : 5
++ /home/HarjasG/miniforge3/envs/boltz/bin/boltz predict /home/HarjasG/tnf-track3/tfr1-comp4/boltz/mouse/yaml --out_dir /home/HarjasG/tnf-track3/tfr1-comp4/boltz/mouse/pred --model boltz2 --accelerator gpu --devices 1 --recycling_steps 3 --diffusion_samples 1 --sampling_steps 200 --output_format pdb
+Checking input data.
+Found 57 existing processed inputs, skipping them.
+Processing 5 inputs with 5 threads.
+  0%|          | 0/5 [00:00<?, ?it/s]Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+Found explicit empty MSA for some proteins, will run these in single sequence mode. Keep in mind that the model predictions will be suboptimal without an MSA.
+ 20%|██        | 1/5 [00:01<00:04,  1.11s/it]100%|██████████| 5/5 [00:01<00:00,  4.51it/s]
+Found some existing predictions (57), skipping and running only the missing ones, if any. If you wish to override these existing predictions, please set the --override flag.
+Using bfloat16 Automatic Mixed Precision (AMP)
+GPU available: True (cuda), used: True
+TPU available: False, using: 0 TPU cores
+HPU available: False, using: 0 HPUs
+/home/HarjasG/miniforge3/envs/boltz/lib/python3.11/site-packages/pytorch_lightning/trainer/connectors/logger_connector/logger_connector.py:76: Starting from v1.9.0, `tensorboardX` has been removed as a dependency of the `pytorch_lightning` package, due to potential conflicts with other packages in the ML ecosystem. For this reason, `logger=True` will use `CSVLogger` as the default logger, unless the `tensorboard` or `tensorboardX` packages are found. Please `pip install lightning[extra]` or one of them to enable TensorBoard support by default
+Running structure prediction for 5 inputs.
+/home/HarjasG/miniforge3/envs/boltz/lib/python3.11/site-packages/pytorch_lightning/utilities/migration/utils.py:56: The loaded checkpoint was produced with Lightning v2.5.0.post0, which is newer than your current Lightning version: v2.5.0
+You are using a CUDA device ('NVIDIA A100-SXM4-80GB') that has Tensor Cores. To properly utilize them, you should set `torch.set_float32_matmul_precision('medium' | 'high')` which will trade-off precision for performance. For more details, read https://pytorch.org/docs/stable/generated/torch.set_float32_matmul_precision.html#torch.set_float32_matmul_precision
+LOCAL_RANK: 0 - CUDA_VISIBLE_DEVICES: [0]
+/home/HarjasG/miniforge3/envs/boltz/lib/python3.11/site-packages/pytorch_lightning/utilities/_pytree.py:21: `isinstance(treespec, LeafSpec)` is deprecated, use `isinstance(treespec, TreeSpec) and treespec.is_leaf()` instead.
+Predicting: |          | 0/? [00:00<?, ?it/s]Predicting:   0%|          | 0/5 [00:00<?, ?it/s]Predicting DataLoader 0:   0%|          | 0/5 [00:00<?, ?it/s]/home/HarjasG/miniforge3/envs/boltz/lib/python3.11/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/home/HarjasG/miniforge3/envs/boltz/lib/python3.11/site-packages/cuequivariance_ops_torch/triangle_attention.py:623: UserWarning: Generic kernel expects bias to be float32 so it's going to be cast to torch.float32. Check if you can change your code for maximum performance.
+  warn_eager_only(
+Predicting DataLoader 0:  20%|██        | 1/5 [00:30<02:03,  0.03it/s]Predicting DataLoader 0:  40%|████      | 2/5 [00:57<01:25,  0.04it/s]Predicting DataLoader 0:  60%|██████    | 3/5 [01:24<00:56,  0.04it/s]Predicting DataLoader 0:  80%|████████  | 4/5 [01:49<00:27,  0.04it/s]Predicting DataLoader 0: 100%|██████████| 5/5 [02:15<00:00,  0.04it/s]Number of failed examples: 0
+Predicting DataLoader 0: 100%|██████████| 5/5 [02:15<00:00,  0.04it/s]
+
+5/5 scored in 3.0 min (36.25 s/design)
+  hisb_apex_m_d_0_s1                 binder-target ipTM=0.277 binder_ptm=0.943 iplddt=0.832
+  plain_shoulder_l_d_85_s4           binder-target ipTM=0.252 binder_ptm=0.973 iplddt=0.793
+  plain_shoulder_s_d_13_s2           binder-target ipTM=0.230 binder_ptm=0.961 iplddt=0.839
+  hisb_apex_m_d_23_s4                binder-target ipTM=0.134 binder_ptm=0.981 iplddt=0.848
+  hisb_shoulder_m_d_9_s4             binder-target ipTM=0.126 binder_ptm=0.960 iplddt=0.855
+scores -> /home/HarjasG/tnf-track3/tfr1-comp4/boltz/mouse/scores.json

@@ -147,7 +147,12 @@ def main():
             backbone=pname.split("_", 1)[1].rsplit("_s", 1)[0],
             round="r1" if "_r2" not in pname else "r2",
             sequence=seq, length=len(seq), human_iptm=hum,
-            mouse_iptm=None, mouse_ratio=None, ddg=0.0, fold_shift=1.0,
+            # controls were mouse-scored too, in the same boltz/mouse run
+            mouse_iptm=(round(mouse[pname]["binder_target_iptm"], 4)
+                        if pname in mouse else None),
+            mouse_ratio=(round(mouse[pname]["binder_target_iptm"] / hum, 3)
+                         if pname in mouse and hum else None),
+            ddg=0.0, fold_shift=1.0,
             scope="none", n_his=0, mutations="",
             n_hotspots=int(q.get("n_hotspots", 0) or 0),
             hotspots=q.get("hotspots", ""), hotspot_set=q.get("hotspot_set", ""),
@@ -155,6 +160,24 @@ def main():
             binder_ptm=float(ps.get("binder_ptm") or 0),
             iplddt=float(ps.get("complex_iplddt") or 0),
             is_control=True))
+    # ---- self-consistency gate (HARD) ----------------------------------
+    # Two seeds must agree on WHERE the binder sits, not merely on how
+    # confident they are. Challenge 03 saw two seeds agree on interface
+    # confidence to within 0.03 while placing the binder 37 A apart. Here
+    # eight designs fail: three flip to an entirely different site (jaccard
+    # 0.0, centroid shifts 41-76 A after superposing the targets), and one of
+    # those had already been selected into class A on a mouse ratio of 1.14.
+    sc_path = ROOT / "results/selfconsistency.csv"
+    if sc_path.exists():
+        sc = {r["name"]: r for r in csv.DictReader(open(sc_path))}
+        before = len(cands)
+        cands = [c for c in cands
+                 if sc.get(c["name"], {}).get("passes", "True") == "True"]
+        print(f"[80] self-consistency gate: {before} -> {len(cands)} "
+              f"({before - len(cands)} dropped for seed-dependent poses)")
+    else:
+        print("[80] WARNING: no selfconsistency.csv - pose gate NOT applied")
+
     print(f"[80] {len(cands)} candidates "
           f"({sum(1 for c in cands if c.get('is_control'))} unmutated controls)")
     print(f"[80] mouse-scored: {sum(1 for c in cands if c['mouse_iptm'] is not None)}")

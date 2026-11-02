@@ -1,0 +1,9 @@
+[06c] 57 designs, 0 agree across seeds (jaccard >= 0.5, shift <= 5.0 A)
+[06c] designs whose binder moved >10 A between seeds: 57
+        hisb_shoulder_l_d_6_s1__L65H_K59H                shift 66.9 A  jaccard 1.0
+        hisb_apex_l_d_12_s1__D28H_R35H                   shift 55.2 A  jaccard 1.0
+        hisb_shoulder_m_d_135_s2__M32H_R25H              shift 87.2 A  jaccard 1.0
+        plain_shoulder_m_d_133_s1__L80H                  shift 70.9 A  jaccard 0.955
+        hisb_shoulder_m_d_89_s3__R55H                    shift 70.6 A  jaccard 0.941
+        plain_swap_m_d_42_s4__V32H_S72H_E65H             shift 20.6 A  jaccard 0.926
+[out] /home/HarjasG/tnf-track3/tfr1-comp4/results/selfconsistency.csv

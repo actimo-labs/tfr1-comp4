@@ -1,0 +1,36 @@
+[80] 114 candidates (57 unmutated controls)
+[80] mouse-scored: 0
+[80] class A: 0/8 filled from 0 candidates
+[80] class B: 5/5 filled from 27 candidates
+[80] class C: 4/4 filled from 109 candidates
+[80] class D: 3/3 filled from 55 candidates
+[80] slate: 20/20
+[80] structures copied: 20/20
+
+[80] slate composition: {'B': 8, 'D': 7, 'C': 5}
+[80] distinct backbones: 19
+[80] length range: 61-119
+
+  name                                       cls  hIPTM  mIPTM  ratio   ddG  fold
+  hisb_shoulder_m_d_15_s2__E61H_L17H           B  0.398  0.000   0.00  1.65    16
+  hisb_apex_m_d_56_s4__E61H_Y68H               B  0.508  0.000   0.00  1.57    14
+  hisb_shoulder_l_d_50_s2__R39H_D71H           B  0.609  0.000   0.00  1.39    10
+  plain_apex_m_d_22_s2__S75H_N58H              B  0.578  0.000   0.00  1.35    10
+  hisb_shoulder_l_d_37_s2__E75H_E82H_E43H      B  0.439  0.000   0.00  1.34    10
+  hisb_shoulder_m_d_9_s4                       D  0.813  0.000   0.00  0.00     1
+  plain_shoulder_m_d_93_s3__E53H_E3H           B  0.772  0.000   0.00  0.82     4
+  hisb_shoulder_l_d_78_s2__A19H                C  0.751  0.000   0.00  0.49     2
+  plain_shoulder_s_d_13_s2                     D  0.749  0.000   0.00  0.00     1
+  plain_shoulder_l_d_85_s4                     D  0.738  0.000   0.00  0.00     1
+  hisb_apex_m_d_0_s1                           D  0.731  0.000   0.00  0.00     1
+  hisb_apex_m_d_23_s4                          D  0.697  0.000   0.00  0.00     1
+  plain_shoulder_m_d_133_s1__L80H              C  0.684  0.000   0.00  0.39     2
+  hisb_shoulder_l_d_6_s1__L65H_K59H            B  0.667  0.000   0.00  1.08     6
+  hisb_swap_m_d_42_s4__S72H_V32H               B  0.654  0.000   0.00  1.29     9
+  hisb_swap_m_d_10_s1__R81H                    C  0.653  0.000   0.00  0.59     3
+  plain_shoulder_m_d_103_s2__S55H              C  0.653  0.000   0.00  0.51     2
+  plain_apex_m_d_0_s2                          D  0.648  0.000   0.00  0.00     1
+  hisb_shoulder_l_d_84_s4__E36H_E30H           C  0.636  0.000   0.00  0.66     3
+  plain_shoulder_m_d_32_s1                     D  0.634  0.000   0.00  0.00     1
+
+[out] /home/HarjasG/tnf-track3/tfr1-comp4/results/submission.csv
