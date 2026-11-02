@@ -126,8 +126,21 @@ def main():
     print(f"[80] mouse-scored: {sum(1 for c in cands if c['mouse_iptm'] is not None)}")
 
     # ---- classes --------------------------------------------------------
+    # IMPORTANT, learned from the mouse screen: a conserved-cation switch does
+    # NOT imply a cross-reactive binder. Those are independent properties. The
+    # switch is one residue; the interface is 15-20, and most of them differ
+    # between species. Measured: of the four surviving cross-species-switch
+    # designs, mouse:human ipTM ratios are 1.34, 0.46, 0.20 and 0.19 - and the
+    # best human binder of the whole campaign (0.755) sits at 0.19. Meanwhile
+    # several SPECIES-SPECIFIC-switch designs cross-react well (1.34, 1.14,
+    # 1.08).
+    #
+    # Objective 2 is scored by what the assay measures - mouse binding - not by
+    # our mechanism label. So class A is defined by MEASURED mouse retention,
+    # with the switch as a secondary ordering term, not the other way round.
     for c in cands:
-        if c["scope"] == "cross_species" and c["ddg"] > 0:
+        ratio = c["mouse_ratio"] or 0
+        if ratio >= 0.75 and c["mouse_iptm"] and c["mouse_iptm"] >= 0.30:
             c["cls"] = "A"
         elif c["ddg"] >= 0.7:
             c["cls"] = "B"
@@ -137,8 +150,8 @@ def main():
             c["cls"] = "C"
 
     # within-class ordering
-    def key_A(c):   # cross-species: switch strength, then mouse retention
-        return (-(c["ddg"]), -(c["mouse_ratio"] or 0), -c["human_iptm"])
+    def key_A(c):   # objective 2: measured mouse retention first, then switch
+        return (-(c["mouse_ratio"] or 0), -(c["ddg"]), -c["human_iptm"])
 
     def key_B(c):   # human switch: switch strength, then affinity
         return (-(c["ddg"]), -c["human_iptm"])
