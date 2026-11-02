@@ -122,7 +122,41 @@ def main():
             cterm_dist=float(q.get("cterm_dist", 0) or 0),
             binder_ptm=float(r["binder_ptm"]), iplddt=float(r["iplddt"])))
 
-    print(f"[80] {len(cands)} refold survivors with sequences")
+    # ---- unmutated parents, as the no-switch control -------------------
+    # §7 asks for designs with NO deliberate switch: pure objective-3
+    # insurance AND the internal control for the switch hypothesis. Every
+    # refold survivor carries His substitutions by construction, so without
+    # this the slate has no control arm and the switch claim has nothing to be
+    # compared against.
+    parents_scored = {}
+    for tag in ("screen", "screen_r2"):
+        parents_scored.update(load_scores(ROOT / f"boltz/{tag}/scores.json"))
+    chosen_parents = {c["parent"] for c in cands}
+    for pname, ps in parents_scored.items():
+        q = qc.get(pname)
+        if not q or q.get("passes") != "True":
+            continue
+        seq = seqs.get(pname)
+        if not seq or pname in chosen_parents:
+            continue
+        hum = ps.get("binder_target_iptm") or 0
+        if hum < 0.45:
+            continue
+        cands.append(dict(
+            name=pname, parent=pname,
+            backbone=pname.split("_", 1)[1].rsplit("_s", 1)[0],
+            round="r1" if "_r2" not in pname else "r2",
+            sequence=seq, length=len(seq), human_iptm=hum,
+            mouse_iptm=None, mouse_ratio=None, ddg=0.0, fold_shift=1.0,
+            scope="none", n_his=0, mutations="",
+            n_hotspots=int(q.get("n_hotspots", 0) or 0),
+            hotspots=q.get("hotspots", ""), hotspot_set=q.get("hotspot_set", ""),
+            cterm_dist=float(q.get("cterm_dist", 0) or 0),
+            binder_ptm=float(ps.get("binder_ptm") or 0),
+            iplddt=float(ps.get("complex_iplddt") or 0),
+            is_control=True))
+    print(f"[80] {len(cands)} candidates "
+          f"({sum(1 for c in cands if c.get('is_control'))} unmutated controls)")
     print(f"[80] mouse-scored: {sum(1 for c in cands if c['mouse_iptm'] is not None)}")
 
     # ---- classes --------------------------------------------------------
@@ -144,7 +178,7 @@ def main():
             c["cls"] = "A"
         elif c["ddg"] >= 0.7:
             c["cls"] = "B"
-        elif c["hotspot_set"] == "apex":
+        elif c.get("is_control"):
             c["cls"] = "D"
         else:
             c["cls"] = "C"
@@ -179,8 +213,22 @@ def main():
         used_bb[c["backbone"]] = used_bb.get(c["backbone"], 0) + 1
         return True
 
+    # Pools, not partitions. A and B are defined by their mechanism, but C is
+    # the AFFINITY slot and must draw from everything still unselected -
+    # otherwise a design with both top affinity and a decent switch gets
+    # labelled B, loses B's slots to stronger switches, and never reaches C.
+    # That happened on the first pre-flight: the two best human binders in the
+    # campaign (ipTM 0.772 and 0.755) were excluded from the slate entirely,
+    # while objective 3 is a ranked criterion.
     for cls in ("A", "B", "C", "D"):
-        pool = sorted([c for c in cands if c["cls"] == cls], key=order[cls])
+        if cls == "C":
+            pool = sorted([c for c in cands if c not in chosen], key=key_aff)
+        elif cls == "D":
+            pool = sorted([c for c in cands
+                           if c not in chosen and c.get("is_control")],
+                          key=key_aff)
+        else:
+            pool = sorted([c for c in cands if c["cls"] == cls], key=order[cls])
         n = 0
         for c in pool:
             if n >= quota[cls]:
@@ -228,8 +276,11 @@ def main():
     # structures
     n = 0
     for c in chosen:
-        hits = glob.glob(str(ROOT / f"boltz/refold*/pred/**/{c['name']}_model_0.pdb"),
-                         recursive=True)
+        hits = []
+        for tag in ("refold", "refold_r2", "screen", "screen_r2"):
+            hits += glob.glob(
+                str(ROOT / f"boltz/{tag}/pred/**/{c['name']}_model_0.pdb"),
+                recursive=True)
         if hits:
             shutil.copy(hits[0], args.structures / f"{c['name']}_complex.pdb")
             n += 1
