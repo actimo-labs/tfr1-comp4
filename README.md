@@ -23,7 +23,6 @@ Ranked in that order. 20 designs submitted, 61–118 aa, all `single_chain`.
 | `upload/submission/structures/` | 20 predicted complexes |
 | `upload/submission/SHA256SUMS.txt` | verify with `sha256sum -c` |
 
-72 files, 10.2 MB. **Never pushed to remote, never submitted** — both require explicit approval.
 
 ## Pipeline
 
